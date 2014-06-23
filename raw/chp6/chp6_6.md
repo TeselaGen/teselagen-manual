@@ -1,0 +1,1 @@
+It is possible to change the assembly product type (i.e. circular or linear DNA) for the collection by going to the "Collection Info" tab in the right panel of the DeviceEditor display, and clicking on either "Circular" or "Linear". Doing so will affect how the DNA assembly process will be designed by j5 to yield a circular or linear DNA product.
