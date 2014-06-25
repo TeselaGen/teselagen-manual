@@ -1,0 +1,84 @@
+a.author-link {
+    display: none !important;
+}
+a.issues-link {
+    display: none !important;
+}
+a.contribute-link {
+    display: none !important;
+}
+
+a.sharing-link {
+    display: none !important;
+}
+a.count-watch {
+    display: none !important;
+}
+a.count-star {
+    display: none !important;
+}
+
+a.home-bookmark {
+    display: none !important;
+}
+.gitbook-link {
+    display: none !important;
+}
+
+/* side menu */
+
+ul.articles {
+  display: none !important;
+}
+
+
+/**************
+.book-summary {
+    width: 350px !important;
+}
+.book-body {
+    left: 350px !important;
+}
+
+***************/
+
+/* footer */
+
+#footer {
+  background: #003554;
+  display: table;
+  width: 100%;
+  height: 250px;
+  clear: both;
+}
+#footer_links {
+  background: none;
+  margin-top: 80px;
+}
+.footer-ul {
+  text-align: center;
+  color: white;
+}
+.footer-ul li {
+  display: inline-block;
+}
+.footer-ul li a {
+  font-size: 14px;
+  color: white;
+  margin: 0px 20px;
+}
+
+/* header */
+
+.top-bar {
+    height: 55px;
+}
+.top-bar img {
+    height: 45px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+a img {
+    border: none;
+}
