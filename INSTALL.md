@@ -14,5 +14,5 @@ Instructions to edit/compile manual within localhost
 Instructions to push changes to live server (if authorized)
 --
 1. ssh to www.teselagen.com server 
-2. >su teselagen; cd /home/teselagen/teselagen-manual/
-3. >git pull
+2. `su teselagen; cd /home/teselagen/teselagen-manual/`
+3. `git pull`
