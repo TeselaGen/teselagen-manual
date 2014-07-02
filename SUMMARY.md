@@ -1,6 +1,6 @@
 # Summary
 * [Intro. to BioCAD/CAM](chp/chp1/chp1.md)
-    * [From specification, to design, to implementation, to assay](chp1_1.md)
+    * [From specification, to design, to implementation, to assay](chp/chp1/chp1_1.md)
 * [Intro. to DNA Assembly](chp/chp2/chp2.md)
     * [The DNA assembly challenge](chp/chp2/chp2_1.md)
     * [The traditional multiple cloning site approach](chp/chp2/chp2_2.md)
