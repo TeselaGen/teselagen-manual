@@ -1,3 +1,5 @@
+## Editing a sequence
+
 Editing a sequence is as simple as clicking on the sequence within the sequence library. What you can see by opening a sequence, is a circular view of the plasmid, along with a rendering of its annotations and their names. This view here is what we call the map view, and the panel on the right is the sequence view. If you've used DNA editing software before, this should look pretty familiar.
 
 We can select portions of the sequence in either the map or the sequence view, just by clicking and dragging. By default, selections lock to the starts or ends of annotations in the map view, but you can select any sequence by holding control while you select, or you can select in the sequence view. You can fine-tune selections by dragging the edges of the selection in the sequence view.

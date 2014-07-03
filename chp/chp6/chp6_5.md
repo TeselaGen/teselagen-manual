@@ -1,3 +1,5 @@
+## Controlling column assembly directives for j5
+
 After adding columns to the collection, we can change the j5 assembly directives for each of the columns. This can be done in the panel on the right side of the DeviceEditor display within the "Collection Info" tab, with the Collection Table in its expanded state.
 
 For more information on the following j5 DNA assembly design directives, refer to the "Target part order list file" page under the "j5 input files" section.

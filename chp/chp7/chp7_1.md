@@ -1,3 +1,5 @@
+## Editing a part's name or definition
+
 After mapping a sequence to a part, it is possible to change the part's name or how it is defined.
 
 ###### CHANGING A PART'S NAME:

@@ -1,3 +1,5 @@
+## Bioinformatics and BioCAD preliminaries
+
 Given the scope of TeselaGen's BETA release functionality, there are often several upstream and downstream tasks to consider.
 
 #### Upstream preparation:

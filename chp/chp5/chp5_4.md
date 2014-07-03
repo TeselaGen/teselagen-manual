@@ -1,3 +1,5 @@
+## Sequence analysis tools
+
 When looking at a sequence, you will be able to use several sequence analysis tools that we have made available to you. Under the "Tools" menu, you will find the restriction enzymes manager and the digestion simulator.
 
 ###### Restriction enzymes manager

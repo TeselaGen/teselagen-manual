@@ -1,3 +1,5 @@
+## Cutting, copying, pasting parts
+
 After mapping a sequence to a part icon, it is possible to copy/paste the part (even between different Device Editor design canvases in separate tabs).
 
 ###### CUTTING A PART:

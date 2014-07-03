@@ -1,3 +1,5 @@
+## Adding and removing columns
+
 After starting a DeviceEditor session, it is possible to add columns to, or remove columns from, the collection in the design canvas.
 
 The relative (combinatorial) arrangement of the parts in the collection defines the DNA sequence(s) to be constructed. The collection contains one or more columns, where the total number of columns is equal to the total number of parts desired to be assembled together into the resulting construct. Parts placed into adjacent columns will be adjacent in the resulting assembled DNA sequence(s) (with the last column cyclically followed by the first column for circular DNA designs such as plasmids). Parts in the same column are considered combinatorial variants of/alternatives for each other. That is to say, each individual construct in the resulting combinatorial library contains exactly one of the parts in each column.

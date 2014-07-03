@@ -1,3 +1,5 @@
+## Changing column SBOL Visual icons
+
 After adding columns to the collection, it is possible to select the SBOL Visual Icons for the columns.
 
 ###### INITIAL SBOL VISUAL ICON SELECTION:
