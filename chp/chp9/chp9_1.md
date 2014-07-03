@@ -2,7 +2,7 @@
 
 Before using j5 to design SLIC/Gibson/CPEC/SLiCE or Golden Gate assembly, there are several important bioinformatics/BioCAD tasks to perform.
 
-For a recent (non-exhaustive, for example not including j5 or DeviceEditor) review of a of currently available BioCAD tools, please see (MacDonald 2011).
+For a recent (non-exhaustive, for example not including j5 or DeviceEditor) review of currently available BioCAD tools, please see (MacDonald 2011).
 
 #### SLIC/Gibson/CPEC/SLiCE:
 
@@ -26,4 +26,4 @@ In this instance, it is possible to generate (silent) point mutations to disrupt
 
 #### BioBrick compatible assembly:
 
-If the resulting construct is desired to be BioBrick compatible, then it is necessary to identify remove any undesired BioBrick sites, by  generating (silent) point mutations to disrupt these sites.
+If the resulting construct is desired to be BioBrick compatible, then it is necessary to identify and remove any undesired BioBrick sites, by generating (silent) point mutations to disrupt these sites.

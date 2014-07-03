@@ -28,7 +28,7 @@ Linked parts are especially useful in combinatorial assembly designs, when you m
 
 A regular paste results in the pasted part retaining no link to the part it was copied from. While initially most of the properties of the regularly pasted part are identical to the part it was copied from (with the exception of the part's name, which is not allowed to be the same as the part it was copied from, if pasted into the same design canvas), any changes made to the regularly pasted part do not affect the part it was copied from. Note that the regularly pasted part does not retain any of the Eugene design rules defined for the part it was copied from.
 
-Regularly pasting a part is useful if you want to use a slightly modified variant of a part that is already defined, such as changing the where the sequence mapped to the part icon starts ("StartBP") and stops ( "StopBP"). In the video example above, the definition of the regularly pasted GFP part is changed so as to remove the stop codon from its sequence, without having to go through an entire sequence mapping procedure.
+Regularly pasting a part is useful if you want to use a slightly modified variant of a part that is already defined, such as changing where the sequence mapped to the part icon starts ("StartBP") and stops ( "StopBP"). In the video example above, the definition of the regularly pasted GFP part is changed so as to remove the stop codon from its sequence, without having to go through an entire sequence mapping procedure.
 
 ###### PASTING A PART TO ANOTHER DEVICEEDITOR SESSION IN A SEPARATE BROWSER TAB:
 

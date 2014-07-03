@@ -12,7 +12,7 @@ that goes through the process of importing and managing DNA sequences and parts.
 
 ###### Sequence library
 
-The first thing you'll see upon logging in TeselaGen is the dashboard. This is a jumping-off point for anything you'd like to do within the app. There are shortcuts allowing you to create a new project, a new sequence, or to get help on how to use our software. There is also a summary view of the data you have saved, with a count of your projects, parts, designs, and DNA sequences.
+The first thing you'll see upon logging in to TeselaGen is the dashboard. This is a jumping-off point for anything you'd like to do within the app. There are shortcuts allowing you to create a new project, a new sequence, or to get help on how to use our software. There is also a summary view of the data you have saved, with a count of your projects, parts, designs, and DNA sequences.
 
 In the sequence library you can find a repository of DNA sequences that the user has uploaded to the server. Sequences represent any piece of DNA, whether it's a plasmid you have in the fridge or a construct you intend to produce with an assembly. 
 

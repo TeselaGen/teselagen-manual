@@ -6,7 +6,7 @@ The relative (combinatorial) arrangement of the parts in the collection defines 
 
 ###### ADDING COLUMNS:
 
-If you would like to append a column to the collection, simply select a column and then, under "Insert" in the top menu bar, select wither "Column left" or "Column right", depending if you would like to insert a column to the left or right of the selected column (correspondingly). 
+If you would like to append a column to the collection, simply select a column and then, under "Insert" in the top menu bar, select either "Column left" or "Column right", depending if you would like to insert a column to the left or right of the selected column (correspondingly). 
 
 ###### REMOVING COLUMNS:
 

@@ -10,7 +10,7 @@ Opening up the restriction enzymes manager will display two lists of enzymes. On
 
 Another tool available to you is the digestion simulator. This will simulate the results of a gel digest on our sequence with the selected enzymes. The interface to the digestion simulator is similar to the restriction enzyme manager. On the left you have a list of enzymes that are available to simulate digestion with, and on the right there is a list of enzymes that are currently being used to simulate the digestion. As in the enzyme manager, you can change lists and search through available enzymes.
 
-After simulating a digestion with a group of enzymes, you will see the results of the digestion in this right panel. These results will show the expected bands corresponding to each cut site. If you mouse over a band, you will see the name of the enzyme responsible of the cut site. You can also change the ladder to be used.
+After simulating a digestion with a group of enzymes, you will see the results of the digestion in this right panel. These results will show the expected bands corresponding to each cut site. If you mouse over a band, you will see the name of the enzyme responsible for the cut site. You can also change the ladder to be used.
 
 ###### Other tools
 

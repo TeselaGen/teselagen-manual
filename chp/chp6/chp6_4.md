@@ -1,6 +1,6 @@
 ## Changing column names
 
-After adding columns to the collection, it is possible to names the columns.
+After adding columns to the collection, it is possible to name the columns.
 
 Within the design canvas portion of the DeviceEditor display, the name of each of the columns is displayed in the header row above the collection and just below the corresponding SBOL icon.
 

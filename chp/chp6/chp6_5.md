@@ -18,6 +18,6 @@ Click on the forced relative overhang field (contained within the sixth column (
 
 ###### CONTROLLING 5' AND 3' EXTRA CPEC OVERLAP BPS:
 
-The 5' and 3' Extra CPEC overlap bps are displayed for each column entry within the seventh and eighth columns (whose headers reads "5'Ex" and "3'Ex") of the collection table. Edit the fields to your selected extra bps (integral numbers (positive or negative) of base-pairs). If you enter something in these fields other than integers, your changes will be rejected. Deleting the contents of the fields (or if they are blank) indicates that there aren't a forced extra 5' or 3' CPEC overlap bps for the respective assembly junction.
+The 5' and 3' Extra CPEC overlap bps are displayed for each column entry within the seventh and eighth columns (whose headers reads "5'Ex" and "3'Ex") of the collection table. Edit the fields to your selected extra bps (integral numbers (positive or negative) of base-pairs). If you enter something in these fields other than integers, your changes will be rejected. Deleting the contents of the fields (or if they are blank) indicates that there isn't a forced extra 5' or 3' CPEC overlap bps for the respective assembly junction.
 
 
