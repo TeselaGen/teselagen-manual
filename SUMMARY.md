@@ -38,7 +38,7 @@
     * [DeviceEditor format (.xml) design files](chp/chp8/chp8_1.md)
 * [DNA assembly protocol generator](chp/chp9/chp9.md)
     * [Bioinformatics/BioCAD prerequisites to SLIC/Gibson/CPEC/SLiCE and Golden Gate DNA assembly](chp/chp9/chp9_1.md)
-    * [Process flow for j5 and integration with Registries of Biological Parts and BioCAD tools](chp/chp8/chp9_2.md)
+    * [Process flow for j5 and integration with Registries of Biological Parts and BioCAD tools](chp/chp9/chp9_2.md)
     * [Brief survey of j5 functionality](chp/chp9/chp9_3.md)
 * [Specific examples of using j5](chp/chp10/chp10.md)
     * [SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning)](chp/chp10/chp10_1.md)
