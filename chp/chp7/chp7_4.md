@@ -1,6 +1,6 @@
 ## Importing a set of Eugene design specification rules
 
-After naming a part on the design canvas, it is possible to create Eugene design specification rules ([Bilitchenko 2011A](http://www.ncbi.nlm.nih.gov/pubmed/21559524), [Bilitchenko 2011B](http://www.ncbi.nlm.nih.gov/pubmed/21601677)) for the part to ensure that only desired DNA designs are constructed. NOTE: mapping a sequence to the part, as long as the part has been named, is not pre-requisite.
+After naming a part on the design canvas, it is possible to create Eugene design specification rules ([Bilitchenko 2011A](http://www.ncbi.nlm.nih.gov/pubmed/21559524), [Bilitchenko 2011B](http://www.ncbi.nlm.nih.gov/pubmed/21601677)) for the part to ensure that only desired DNA designs are constructed. NOTE: mapping a sequence to the part, as long as the part has been named, is not a pre-requisite.
 
 Any Eugene rules that do not solely relate to parts on the design canvas or do not use one of the six currently supported operators ("AFTER", "BEFORE", "THEN", "NEXTTO", or "MORETHAN") or their negated "NOT" variants, are ignored.
 

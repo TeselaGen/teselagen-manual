@@ -12,5 +12,5 @@ If you would like to append a column to the collection, simply select a column a
 
 If you would like to remove a column within the design canvas, select the corresponding column and then, under "Edit" in the top menu, select "Remove Column". 
 
-Note that, under the "Edit" top menu, you an "Undo" or "Redo" the actions of adding or removing a column.
+Note that, under the "Edit" top menu, you can "Undo" or "Redo" the actions of adding or removing a column.
 After adding columns to the collection, the next steps are to select SBOL Visual icons for the columns, change the assembly orientations of the columns, name the columns, and/or set the columns' j5 assembly directives.

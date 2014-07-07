@@ -2,6 +2,10 @@
 
 We strive to provide a design-build-test-evolve platform for automated combinatorial DNA assembly; with sequence viewing and editing, forward design, and scarless assembly all at the least possible cost. Please use the menu on the left to learn more about our platform. 
 
+#### Contact Info
+
+For business inquiries or other questions, please contact: Contact [at] Teselagen [dot] com
+
 #### Table of Contents
 
 * Intro. to BioCAD/CAM
@@ -99,7 +103,3 @@ We strive to provide a design-build-test-evolve platform for automated combinato
     * 5' phosphorylation of annealed DNA oligos
 * Related publications
     * How to cite j5, and publications citing j5
-
-#### Contact Info
-
-For business inquiries or other questions, please contact: Contact [at] Teselagen [dot] com

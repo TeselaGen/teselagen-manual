@@ -4,7 +4,7 @@ The first thing you'll see upon logging in to TeselaGen is the dashboard. This i
 
 You can import a sequence by simply dragging a genbank file into the sequence library. You can drag one or more sequences. After dragging the sequences into the sequence library, you'll notice that a progress bar will appear in the top of the screen, and that the sequence(s) will appear in the library. A sequence within the sequence library will contain the GenBank locus name of each sequence, the sequence length, the names of any annotations that may be present in the file, as well as the date the sequence was created and last modified.
 
-Alternatively, you can import a genbank file by creating a new sequence and then, under the File top-menu, clicking on 'open sequence file'. By doing this, you can overwrite the current sequence or make a new one. 
+Alternatively, you can import a genbank file by creating a new sequence and then, under the File top-menu, clicking on 'Open A Sequence File'. By doing this, you can overwrite the current sequence or make a new one. 
 
 If we mouse a sequence within the sequence library, a preview window will pop up showing the sequence along with its annotations, if any are present. The preview will also indicate whether a sequence is linear or circular. We can also search through our sequence library and sort based on their names, length, and dates created and last modified.
 

@@ -4,7 +4,7 @@ Editing a sequence is as simple as clicking on the sequence within the sequence 
 
 We can select portions of the sequence in either the map or the sequence view, just by clicking and dragging. By default, selections lock to the starts or ends of annotations in the map view, but you can select any sequence by holding control while you select, or you can select in the sequence view. You can fine-tune selections by dragging the edges of the selection in the sequence view.
 
-By default, vector editor only displays features and their labels, but this can be changed in the view menu. In the view menu, you can toggle display of features, restriction enzyme cut sites, and ORFs. You can also toggle the display of amino acid sequences in the sequence view. There are shortcuts to display features, cut sites, and orfs in the toolbar as well.
+By default, vector editor only displays features and their labels, but this can be changed in the view menu. In the view menu, you can toggle display of features, restriction enzyme cut sites, and ORFs. You can also toggle the display of amino acid sequences in the sequence view. There are shortcuts to display features, cut sites, and ORFs in the toolbar as well.
 
 You'll notice that mousing over features, cut sites, ORFs, or their labels will give you a more detailed description of them, and clicking them causes their positions in the sequence to be selected.
 
@@ -16,4 +16,4 @@ You can search within the DNA or Amino Acid sequence, using either literal searc
 
 If you want to create a new feature, select a portion of the sequence, and right click on your selection. Clicking the 'annotate as new sequence feature' option will bring up a window allowing you to specify the name and location of the feature, as well any additional attributes you want it to have. You can also change the feature’s type. This is an attribute with a number of different options that describes the feature’s function.
 
-Features can also be edited by right clicking on them and selecting the 'edit' option. You can modify their name, type, location, etc.
+Features can also be edited by right clicking on them and selecting the 'edit sequence feature' option. You can modify their name, type, location, etc.

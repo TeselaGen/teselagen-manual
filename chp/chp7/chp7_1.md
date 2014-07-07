@@ -10,7 +10,7 @@ NOTE: with a part selected (highlighted with a gray outline in the design canvas
 
 ###### SELECTING A PART FROM THE LIBRARY
 
-With a part cell selected (active) in the design canvas, if no part has been already mapped to that cell, it is possible to click the "Select part library" red button in the panel on the right side of the DeviceEditor display. This will pop-up your "Part Library" dialog, which display all the parts available for you within your Part Library. By clicking on one of the parts in your library, you will immediately assign that part to the selected part cell.
+With a part cell selected (active) in the design canvas, if no part has been already mapped to that cell, it is possible to click the "Select part library" red button in the panel on the right side of the DeviceEditor display. This will pop-up your "Part Library" dialog, which displays all the parts available for you within your Part Library. By clicking on one of the parts in your library, you will immediately assign that part to the selected part cell.
 
 
 ###### CHANGING A PART'S DEFINITION
