@@ -1,8 +1,8 @@
-####Welcome to Teselagen's Manual. 
+###Welcome to Teselagen's Manual. 
 
 We strive to provide a design-build-test-evolve platform for automated combinatorial DNA assembly; with sequence viewing and editing, forward design, and scarless assembly all at the least possible cost. Please use the menu on the left to learn more about our Platform. 
 
-##### Table of Contents
+#### Table of Contents
 
 * Intro. to BioCAD/CAM
     * From specification, to design, to implementation, to assay
@@ -33,7 +33,7 @@ We strive to provide a design-build-test-evolve platform for automated combinato
     * Changing column names
     * Controlling column assembly directives for j5
     * Changing the assembly product type (circular-linear)
-* [Managing specific parts
+* Managing specific parts
     * Editing a part's name or definition
     * Changing the assembly strategy for a part
     * Creating Eugene design specification rules
@@ -100,6 +100,6 @@ We strive to provide a design-build-test-evolve platform for automated combinato
 * Related publications
     * How to cite j5, and publications citing j5
 
-##### Contact Info
+#### Contact Info
 
 For business inquiries or other questions, please contact: Contact [at] Teselagen [dot] com
