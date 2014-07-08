@@ -1,6 +1,6 @@
 ### Welcome to <a href='/'><img src='https://www.teselagen.com/img/teselagen_toplogo.png'></a>'s Manual. 
 
-We strive to provide a design-build-test-evolve platform for automated combinatorial DNA assembly; with sequence viewing and editing, forward design, and scarless assembly, all at the least possible cost. Please use the menu on the left to learn more about our platform. 
+We strive to provide a design-build-test-evolve platform for automated combinatorial DNA assembly; with sequence viewing and editing, combinatorial design, and j5 scarless genetic assembly, all at the least possible cost. Please use the menu on the left to learn more about our platform. 
 
 #### Contact Info
 
