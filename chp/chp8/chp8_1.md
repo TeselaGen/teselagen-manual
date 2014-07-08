@@ -6,7 +6,7 @@ Here is the XML schema for DeviceEditor format design files: [design.xsd](http:/
 
 Here is an example DeviceEditor design: [DeviceEditor_example.xml](http://j5.jbei.org/DeviceEditor_manual/attachments/DeviceEditor_example.xml)
 
-![DE format](https://dl.dropbox.com/s/i5gas7c7p167ip9/Screen_Shot_2012-05-20.png)
+![DE format](../../images/Screen_Shot_2014-07-03.png)
 
 Several key aspects of this example design to highlight are:
 

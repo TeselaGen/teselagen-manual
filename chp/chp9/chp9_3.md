@@ -10,7 +10,7 @@ The j5 assembly design process begins with the definition of the biological part
 
 Here is a typical list of defined parts (these would have been defined in a j5 parts list input file):
 
-![Brief Survery 1](https://dl.dropbox.com/s/kt97votr8juf4z7/pastedImage13.png)
+![Brief Survery 1](../../images/pastedImage13.png)
 
 In essence, a part is merely defined by a start and end base pair within a source sequence, and by its location on the top or bottom (reverse complement) strand. 
 
@@ -18,7 +18,7 @@ Following the definitions of the parts to be assembled, the next step is to orde
 
 Here is a typical list of ordered parts to be assembled (the order and direction of each part would have been defined in a j5 target part order list input file):
 
-![Brief Survery 2](https://dl.dropbox.com/s/3jyyigioe4sh4tb/pastedImage14.png)
+![Brief Survery 2](../../images/pastedImage14.png)
 
 For this particular assembly, the vector backbone (the very first part in the list) will be restriction digest linearized to yield the first assembly piece. The primary advantages of using a digest linearized vector backbone (over PCR amplification) are that PCR amplification of a (potentially) long vector backbone sequence is not required, and point mutations that may be introduced into the vector backbone during PCR amplification are not a concern. As a consequence, deep sequencing into the digest linearized vector backbone is not required (although sequence verification of the vector backbone junctions with the other assembly pieces is still necessary). The main disadvantages of a restriction digest linearized vector backbone are that, first and foremost, it requires a (unique) cut-site which diminishes the sequence-independence of the assembly process, and second that it places the entire SLIC/Gibson/CPEC/SLiCE sequence homology/overlap burden on the adjacent assembly pieces. For example, we must flank the 5' end of the first DNA part to follow the digest linearized vector backbone (in this specific example, the 3' end of the atfA gene) with the entire homology region (e.g. the last 26 bps of the linearized vector backbone). If, in contrast, we were to PCR amplify the vector backbone, we could share the SLIC/Gibson/CPEC/SLiCE sequence homology/overlap burden more equally between the linearized vector backbone and the neighboring assembly pieces (e.g. flanking only about 13 bps of homology sequence to the ends of the linearized vector backbone and first assembly pieces), and we would not require a cut-site to linearize the backbone. In the case of Golden Gate assembly, the main disadvantage of restriction digest backbone linearization is that it requires a Golden Gate specific entry vector with prescribed Golden Gate overhangs (which may greatly constrain the Golden Gate assembly design process).
 
@@ -28,7 +28,7 @@ In addition to digest, PCR/SOE, oligo embedding, or direct DNA synthesis assembl
 
 Here is a typical list of DNA oligos to be used in an assembly (the designed oligos would be appended to a j5 master oligos list file):
 
-![Brief Survery 3](https://dl.dropbox.com/s/5d9or9hkqda3qa7/pastedImage15.png)
+![Brief Survery 3](../../images/pastedImage15.png)
 
 j5 utilizes the Primer3 primer design program in the oligo design process, using design parameters (such as the target Tm) defined in the j5 parameters file. There are two types of primers that j5 designs: 1) "pure" primers that anneal perfectly to the template sequence, and 2) full-length primers that contain a 5' SLIC/Gibson/CPEC/SLiCE flanking homology sequence (or a 5' type IIs endonuclease site followed by a Golden Gate overhang) followed by the identical sequence of the corresponding "pure" primer. By default, j5 does not output these "pure" primers, although you can request that j5 does so by setting the "SUPPRESS_PURE_PRIMERS" j5 parameter to "FALSE" (as specified in the j5 parameters file). The "pure" primers can be useful, for example, when first amplifying from a genomic DNA template, before reamplifying the resulting "pure" PCR product with the full length primers to introduce the flanking SLIC/Gibson/CPEC/SLiCE or Golden Gate sequence required for assembly.
 
@@ -44,13 +44,13 @@ j5 utilizes BLAST (bl2seq) to check for probable mis-priming events that exceed 
 
 With all of the direct DNA synthesis pieces and DNA oligos designed, j5 then outputs the PCR reactions that are required to generate the DNA fragments to be assembled together. Here is a typical list of PCR reactions:
 
-![Brief Survery 4](https://dl.dropbox.com/s/udu5d1yvzzu1hof/pastedImage16.png)
+![Brief Survery 4](../../images/pastedImage16.png)
 
 In this particular example, the PCR reactions in the first half of the list use "pure" primers, and those in the the second half use full-length primers. The primary sequence templates of the PCR reactions in the second half of the list are the corresponding "pure" PCR reaction products. j5 suggests that the full-length PCR reactions can alternatively use plasmid templates directly, forgoing the "pure" reactions altogether. If the resulting PCR product size is smaller than the minimum required for Gibson assembly (defined in the j5 parameters file), the PCR reaction is annotated as "SOE", indicating that this PCR product should be SOE'd together with neighboring assembly pieces until the minimum Gibson fragment size is achieved. Since neighboring assembly pieces already contain flanking homology sequence, and the requisite external primers are included in the list of designed oligos above, this SOEing process requires no additional design or new oligos.
 
 j5 then details the resulting DNA pieces that will be assembled together. Here is a typical list of assembly pieces:
 
-![Brief Survery 5](https://dl.dropbox.com/s/f8eotbxi8l6f9uo/pastedImage17.png)
+![Brief Survery 5](../../images/pastedImage17.png)
 
 j5 provides the number of base pairs of flanking homology sequence shared between neighboring assembly pieces (relevant to SLIC and Gibson assembly) and the Tms of annealing to their neighboring assembly pieces (relevant to CPEC assembly).
 
@@ -60,13 +60,13 @@ In this particular example, there are incompatibilities amongst the set of assem
 
 Here is the list of assembly piece incompatibilities for this particular example, and a suggested hierarchical assembly (for details see j5 SLIC/Gibson/CPEC/SLiCE output documentation):
 
-![Brief Survery 6](https://dl.dropbox.com/s/xdgqa6gxo8w2pk1/pastedImage18.png)
+![Brief Survery 6](../../images/pastedImage18.png)
 
 The final task of j5 is to prepare an annotated sequence file for the resulting assembly. j5 can output sequences in GenBank, FASTA, jbei-seq or SBOL XML format. Any feature annotations found within the sequence files going in to the assembly are correspondingly preserved in the resulting assembled sequence file. j5 will auto-annotate FASTA sequences with a "misc_feature" type feature whose label matches the display ID of the sequence (i.e. what follows the ">").
 
 Here is the map of the resulting j5 designed assembly for this particular example:
 
-![Brief Survery 7](https://dl.dropbox.com/s/eicnvl2hne3ad7e/pastedImage19.png)
+![Brief Survery 7](../../images/pastedImage19.png)
 
 The resulting annotated sequence file (and corresponding plasmid map) provides a quick way to check that you will assemble what you actually want.
 
