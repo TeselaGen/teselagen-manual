@@ -4,7 +4,7 @@
 
 Here is a demonstration video:
 
-[![Video1](https://dl.dropbox.com/s/0sf7c2kyfzdm9iw/video1.png)](https://www.youtube.com/watch?v=iJr7AkwSTtY)
+[![Video1](../../images/video1.png)](https://www.youtube.com/watch?v=iJr7AkwSTtY)
 
 that goes through the process of importing and managing DNA sequences and parts.
 

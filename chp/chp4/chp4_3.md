@@ -4,7 +4,7 @@
 
 Here is a demonstration video
 
-[![Video3](https://dl.dropbox.com/s/bjgb8r89gzmvez2/video3.png)](https://www.youtube.com/watch?v=rRCAbQKYZAM)
+[![Video3](../../images/video3.png)](https://www.youtube.com/watch?v=rRCAbQKYZAM)
 
 that goes through this process.
 
