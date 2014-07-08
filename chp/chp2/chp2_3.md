@@ -3,7 +3,7 @@
 BioBricks standardize the DNA assembly process, facilitating automation and part re-use. There are several BioBrick assembly standards, such as that originally developed at MIT ([Shetty 2008](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2373286/?tool=pubmed)), as well as the UC Berkeley BglBrick standard ([Anderson 2010](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2822740/?tool=pubmed)), which is depicted in the example shown below.
 BglBrick assembly of partA, partB, and the partA-bearing vector backbone:
 
-![BioBrick approach 1](https://dl.dropbox.com/s/wqil2okv01miaal/pastedImage1.png)
+![BioBrick approach 1](../../images/pastedImage1.png)
 
 In the BglBrick standard, a part (or DNA sequence fragment that is nominally associated with a biological function) is flanked with two restriction enzyme sites at its 5' end, namely EcoRI and BglII, and is flanked with BamHI and XhoI at its 3' terminus. To comply with the BglBrick standard, these four restriction sites must be absent from the sequence of the part itself. The "BglBrick", then, spans from the EcoRI to the XhoI site, and the BioBrick-bearing vector backbone makes up the residual plasmid sequence, which should also be devoid of the four BglBrick restriction sites. To assemble partA followed by partB, followed by the partA-bearing vector backbone, the partA BglBrick vector is digested with BamHI and XhoI, and the partB vector is digested with BglII and XhoI. The resulting digest fragments containing partA and partB are then ligated together, resulting in the desired plasmid. The overhang sequences resulting from BamHI and BglII digest are complementary (base-pair/anneal perfectly with one-another), but the resulting ligation product sequence is not recognized/recleaved by either BamHI or BglII. Thus, the assembly results in a new BglBrick, containing partA followed by a six bp scar sequence, followed by partB. A key consequence of BglBrick assembly is that assembling two parts results in a new BglBrick, so that this process can be iterated successively to assemble an arbitrary number of parts together, using the same protocol repetitively. It is possible to assemble partB in front of partA, and/or to select the partA or partB-bearing vector backbone for the resulting construct, by using different combinations of the four BglBrick restriction enzymes. Other BioBrick standards are completely analogous to BglBricks, and simply use alternate sets of the four restriction enzymes.
 
@@ -11,7 +11,7 @@ Contrasting with the traditional approach, there are several advantages to using
 
 Returning to the previous DNA assembly challenge, here's how we could use BioBrick assembly to put together the pathway:
 
-![BioBrick approach 2](https://dl.dropbox.com/s/wmill2z6iupim2s/pastedImage2.png)
+![BioBrick approach 2](../../images/pastedImage2.png)
 
 Note that there are many different possible routes (assembly trees) to put together this pathway using BioBricks. Some of the intermediate parts, such as the terminator fused to the promoter, need only be made once, and can be re-used multiple times. Recently, algorithms have been developed ([Densmore 2010](http://nar.oxfordjournals.org/cgi/content/full/gkq165v1)) to optimize the design of binary BioBrick assembly trees, and an automated in vivo BglBrick assembly process utilizing liquid-handling robotics has been demonstrated ([Leguia 2011](http://www.ncbi.nlm.nih.gov/pubmed/21601686)).
 

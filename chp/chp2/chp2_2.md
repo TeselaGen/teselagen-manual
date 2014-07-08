@@ -4,7 +4,7 @@ TeselaGen does not design DNA assembly using the traditional multiple cloning si
 
 Shown below is a typical expression destination vector designed with the traditional approach in mind. 
 
-![Traditional approach](https://dl.dropbox.com/s/53vf3orp7pfwn2b/pastedImage0.png)
+![Traditional approach](../../images/pastedImage0.png)
 
 In this specific example, a multiple cloning site (MCS) follows a T7 promoter, and is in turn followed by a T7 terminator. If a researcher wants to integrate a protein coding sequence of interest into this expression vector, he or she: 1) identifies two restriction sites present in the MCS, but absent in the coding sequence of interest, 2) PCR amplifies the coding sequence of interest with DNA oligo primers flanked with the selected restriction sites, 3) digests the PCR product as well as the destination vector with the corresponding restriction enzymes, 4) gel-purifies the digested PCR product and the destination vector backbone, 5) ligates the purified digested PCR product and destination vector, and 6) transforms the resulting ligation reaction into competent _E. coli_.
 

@@ -4,7 +4,7 @@ Simply put, the DNA assembly challenge is to take a set of double-stranded DNA s
 
 Here is an example DNA assembly:
 
-![DNA Assembly challenge](https://dl.dropbox.com/s/zx6aw54zm80qdjn/pastedImage.png)
+![DNA Assembly challenge](../../images/pastedImage.png)
 
 
 We start with 8 non-degenerate (non-repeated) composite biological parts (shown at the bottom of the figure): a vector backbone, 5 protein coding sequences (orfA to orfE) with upstream ribosome binding sites (RBS), a terminator, and a promoter. We assemble these 8 parts into the target expression vector (shown at the top of the figure). Note that in this particular example, we used the same terminator and promoter parts twice to achieve the target expression vector.

@@ -8,7 +8,7 @@ SLIC, or sequence and ligase independent cloning ([Li 2007](http://www.nature.co
 
 SLIC assembly of partA with a linearized destination vector:
 
-![SLIC method](https://dl.dropbox.com/s/782eway1z4tc34b/pastedImage3.png)
+![SLIC method](../../images/pastedImage3.png)
 
 The linearized destination vector and the PCR product containing partA are separately treated with T4 DNA polymerase in the absence of dNTPs. In the absence of dNTPs, T4 DNA polymerase has 3' exonuclease activity, which begins to chew-back the linearized destination vector and the PCR product from 3' to 5'. Once the termini of the linearized destination vector and the PCR product have sufficient complementary single-stranded 5' overhangs exposed, dCTP is added to arrest the chew-back reaction. With the addition of dCTP, the T4 DNA polymerase changes activity from 3' exonuclease to polymerase, but stalls because not all dNTPs are present, retaining most, if not the entirety, of each chewed-back overhang. Alternatives to the 3' chew-back with T4 DNA polymerase in the absence of dNTPs include the use of mixed or incomplete PCR products (so this does not apply to the linearized vector backbone if it is derived from a restriction enzyme digest), which can also result in the desired 5' overhangs, as described in the original SLIC publication ([Li 2007](http://www.nature.com/nmeth/journal/v4/n3/abs/nmeth1010.html)).The chewed-back linearized destination vector and PCR product are mixed together, and annealed to each other. Since there is no ligase in the reaction, this results in a plasmid with four single stranded gaps or nicks. Once transformed into competent _E. coli_, the gaps are repaired. Note that SLIC assembly is standardized, in that it always uses the same reaction components and conditions, scar-less, since there is no sequence in the resulting assembly that is not user-designed, and sequence-independent, as the method is not (at least to a large extent, but see below) sensitive to the sequences of either the destination vector or the part to be incorporated.
 
@@ -18,7 +18,7 @@ Gibson DNA assembly, so named after the developer of the method ([Gibson 2009](h
 
 Gibson assembly of partA with a linearized destination vector:
 
-![Gibson method](https://dl.dropbox.com/s/vdq9bmql4jk7jkm/pastedImage4.png)
+![Gibson method](../../images/pastedImage4.png)
 
 The linearized destination vector and the PCR product containing partA are mixed together with T5 exonuclease, which chews-back the linearized destination vector and the PCR product from 5' to 3', Phusion polymerase, which (with the annealed linearized destination vector and PCR product effectively priming each other) fills in the gaps, and ligase, which seals the four single stranded nicks. The polymerase chases the exonuclease around the plasmid, with the polymerase eventually overtaking, as the exonuclease is gradually heat-inactivated (and Phusion is extremely fast). Like SLIC, Gibson assembly is standardized, scar-less, and largely sequence-independent. Gibson is advantageous over SLIC in that it is a simultaneous one pot reaction (the two-step addition of dCTP is not required), the presence of ligase may boost assembly efficiency, and since the assembly reaction occurs at an elevated temperature relative to SLIC, there may be fewer problems when somewhat stable secondary structures occur at the ends of assembly pieces; the disadvantage of the Gibson method is that the T5 exonuclease, Phusion polymerase, and Taq ligase cocktail is more expensive than that required for SLIC (only T4 DNA polymerase, or none at all if mixed or incomplete PCR products are used). An anecdotal/empirical limitation of the Gibson method is that it works best to assemble DNA fragments that are at least 250 bp in length or longer; this is perhaps due to the likelihood that the T5 exonuclease would entirely chew through a short DNA fragment before it has a chance to anneal and prime the Phusion polymerase for extension. While the same could be said for SLIC, the timing of dCTP addition provides some control in switching from the exonuclease to the polymerase activity of T4 DNA polymerase (the use of mixed or incomplete PCR products can prevent this problem all together), although caution should be applied when using SLIC to assemble small DNA fragments. Prior to Gibson (or SLIC) assembly, it is recommended to SOE (splice by overlap extension) together neighboring assembly fragments until their cumulative size is larger than 250 bp. Fortunately, the very same PCR products designed for Gibson (and SLIC) assembly, already contain the flanking homology sequences required for SOEing. It has also been observed anecdotally that adding a 5-fold molar excess of fragments less than 250 bp in length can also address the issue.
 
@@ -28,7 +28,7 @@ CPEC, or circular polymerase extension cloning ([Quan 2009](http://www.plosone.o
 
 CPEC assembly of partA with a linearized destination vector:
 
-![CPEC method](https://dl.dropbox.com/s/jbxips2kk84ngn3/pastedImage5.png)
+![CPEC method](../../images/pastedImage5.png)
 
 Since there are no (or very few) re-amplifications of a given template sequence, PCR-derived mutations are not propagated to the same extent as one would anticipate for standard SOEing reactions. Like SLIC and Gibson assembly, CPEC is standardized, scar-less, and largely sequence-independent. CPEC is advantageous in that, since there is no exonuclease chew-back, small sequence fragments can be assembled directly without a preliminary SOEing step, there is no dNTP addition step (unlike SLIC), there is only a single enzyme (polymerase) required (unlike Gibson), and since the CPEC assembly reaction occurs at higher temperatures than either SLIC or Gibson, stable secondary structures at the ends of assembly pieces are relatively less of a concern. The main disadvantages of CPEC is that it is more likely to result in polymerase-derived mutations than SLIC or Gibson, and mis-priming events are now possible anywhere along the sequences of the fragments to be assembled (as opposed to only at the termini of the fragments), although the Gibson method, depending on how much of a head start the T5 exonuclease has, could suffer from similar drawbacks.
 
@@ -40,11 +40,11 @@ SLiCE (Seamless Ligation Cloning Extract, [Zhang 2012](http://www.ncbi.nlm.nih.g
 
 Despite their differences in implementation, SLIC, Gibson, CPEC, and SLiCE assembly methods all start with the same starting materials and result in the same final products:
 
-![Method similarities 1](https://dl.dropbox.com/s/nz8nyb2wkmih9pr/pastedImage6.png)
+![Method similarities 1](../../images/pastedImage6.png)
 
 Thus, an assembly designed for CPEC will be equally applicable to SLIC, Gibson, or SLiCE assembly. Returning to the previous DNA assembly challenge, here's how we could use SLIC/Gibson/CPEC/SLiCE assembly to put together the pathway:
 
-![Method similarities 2](https://dl.dropbox.com/s/ch1lpk9ozcus829/pastedImage7.png)
+![Method similarities 2](../../images/pastedImage7.png)
 
 In this example, each homology region is color-coded, from red to violet, in an analogous fashion to the white and grey homology region coloring in the previous single part SLIC/Gibson/CPEC/SLiCE examples above. It should be noted that with SLIC/Gibson/CPEC/SLiCE, unlike BioBrick assembly, we can put together many parts at the same time in the same pot (multi-part assembly). Consequences of multi-part, in contrast with hierarchical binary BioBrick, assembly is that we have immediate access to each and every part to be assembled, and with only one transformation step, combinatorially generated diversity is captured a single time. As shown in this example, we can use SLIC/Gibson/CPEC/SLiCE assembly to generate a BioBrick (BglBrick) vector, although since we didn't use BioBrick assembly during the construction process, we did not introduce any undesirable scar sequences. The downside of SLIC/Gibson/CPEC/SLiCE assembly is that we must now design the 5' flanking homology sequence of each oligo specifically for each assembly junction, a process that can be tedious, laborious, and error-prone.
 
