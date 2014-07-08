@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning) | TeselaGen&#39;s Manual</title>
+        <title>SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning) | &lt;a href=&#39;/&#39;&gt;&lt;img src=./images/teselagen_toplogo.png&gt;&lt;/a&gt;</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.6">
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.1" data-basepath="../.." data-revision="1404848945796">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.1" data-basepath="../.." data-revision="1404855281014">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -93,7 +93,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-spinner fa-spin"></i>
-        <a href="../../" >TeselaGen&#39;s Manual</a>
+        <a href="../../" >&lt;a href=&#39;/&#39;&gt;&lt;img src=./images/teselagen_toplogo.png&gt;&lt;/a&gt;</a>
     </h1>
 </div>
 
@@ -2029,7 +2029,7 @@ gfpuv_sigpep_BamHI_silent (<a href="http://j5.jbei.org/j5manual/attachments/gfpu
 <p><img src="../../images/pastedImage22.png" alt="j5 examples 22"></p>
 <p>Hereis the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/partslist_pS8c-gfpuv_.csv" target="_blank">partslist_pS8c-gfpuv_sig.pep.csv</a></p>
 <p>It is absolutely crucial here to note that, as described in the parts list file documentation, the part source column refers to the sequence display ID within the sequence file (e.g. pGFPuv_cterm_signal), and not to the file name of the genbank sequence file itself (e.g. pGFPuv_sig.pep.gb). If you open up the genbank file pGFPuv_sig.pep.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like (click to view a larger version):
-<img src="https://dl.dropbox.com/s/3al1xgrcqjtvbn4/pastedImage23.png" alt=""></p>
+<img src="../../images/pastedImage23.png" alt=""></p>
 <p>The sequence display ID immediately follows the LOCUS, in this case it is pGFPuv_cterm_signal, and it is this sequence display ID that should be included in the parts list file, as we have done it above. Note that the same is true for the XhoI and BamHI silent mutation genbank files.</p>
 <h4 id="step-4-create-the-target-part-ordering-list-file-">Step 4 - Create the target part ordering list file:</h4>
 <p>Now we need to define, in a target part ordering file, the order we would like the DNA parts defined above to be assembled in. For this particular assembly, we&#39;ll be assembling all of the parts in the same direction (forward). For more information about how to assemble in the reverse direction, please see the target part ordering file documentation. In addition, since this example assembly will use SLIC/Gibson/CPEC/SLiCE, the option to forcibly set a relative Golden Gate overhang position does not apply, and since we&#39;re not going after a combinatorial assembly, there is little justification for applying direct synthesis firewalls (for more information about forced relative overhang positions, and direct synthesis firewalls, refer to the target part ordering file documentation).</p>

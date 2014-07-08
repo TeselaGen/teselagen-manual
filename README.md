@@ -1,4 +1,4 @@
-### Welcome to <a href='/'><img src=../images/teselagen_toplogo.png></a>'s Manual. 
+### Welcome to Teselagen's Manual. 
 
 We strive to provide a design-build-test-evolve platform for automated combinatorial DNA assembly; with sequence viewing and editing, combinatorial design, and j5 scarless genetic assembly, all at the least possible cost. Please use the menu on the left to learn more about our platform. 
 
