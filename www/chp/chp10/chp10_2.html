@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.2" data-basepath="../.." data-revision="1404774062128">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.2" data-basepath="../.." data-revision="1404848945796">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1985,13 +1985,13 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_50">
+                    <section class="normal" id="section-gitbook_51">
                     
                         <h2 id="combinatorial-slic-gibson-cpec-assembly">Combinatorial SLIC, Gibson, CPEC assembly</h2>
 <p>The following is a step-by-step example of how to use j5 to design a combinatorial SLIC/Gibson/CPEC/SLiCE assembly. This example uses the stand alone simplified web interface for j5.</p>
 <p>[Please refer to the &quot;Running a combinatorial SLIC/Gibson/CPEC/SLiCE or Golden Gate DNA assembly design on the j5 server&quot; section in the DeviceEditor user&#39;s manual for information concerning how the equivalent design process can be accomplished using DeviceEditor. Here is a DeviceEditor .xml design file that you can use to quickly recapitulate the design described below in DeviceEditor (Combinatorial_SLIC_Gibson_CPEC_example.xml, right click and save link as to save the design file to disk): ]</p>
 <p>Here is an example assembly that we might like j5 to design for us with combinatorial SLIC/Gibson/CPEC/SLiCE in mind:</p>
-<p><img src="https://dl.dropbox.com/s/72fcvwwjz6sluqd/pastedImage64.png" alt=""></p>
+<p><img src="../../images/pastedImage64.png" alt=""></p>
 <p>For this particular combinatorial assembly, we want to replace the camR resistance gene in plasmid pJWT00001 with either gentR, rifR, specR, or tetA/tetR. We start with the vector pJWT00001 as the template for PCR. We&#39;ll linearize the pJWT00001 vector with PCR, introducing in the process SLIC/Gibson/CPEC/SLiCE overlaps. We&#39;ll similarly amplify the resistance gene portions of pSGI, pSROI, MAGE-01, or pCM62-Prha-T7SL (for 4 variants total). These five PCR products will then be combinatorially assembled with the SLIC/Gibson/CPEC/SLiCE methodologies to yield 4 plasmid variants total. </p>
 <h4 id="step-1-collect-the-genbank-sequences-and-create-any-new-ones-for-the-assembly-">Step 1 - Collect the genbank sequences (and create any new ones) for the assembly:</h4>
 <p>The first step is to collect all of the genbank sequence files from which we will derive the parts we want to assemble together. For the example above, we will be starting with the plasmid pS8c-gfpuv_sig.pep and the sequences that encode the signaling peptides and linkers (BMC_nterm_sig_pep_GFPuv and ccmN_nterm_sig_pep_GFPuv) and ssrA degradation tags (ssrA_tag_GFPuv and ssrA_tag_enhanced_GFPuv). The genbank files for these sequences are:</p>
@@ -2015,7 +2015,7 @@
 <p>tetA/tetR cassette: bps 3966-5936 (reverse complement)</p>
 <h4 id="step-2-create-the-sequences-list-file-and-zipped-sequences-file-">Step 2 - Create the sequences list file and zipped sequences file:</h4>
 <p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity, click to view larger version):</p>
-<p><img src="https://dl.dropbox.com/s/22zfhgnys2ak0ry/pastedImage75.png" alt=""></p>
+<p><img src="../../images/pastedImage75.png" alt=""></p>
 <p>Here is the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/seqListFile0.csv" target="_blank">seqListFile.csv</a></p>
 <p>Now, we make a zip file that contains all of the genbank sequence files: <a href="http://j5.jbei.org/j5manual/attachments/sequences0.zip" target="_blank">sequences.zip</a></p>
 <h4 id="step-3-create-the-parts-list-file-">Step 3 - Create the parts list file:</h4>
@@ -2025,17 +2025,17 @@
 <p>The next part to define is the specR cassette. The relevant portion of the MAGE-01 sequence (as stated above) is bps 1-1087. We define the part, SpecR, accordingly, with its part source, MAGE-01, start bp, 1, and end bp, 1087. In this case, the specR cassette sequence is on the top strand of MAGE-01, so it will be defined as not being the reverse complement. The resulting part definition for SpecR is shown below.</p>
 <p>The final part to define is the tetA/tetR cassette. The relevant portion of the pCM62-Prha-T7SL sequence (as stated above) is bps 3966-5936. We define the part, TetA, accordingly, with its part source, pCM62-Prha-T7SL-, start bp, 3966, and end bp, 5936. In this case, the tetA/tetR cassette sequence is on the bottom strand of pCM62-Prha-T7SL, so it will be defined as being the reverse complement. The resulting part definition for TetA is shown below.</p>
 <p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity, click to view larger version):</p>
-<p><img src="https://dl.dropbox.com/s/23tn1llvsb9c6zl/pastedImage85.png" alt=""></p>
+<p><img src="../../images/pastedImage85.png" alt=""></p>
 <p>Here is the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/partListFile0.csv" target="_blank">partListFile.csv</a></p>
 <p>It is absolutely crucial here to note that, as described in the parts list file documentation, the part source column refers to the sequence display ID within the sequence file (e.g. pCM62-Prha-T7SL-), and not to the file name of the genbank sequence file itself (e.g. pCM62-Prha-T7SL-RFP.gb). If you open up the genbank file pCM62-Prha-T7SL-RFP.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like (click to view a larger version):</p>
-<p><img src="https://dl.dropbox.com/s/chb5k023u9dlify/page1image368.png" alt=""></p>
+<p><img src="../../images/page1image368.png" alt=""></p>
 <p>The sequence display ID immediately follows the LOCUS, in this case it is pCM62-Prha-T7SL-, and it is this sequence display ID that should be included in the parts list file, as we have done it above.</p>
 <h4 id="step-4-create-the-target-part-ordering-list-file-">Step 4 - Create the target part ordering list file:</h4>
 <p>Now we need to define, in a target part ordering file, the order and combinations we would like the DNA parts defined above to be assembled in. For this particular assembly, we&#39;ll be assembling the vector backbone in the forward direction and all of the resistance genes parts in the reverse direction. This example will not forcibly set relative overlap positions. We will allow j5 to identify an optimal set of overlaps for the collective set of combinations, and then j5 will enforce those overlap selections when assembling each given construct. </p>
 <p>The first combinatorial bin for this assembly contains the linearized vector backbone (the backbone bin, which contains only one part, the vector_backbone). Since we defined the pJWT00001 vector backbone part above as being not in the reverse compliment direction, if we assemble it in the forward direction, we will end up with a vector backbone with the same orientation as that found in the pJWT00001 plasmid. The resulting target bin and part ordering entries for the linearized vector backbone are shown below (for more information about the formatting of combinatorial target part ordering list files, see the target part ordering file documentation).</p>
 <p>The next combinatorial bin for this assembly contains the resistance genes (the resistance_cassette bin, which contains four variants, the GentR, RifR, SpecR and TetA parts). We&#39;ll assemble these in the reverse direction. The resulting target bin and part ordering entries for the resistance genes are shown below.</p>
 <p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity, click to view larger version):</p>
-<p><img src="https://dl.dropbox.com/s/zw2jg6ef1efjtoh/pastedImage101.png" alt=""></p>
+<p><img src="../../images/pastedImage101.png" alt=""></p>
 <p>Here is the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/targetListFile0.csv" target="_blank">targetListFile.csv</a></p>
 <h4 id="step-5-create-the-eugene-rules-list-file-">Step 5 - Create the Eugene rules list file:</h4>
 <p>Now we need to define, in a Eugene rules list file, a list of design rules that j5 will check prior to designing the combinatorial assembly. For this particular assembly, we won&#39;t need to define any special rules. For more information about how and when enforce Eugene design specification rules, please see the Eugene rules list file documentation.</p>
@@ -2074,7 +2074,7 @@
 <p>Unzip the j5 zipped results file, and open the assembled DNA sequence files with a vector editor such as the JBEI Registry Vector Editor, VectorNTI, ApE or Gentle.</p>
 <p>For this particular example (using the identical input files as listed above), the assembled DNA sequence file for the first plasmid combination is: <a href="http://j5.jbei.org/j5manual/attachments/pGG_00005.gb" target="_blank">pGG_00005.gb</a></p>
 <p>Here is the plasmid map of the assembled DNA sequence for the first plasmid combination:</p>
-<p><img src="https://dl.dropbox.com/s/89m8901oziiin18/Screen_Shot_2012-01-0.png" alt=""></p>
+<p><img src="../../images/Screen_Shot_2012-01-0.png" alt=""></p>
 <p>Note that this plasmid map matches our design scheme for the first plasmid combination (see the very top of this page).</p>
 <p>The plasmid maps of the remaining 3 plasmid combinations will not be presented here, but the respective genbank sequence files are available within the output zip file provided above.</p>
 <h4 id="step-10-check-the-resulting-combinatorial-j5-assembly-file-as-well-as-each-of-the-individual-plasmid-j5-assembly-files-for-any-primer-design-or-other-warning-messages-">Step 10 - Check the resulting combinatorial j5 assembly file, as well as each of the individual plasmid j5 assembly files for any primer design or other warning messages:</h4>

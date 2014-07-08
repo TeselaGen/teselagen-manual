@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.8" data-basepath="../.." data-revision="1404774062128">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.8" data-basepath="../.." data-revision="1404848945796">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1991,7 +1991,7 @@
 <p>The following is a step-by-step example of how to use j5 to distribute PCR reactions in multi-well plate across a thermocycler block annealing temperature gradient. This example uses the stand alone simplified web interface for j5.</p>
 <p>Following the previous example of how to use j5 to aggregate assembly files into a single condensed assembly file, this example shows how to take a condensed j5 assembly file (or even a non-condensed assembly file coming directly out of a  SLIC/Gibson/CPEC/SLiCE, combinatorial SLIC/Gibson/CPEC/SLiCE, Golden Gate, or combinatorial Golden Gate assembly design process), and design a multi-well plate arrangement of the requisite PCR reactions, as well as the optimal thermocycler block (gradient) annealing temperature(s), with high-throughput liquid-handling robotics platforms in mind.</p>
 <p>Here is an example set of PCR reactions (with indicated optimal annealing temperatures) that we might like j5 to distribute across a thermocycler block gradient for us:</p>
-<p><img src="https://dl.dropbox.com/s/p8alhz432ex0rd3/pastedImage44.png" alt=""></p>
+<p><img src="../../images/pastedImage44.png" alt=""></p>
 <h4 id="step-1-create-the-source-plate-list-file-and-the-zipped-plate-files-file-">Step 1 - Create the source plate list file and the zipped plate files file:</h4>
 <p>Once we have the j5 assembly file (e.g. myassemblyfilelist_condensed.csv, below) for which we&#39;d like to distribute the PCR reactions across a multi-well plate, we need to create two input files for j5, the source plate list file and the zipped plate files file.  Using an existing source plate list file as a starting point (e.g. plate_list.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our source plate list CSV file (stylized for clarity, click to view larger version):</p>
 <p>Here is the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/plate_list0.csv" target="_blank">plate_list.csv</a></p>
@@ -2022,7 +2022,7 @@ Here is the PR-PR configuration file for this particular example using the ident
 <p>You will note that the resulting plate list file and the zipped plate files file have been updated.</p>
 <p>The plate list file now additionally contains entries for any new PCR plates (stylized for clarity, click <a href="http://j5.jbei.org/j5manual/attachments/pastedImage54.pdf" target="_blank">here</a> to view larger version)</p>
 <p>In addition, the liquid volumes of the oligos and the PCR templates used in the PCR plates have been subtracted from the source plates (stylized for clarity, click to view larger version):</p>
-<p><img src="https://dl.dropbox.com/s/hxrxhy4n72c7l00/pastedImage61.png" alt=""></p>
+<p><img src="../../images/pastedImage61.png" alt=""></p>
 <p>n this particular example, the PCR template &quot;pj5_00001&quot; started out in the source plate with 100 uL, but after 5 uL being dispensed in to each of 10 PCR reactions, only 50 uL remains available. If we had run out of &quot;pj5_00001&quot; template, j5 would have returned an error message. This is a useful precaution against not having enough available PCR template, oligos, etc., available in the source plate to set up all of the PCR reactions. If each well can hold a maximum volume, say 100 uL, it is possible to fill more than one source well with the same PCR template or oligo.</p>
 <p>The new plate files in the resulting zipped plate files file are those corresponding to any new PCR plates.</p>
 <p>That&#39;s it!</p>

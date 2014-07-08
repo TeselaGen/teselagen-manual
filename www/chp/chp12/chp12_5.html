@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="12.5" data-basepath="../.." data-revision="1404774062128">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="12.5" data-basepath="../.." data-revision="1404848945796">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2018,7 +2018,7 @@ Rules utilizing the NEXTTO operator (or its [NOT] negated version) only apply to
 Rule rule_name([NOT] operand1 MORETHAN operand2);
 Part operand1 must occur more than operand2 times in each construct. This is a useful rule to set if you are designing a combinatorial library where you would like to have the order of parts shuffled (which requires placing the same part in multiple target part bins (see the target part list file documentation for more information), and you would like the copy number of each part above a certain threshold (i.e. you are not interested in assembling a plasmid without a gene present at least once). For backwards compatibility, the NOTMORETHAN operator is currently supported and equivalent to (NOT operand1 MORETHAN operand2), although support for NOTMORETHAN may be deprecated going forward.</p>
 <p>Here is an <strong>example Eugene rules list file</strong> (stylized for clarity):</p>
-<p><img src="https://dl.dropbox.com/s/9zpr98qgqg4om71/pastedImage28.png" alt="Eugene rules list"></p>
+<p><img src="../../images/pastedImage28.png" alt="Eugene rules list"></p>
 <p>In this example, note that the seemingly redundant rules that contain the THEN operator need to be defined twice to ensure a symmetric dependency.</p>
 <p>Here is the actual example Eugene rules list file (eugenerules.eug):
 <a href="http://j5.jbei.org/j5manual/attachments/eugenerules00.eug" target="_blank"><img src="http://j5.jbei.org/j5manual/images/_nb_fileIcons/eugenerules00fefffe.png" alt=""></a></p>
