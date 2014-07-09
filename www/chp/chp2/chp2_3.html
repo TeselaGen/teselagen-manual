@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="2.3" data-basepath="../.." data-revision="1404865989486">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="2.3" data-basepath="../.." data-revision="1404939868109">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -312,7 +312,7 @@
                         
                             <b>3.1.</b>
                         
-                         TeselaGens Synthetic Evolution Workflow
+                         TeselaGen&#39;s Synthetic Evolution Workflow
                     </a>
                 
             
@@ -1808,7 +1808,7 @@
     
         <a href="../../chp/chp3/chp3.html" title="Synthetic Evolution" class="chapter  new-chapter" data-progress="3" style="left: 9.473684210526315%;"></a>
     
-        <a href="../../chp/chp3/chp3_1.html" title="TeselaGens Synthetic Evolution Workflow" class="chapter  " data-progress="3.1" style="left: 10.526315789473685%;"></a>
+        <a href="../../chp/chp3/chp3_1.html" title="TeselaGen&#39;s Synthetic Evolution Workflow" class="chapter  " data-progress="3.1" style="left: 10.526315789473685%;"></a>
     
         <a href="../../chp/chp3/chp3_2.html" title="Bioinformatics and BioCAD preliminaries" class="chapter  " data-progress="3.2" style="left: 11.578947368421053%;"></a>
     
@@ -1995,7 +1995,7 @@ BglBrick assembly of partA, partB, and the partA-bearing vector backbone:</p>
 <p>Contrasting with the traditional approach, there are several advantages to using BioBricks: 1) only four restriction enzymes are utilized, 2) once a part is BioBrick&#39;d, it is never necessary to re-clone it (or even re-PCR amplify it, reducing the probability of PCR-derived mutations), and 3) assembling an arbitrary number of parts (in any desired arrangement) is no more difficult than putting two together (plasmid size considerations aside). It should be highlighted that, in contrast with SLIC, Gibson, CPEC, SLiCE and Golden Gate methods, BioBrick assembly not only standardizes the assembly process (e.g. the set of four restriction enzymes, protocols, etc.), but also physically standardizes the BioBrick&#39;d parts themselves, as they all have the same 5&#39; and 3&#39; terminal sequences, and internally share the same 6-bp scar vestiges of prior assemblies. There are burgeoning repositories of these standardized parts (physical and/or informatic), such as the iGEM Registry of Standard Biological Parts, and supporting organizations, such as the BioBricks Foundation, that allow and facilitate researcher re-use of characterized and validated parts, preempting wasteful redundant efforts.</p>
 <p>Returning to the previous DNA assembly challenge, here&#39;s how we could use BioBrick assembly to put together the pathway:</p>
 <p><img src="../../images/pastedImage2.png" alt="BioBrick approach 2"></p>
-<p>Note that there are many different possible routes (assembly trees) to put together this pathway using BioBricks. Some of the intermediate parts, such as the terminator fused to the promoter, need only be made once, and can be re-used multiple times. Recently, algorithms have been developed (<a href="http://nar.oxfordjournals.org/cgi/content/full/gkq165v1" target="_blank">Densmore 2010</a>) to optimize the design of binary BioBrick assembly trees, and an automated in vivo BglBrick assembly process utilizing liquid-handling robotics has been demonstrated (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21601686" target="_blank">Leguia 2011</a>).</p>
+<p>Note that there are many different possible routes (assembly trees) to put together this pathway using BioBricks. Some of the intermediate parts, such as the terminator fused to the promoter, need only be made once, and can be re-used multiple times. Recently, algorithms have been developed (<a href="http://nar.oxfordjournals.org/content/38/8/2607.full.pdf+html" target="_blank">Densmore 2010</a>) to optimize the design of binary BioBrick assembly trees, and an automated in vivo BglBrick assembly process utilizing liquid-handling robotics has been demonstrated (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21601686" target="_blank">Leguia 2011</a>).</p>
 <h4 id="biobrick-limitations-and-obstacles">BioBrick limitations and obstacles</h4>
 <p>Despite the many merits of the BioBrick approach, there are some drawbacks. First, there is no control over the existence and sequence of the 6-bp scars resulting from each binary BioBrick assembly. While in many cases, these scars will not prove problematic, there are scenarios where the scar sequences, affecting coding sequences or mRNA secondary structure, can adversely perturb the desired protein, RBS, terminator, etc., function. Second, unless every intermediate part is archived along the binary assembly tree, it is necessary to repeat the entire process from scratch in order to replace a composite part (e.g., orfC in the example above) in the assembled BioBrick; even if all intermediate parts are archived, many of the steps must still be repeated. Third, combinatorial library diversity generation is potentially at odds with the BioBrick assembly process, because diversity must be recaptured after each and every binary assembly step (which requires aggregating 5 times as many post-transformation colonies per binary assembly as the sequence diversity to be retained). Fourth, BioBrick assembly only works with previously BioBrick&#39;d parts, and another cloning method must be used to first create the BioBricks to be assembled.</p>
 <p>TeselaGen&#39;s j5 designs for the SLIC, Gibson, CPEC, SLiCE and Golden Gate methods, which address the short comings of the BioBrick approach, and retain compatibility with the established BioBrick standard(s) (i.e., the methods employed by j5 can be used to assemble BioBrick vectors, although not using BioBrick assembly to do so).</p>

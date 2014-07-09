@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1404865989486">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1404939868109">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -312,7 +312,7 @@
                         
                             <b>3.1.</b>
                         
-                         TeselaGens Synthetic Evolution Workflow
+                         TeselaGen&#39;s Synthetic Evolution Workflow
                     </a>
                 
             
@@ -1808,7 +1808,7 @@
     
         <a href="../../chp/chp3/chp3.html" title="Synthetic Evolution" class="chapter done new-chapter" data-progress="3" style="left: 9.473684210526315%;"></a>
     
-        <a href="../../chp/chp3/chp3_1.html" title="TeselaGens Synthetic Evolution Workflow" class="chapter done " data-progress="3.1" style="left: 10.526315789473685%;"></a>
+        <a href="../../chp/chp3/chp3_1.html" title="TeselaGen&#39;s Synthetic Evolution Workflow" class="chapter done " data-progress="3.1" style="left: 10.526315789473685%;"></a>
     
         <a href="../../chp/chp3/chp3_2.html" title="Bioinformatics and BioCAD preliminaries" class="chapter done " data-progress="3.2" style="left: 11.578947368421053%;"></a>
     
@@ -1985,7 +1985,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_53">
+                    <section class="normal" id="section-gitbook_52">
                     
                         <h2 id="golden-gate-assembly">Golden Gate assembly</h2>
 <p>The following is a step-by-step example of how to use j5 to design a Golden Gate assembly. This example specifically addresses how to use a PCR linearized vector backbone. This example uses the stand alone simplified web interface for j5.</p>
@@ -2012,8 +2012,8 @@ umuD: <a href="http://j5.jbei.org/j5manual/attachments/umuD_tag_GFPuv.gb" target
 <h4 id="step-2-create-the-sequences-list-file-and-zipped-sequences-file-">Step 2 - Create the sequences list file and zipped sequences file:</h4>
 <p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity, click to view larger version):</p>
 <p><img src="../../images/pastedImage88.png" alt=""></p>
-<p>Here is the actual csv file: (myseqlist_pS8c-umuD_gfpuv_sig.pep.csv](<a href="http://j5.jbei.org/j5manual/attachments/myseqlist_pS8c-umuD_g0.csv" target="_blank">http://j5.jbei.org/j5manual/attachments/myseqlist_pS8c-umuD_g0.csv</a>)</p>
-<p>Now, we make a zip file that contains all of the genbank sequence file:<a href="http://j5.jbei.org/j5manual/attachments/myseqs_pS8c-umuD_gfpu0.zip" target="_blank">myseqs_pS8c-umuD_gfpuv_sig.pep.zip</a></p>
+<p>Here is the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/myseqlist_pS8c-umuD_g0.csv" target="_blank">myseqlist_pS8c-umuD_gfpuv_sig.pep.csv</a></p>
+<p>Now, we make a zip file that contains all of the genbank sequence file: <a href="http://j5.jbei.org/j5manual/attachments/myseqs_pS8c-umuD_gfpu0.zip" target="_blank">myseqs_pS8c-umuD_gfpuv_sig.pep.zip</a></p>
 <h4 id="step-3-create-the-parts-list-file-">Step 3 - Create the parts list file:</h4>
 <p>Now we need to define, in a parts list file, the DNA parts that we will assemble together. The first part to define is the linearized vector backbone. The relevant portion of the pS8c-gfpuv_sig.pep plasmid (as stated above) is bps 1239-1235. We define the part, pS8c-gfpuv_sig.pep_vector_backbone, accordingly, with its part source, pj5_00001, start bp, 1239, and end bp, 1235. We are free to define the vector backbone in either orientation (reverse compliment or not); here we define it as not the reverse compliment. The resulting part definition for the linearized vector backbone is shown below.</p>
 <p>The next part to define is the UmuD N-terminus. The relevant portion of the umuD sequence (as stated above) is bps 1-126. We define the part, umuD_tag, accordingly, with its part source, umuD_tag_GFPuv, start bp, 1, and end bp, 126. In this case, the umuD sequence is on the top strand of umuD_tag_GFPuv, so it will be defined as not being the reverse complement. The resulting part definition for the umuD_tag is shown below.</p>

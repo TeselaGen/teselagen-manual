@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="11.1" data-basepath="../.." data-revision="1404865989486">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="11.1" data-basepath="../.." data-revision="1404939868109">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -312,7 +312,7 @@
                         
                             <b>3.1.</b>
                         
-                         TeselaGens Synthetic Evolution Workflow
+                         TeselaGen&#39;s Synthetic Evolution Workflow
                     </a>
                 
             
@@ -1808,7 +1808,7 @@
     
         <a href="../../chp/chp3/chp3.html" title="Synthetic Evolution" class="chapter done new-chapter" data-progress="3" style="left: 9.473684210526315%;"></a>
     
-        <a href="../../chp/chp3/chp3_1.html" title="TeselaGens Synthetic Evolution Workflow" class="chapter done " data-progress="3.1" style="left: 10.526315789473685%;"></a>
+        <a href="../../chp/chp3/chp3_1.html" title="TeselaGen&#39;s Synthetic Evolution Workflow" class="chapter done " data-progress="3.1" style="left: 10.526315789473685%;"></a>
     
         <a href="../../chp/chp3/chp3_2.html" title="Bioinformatics and BioCAD preliminaries" class="chapter done " data-progress="3.2" style="left: 11.578947368421053%;"></a>
     
@@ -1985,21 +1985,21 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_6">
                     
                         <h2 id="comma-separated-value-csv-fasta-fas-and-genbank-gb-sequence-files">Comma separated value (.csv); FASTA (.fas) and Genbank (.gb) sequence files</h2>
 <p>Here are three types of file formats that j5 uses for input or output: comma separated value, FASTA and Genbank.</p>
-<h4 id="comma-separated-value-csv-files">Comma separated value (CSV) files</h4>
+<h4 id="comma-separated-value-csv-files-">Comma separated value (CSV) files:</h4>
 <p>CSV files are essentially just text files that can easily be arranged into a spreadsheet-like array. Every text line in the CSV file represents a row, and columns are delimited in a line with the use of the comma (,) character. Since commas delimit columns, including a comma itself in a field necessitates that the entire field be enclosed in double quotation marks (e.g. &quot;Last name,  First name&quot; instead of Last name, First name). Since the double quotes (&quot;) character is used to enclose/flank an entire field containing special characters, such as commas, double quotes, if to be contained within a field, themselves must also be enclosed in double quotation marks (e.g. &quot;Hannibal &quot;the Cannibal&quot; Lecter&quot;, instead of Hannibal &quot;the Cannibal&quot; Lecter). An empty, or undefined field, is represented as two commas immediately following one another, or with empty double quotes (e.g. ,, or ,&quot;&quot;,). Besides viewing and editing CSV files in any text editor, CSV files can be readily opened, viewed, and edited with spreadsheet software such as Microsoft Excel, OpenOffice, etc. Note that depending on how your particular spreadsheet software defaults to opening a CSV file, you may need to adjust the displayed column widths to see the entire contents of a given cell or to see several columns on the screen at the same time. </p>
 <p>For more information, see:
 <a href="http://search.cpan.org/~hmbrand/Text-CSV_XS-0.72/CSV_XS.pm" target="_blank">http://search.cpan.org/~hmbrand/Text-CSV_XS-0.72/CSV_XS.pm</a></p>
-<h4 id="fasta-aka-pearson-format-sequence-files">FASTA (aka Pearson) format sequence files</h4>
+<h4 id="fasta-aka-pearson-format-sequence-files-">FASTA (aka Pearson) format sequence files:</h4>
 <p>A FASTA file is a text file that may contain one or more sequences. FASTA files do not contain sequence annotation. For the purposes of j5, and for maintaining well documented sequences in general, the Genbank file format (see below) or the jbei-seq format are much preferred. j5 will auto-annotate FASTA sequences with a &quot;misc_feature&quot; type feature whose label matches the display ID of the sequence (i.e. what follows the &quot;&gt;&quot;).</p>
 <p>Note that there is no standard file extension for FASTA files; j5 uses (.fas).</p>
 <p>For information about the FASTA format, see:
 <a href="http://www.ncbi.nlm.nih.gov/blast/fasta.shtml" target="_blank">http://www.ncbi.nlm.nih.gov/blast/fasta.shtml</a>
 <a href="http://www.bioperl.org/wiki/FASTA_sequence_format" target="_blank">http://www.bioperl.org/wiki/FASTA_sequence_format</a></p>
-<h4 id="genbank-format-sequence-files">Genbank format sequence files</h4>
+<h4 id="genbank-format-sequence-files-">Genbank format sequence files:</h4>
 <p>Genbank format sequence files generally contain a single sequence each (although at times, you may see multiple ORF translated sequences embedded as feature annotations within a long DNA sequence). Feature annotations within Genbank format files are extremely useful for being able to view a DNA sequence at a higher/more functional level, and allow for rapidly checking if a designed DNA assembly process will result in the desired sequence.</p>
 <p>Currently, the &quot;label=&quot; field for a given feature annotation is used to determine if two features (with the same name/label) should be spliced at a DNA assembly junction.</p>
 <p>For more information about the Genbank format, see:

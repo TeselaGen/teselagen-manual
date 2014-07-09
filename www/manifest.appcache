@@ -1,25 +1,25 @@
 CACHE MANIFEST
-# Revision 1404865989487
+# Revision 1404939868110
 
 CACHE:
 index.html
-chp/chp17/chp17.html
 chp/chp17/chp17_1.html
+chp/chp17/chp17.html
 chp/chp1/chp1.html
 chp/chp1/chp1_1.html
-chp/chp11/chp11.html
 chp/chp11/chp11_1.html
+chp/chp11/chp11.html
 chp/chp11/chp11_2.html
 chp/chp11/chp11_3.html
-chp/chp12/chp12.html
+chp/chp12/chp12_3.html
 chp/chp12/chp12_10.html
+chp/chp12/chp12.html
 chp/chp12/chp12_11.html
 chp/chp12/chp12_12.html
 chp/chp12/chp12_2.html
 chp/chp12/chp12_1.html
 chp/chp12/chp12_4.html
 chp/chp12/chp12_5.html
-chp/chp12/chp12_3.html
 chp/chp12/chp12_6.html
 chp/chp12/chp12_7.html
 chp/chp12/chp12_8.html
@@ -53,10 +53,10 @@ chp/chp10/chp10.html
 chp/chp10/chp10_1.html
 chp/chp10/chp10_2.html
 chp/chp10/chp10_3.html
-chp/chp10/chp10_4.html
 chp/chp10/chp10_5.html
-chp/chp10/chp10_7.html
+chp/chp10/chp10_4.html
 chp/chp10/chp10_6.html
+chp/chp10/chp10_7.html
 chp/chp10/chp10_8.html
 chp/chp10/chp10_9.html
 chp/chp2/chp2.html
@@ -128,10 +128,10 @@ gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 gitbook/plugins/gitbook-plugin-tesela/footer.html
 gitbook/plugins/gitbook-plugin-tesela/tesela.css
 gitbook/plugins/gitbook-plugin-tesela/tesela.js
+gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 
 NETWORK:
 *
