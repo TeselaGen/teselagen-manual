@@ -30,10 +30,10 @@ a.home-bookmark {
 ul.articles {
   display: none !important;
 }
-/*ul:active {
-  display:block;
-}
-*/
+/*li:active {
+    display:block;
+ }*/
+
 
 /**************
 .book-summary {
