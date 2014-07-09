@@ -28,7 +28,7 @@ a.home-bookmark {
 /* side menu */
 
 ul.articles {
-  display: block !important;
+  display: none !important;
 }
 /*ul:active {
   display:block;

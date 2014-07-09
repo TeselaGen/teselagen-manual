@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1404947736651">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1404949515841">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1989,7 +1989,7 @@
                     
                         <h2 id="golden-gate-assembly">Golden Gate assembly</h2>
 <p>The following is a step-by-step example of how to use j5 to design a Golden Gate assembly. This example specifically addresses how to use a PCR linearized vector backbone. This example uses the stand alone simplified web interface for j5.</p>
-<p>Here is a DeviceEditor .xml design file that you can use to quickly recapitulate the design described below in DeviceEditor: <a href="http://j5.jbei.org/j5manual/attachments/Golden_Gate_example0.xml" target="_blank">Golden_Gate_example.xml</a></p>
+<p>Here is a DeviceEditor .xml design file that you can use to quickly recapitulate the design described below in DeviceEditor: <a href="../../documents/Golden_Gate_example0.xml">Golden_Gate_example.xml</a>.</p>
 <p>Here is an example assembly that we might like j5 to design for us with Golden Gate in mind:</p>
 <p><img src="../../images/pastedImage45.png" alt=""></p>
 <p>For this particular assembly, we want to translationally fuse the N-terminus of UmuD to a GFP variant. As was the case for the previous SLIC/Gibson/CPEC/SLiCE example, we would like the BglBrick restriction sites (EcoRI, BglII, BamHI and XhoI) to be absent from the resulting plasmid. We start with the vector pS8c-gfpuv_sig.pep (this was constructed in the previous SLIC/Gibson/CPEC/SLiCE example) and E. coli genomic DNA as the templates for PCR. We&#39;ll linearize the pS8c-gfpuv_sig.pep vector with PCR, introducing the flanking BsaI sites and Golden Gate overhangs in the process, and similarly amplify the 5&#39; coding portion of umuD. These two PCR products will then be assembled with the Golden Gate methodology.</p>
