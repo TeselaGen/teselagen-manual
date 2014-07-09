@@ -28,12 +28,12 @@ a.home-bookmark {
 /* side menu */
 
 ul.articles {
-  display: none !important;
+  display: all !important;
 }
-/*li:active {
-    display:block;
- }*/
-
+/*ul:active {
+  display:block;
+}
+*/
 
 /**************
 .book-summary {
