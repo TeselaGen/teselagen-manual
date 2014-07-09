@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de:design xsi:schemaLocation="http://jbei.org/device_editor design.xsd" xmlns:de="http://jbei.org/device_editor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <de:version>4.0</de:version>
+  <de:sequenceFiles>
+    <de:sequenceFile hash="23d714d34632e24f53c2095f05e79f17aded7ec22651c20e4b320f82bc2bf731">
+      <de:format>Genbank</de:format>
+      <de:content><![CDATA[LOCUS       pj5_00001               5299 bp    dna     circular UNK 26-OCT-2009
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+KEYWORDS    ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; .
+FEATURES             Location/Qualifiers
+     CDS             complement(7..885)
+                     /label=araC
+     protein_bind    914..931
+                     /label=operator\O2
+     promoter        complement(1036..1064)
+                     /label=araC\promoter
+     protein_bind    1072..1093
+                     /label=operator\O1
+     misc_binding    1115..1128
+                     /label=CAP\site
+     protein_bind    1124..1162
+                     /label=Operator\I2\and\I1
+     promoter        1161..1188
+                     /label=pBAD\promoter
+     RBS             1216..1235
+                     /label=RBS
+     CDS             1236..2018
+                     /vntifkey="4"
+                     /label=GFPuv
+     misc_feature    1661..1661
+                     /label=XhoI_silent_mutation
+     misc_feature    1760..1760
+                     /label=BamHI_silent_mutation
+     CDS             1953..2015
+                     /vntifkey="4"
+                     /label=signal_peptide
+     terminator      2034..2162
+                     /label=dbl\term
+     rep_origin      complement(2164..4392)
+                     /label=pSC101**
+     terminator      4393..4498
+                     /label=T0
+     misc_marker     complement(4514..5173)
+                     /label=CmR
+ORIGIN      
+        1 gacgtcttat gacaacttga cggctacatc attcactttt tcttcacaac cggcacggaa
+       61 ctcgctcggg ctggccccgg tgcatttttt aaatacccgc gagaaataga gttgatcgtc
+      121 aaaaccaaca ttgcgaccga cggtggcgat aggcatccgg gtggtgctca aaagcagctt
+      181 cgcctggctg atacgttggt cctcgcgcca gcttaagacg ctaatcccta actgctggcg
+      241 gaaaagatgt gacagacgcg acggcgacaa gcaaacatgc tgtgcgacgc tggcgatatc
+      301 aaaattgctg tctgccaggt gatcgctgat gtactgacaa gcctcgcgta cccgattatc
+      361 catcggtgga tggagcgact cgttaatcgc ttccatgcgc cgcagtaaca attgctcaag
+      421 cagatttatc gccagcagct ccgaatagcg cccttcccct tgcccggcgt taatgatttg
+      481 cccaaacagg tcgctgaaat gcggctggtg cgcttcatcc gggcgaaaga accccgtatt
+      541 ggcaaatatt gacggccagt taagccattc atgccagtag gcgcgcggac gaaagtaaac
+      601 ccactggtga taccattcgc gagcctccgg atgacgaccg tagtgatgaa tctctcctgg
+      661 cgggaacagc aaaatatcac ccggtcggca aacaaattct cgtccctgat ttttcaccac
+      721 cccctgaccg cgaatggtga gattgagaat ataacctttc attcccagcg gtcggtcgat
+      781 aaaaaaatcg agataaccgt tggcctcaat cggcgttaaa cccgccacca gatgggcatt
+      841 aaacgagtat cccggcagca ggggatcatt ttgcgcttca gccatacttt tcatactccc
+      901 gccattcaga gaagaaacca attgtccata ttgcatcaga cattgccgtc actgcgtctt
+      961 ttactggctc ttctcgctaa ccaaaccggt aaccccgctt attaaaagca ttctgtaaca
+     1021 aagcgggacc aaagccatga caaaaacgcg taacaaaagt gtctataatc acggcagaaa
+     1081 agtccacatt gattatttgc acggcgtcac actttgctat gccatagcat ttttatccat
+     1141 aagattagcg gattctacct gacgcttttt atcgcaactc tctactgttt ctccataccc
+     1201 gtttttttgg gaatttttaa gaaggagata tacatatgag taaaggagaa gaacttttca
+     1261 ctggagttgt cccaattctt gttgaattag atggtgatgt taatgggcac aaattttctg
+     1321 tcagtggaga gggtgaaggt gatgcaacat acggaaaact tacccttaaa tttatttgca
+     1381 ctactggaaa actacctgtt ccatggccaa cacttgtcac tactttctct tatggtgttc
+     1441 aatgcttttc ccgttatccg gatcatatga aacggcatga ctttttcaag agtgccatgc
+     1501 ccgaaggtta tgtacaggaa cgcactatat ctttcaaaga tgacgggaac tacaagacgc
+     1561 gtgctgaagt caagtttgaa ggtgataccc ttgttaatcg tatcgagtta aaaggtattg
+     1621 attttaaaga agatggaaac attctcggac acaaactcga atacaactat aactcacaca
+     1681 atgtatacat cacggcagac aaacaaaaga atggaatcaa agctaacttc aaaattcgcc
+     1741 acaacattga agatggatct gttcaactag cagaccatta tcaacaaaat actccaattg
+     1801 gcgatggccc tgtcctttta ccagacaacc attacctgtc gacacaatct gccctttcga
+     1861 aagatcccaa cgaaaagcgt gaccacatgg tccttcttga gtttgtaact gctgctggga
+     1921 ttacacatgg catggatgag ctcggcggcg gcggcagcaa ggtctacggc aaggaacagt
+     1981 ttttgcggat gcgccagagc atgttccccg atcgctaaat cgagtaagga tctccaggca
+     2041 tcaaataaaa cgaaaggctc agtcgaaaga ctgggccttt cgttttatct gttgtttgtc
+     2101 ggtgaacgct ctctactaga gtcacactgg ctcaccttcg ggtgggcctt tctgcgttta
+     2161 tacctagggt acgggttttg ctgcccgcaa acgggctgtt ctggtgttgc tagtttgtta
+     2221 tcagaatcgc agatccggct tcagccggtt tgccggctga aagcgctatt tcttccagaa
+     2281 ttgccatgat tttttcccca cgggaggcgt cactggctcc cgtgttgtcg gcagctttga
+     2341 ttcgataagc agcatcgcct gtttcaggct gtctatgtgt gactgttgag ctgtaacaag
+     2401 ttgtctcagg tgttcaattt catgttctag ttgctttgtt ttactggttt cacctgttct
+     2461 attaggtgtt acatgctgtt catctgttac attgtcgatc tgttcatggt gaacagcttt
+     2521 gaatgcacca aaaactcgta aaagctctga tgtatctatc ttttttacac cgttttcatc
+     2581 tgtgcatatg gacagttttc cctttgatat gtaacggtga acagttgttc tacttttgtt
+     2641 tgttagtctt gatgcttcac tgatagatac aagagccata agaacctcag atccttccgt
+     2701 atttagccag tatgttctct agtgtggttc gttgtttttg cgtgagccat gagaacgaac
+     2761 cattgagatc atacttactt tgcatgtcac tcaaaaattt tgcctcaaaa ctggtgagct
+     2821 gaatttttgc agttaaagca tcgtgtagtg tttttcttag tccgttatgt aggtaggaat
+     2881 ctgatgtaat ggttgttggt attttgtcac cattcatttt tatctggttg ttctcaagtt
+     2941 cggttacgag atccatttgt ctatctagtt caacttggaa aatcaacgta tcagtcgggc
+     3001 ggcctcgctt atcaaccacc aatttcatat tgctgtaagt gtttaaatct ttacttattg
+     3061 gtttcaaaac ccattggtta agccttttaa actcatggta gttattttca agcattaaca
+     3121 tgaacttaaa ttcatcaagg ctaatctcta tatttgcctt gtgagttttc ttttgtgtta
+     3181 gttcttttaa taaccactca taaatcctca tagagtattt gttttcaaaa gacttaacat
+     3241 gttccagatt atattttatg aattttttta actggaaaag ataaggcaat atctcttcac
+     3301 taaaaactaa ttctaatttt tcgcttgaga acttggcata gtttgtccac tggaaaatct
+     3361 caaagccttt aaccaaagga ttcctgattt ccacagttct cgtcatcagc tctctggttg
+     3421 ctttagctaa tacaccataa gcattttccc tactgatgtt catcatctga gcgtattggt
+     3481 tataagtgaa cgataccgtc cgttctttcc ttgtagggtt ttcaatcgtg gggttgagta
+     3541 gtgccacaca gcataaaatt agcttggttt catgctccgt taagtcatag cgactaatcg
+     3601 ctagttcatt tgctttgaaa acaactaatt cagacataca tctcaattgg tctaggtgat
+     3661 tttaatcact ataccaattg agatgggcta gtcaatgata attactagtc cttttcccgg
+     3721 gtgatctggg tatctgtaaa ttctgctaga cctttgctgg aaaacttgta aattctgcta
+     3781 gaccctctgt aaattccgct agacctttgt gtgttttttt tgtttatatt caagtggtta
+     3841 taatttatag aataaagaaa gaataaaaaa agataaaaag aatagatccc agccctgtgt
+     3901 ataactcact actttagtca gttccgcagt attacaaaag gatgtcgcaa acgctgtttg
+     3961 ctcctctaca aaacagacct taaaacccta aaggcttaag tagcaccctc gcaagctcgg
+     4021 gcaaatcgct gaatattcct tttgtctccg accatcaggc acctgagtcg ctgtcttttt
+     4081 cgtgacattc agttcgctgc gctcacggct ctggcagtga atgggggtaa atggcactac
+     4141 aggcgccttt tatggattca tgcaaggaaa ctacccataa tacaagaaaa gcccgtcacg
+     4201 ggcttctcag ggcgttttat ggcgggtctg ctatgtggtg ctatctgact ttttgctgtt
+     4261 cagcagttcc tgccctctga ttttccagtc tgaccacttc ggattatccc gtgacaggtc
+     4321 attcagactg gctaatgcac ccagtaaggc agcggtatca tcaacaggct tacccgtctt
+     4381 actgtcccta gtgcttggat tctcaccaat aaaaaacgcc cggcggcaac cgagcgttct
+     4441 gaacaaatcc agatggagtt ctgaggtcat tactggatct atcaacagga gtccaagcga
+     4501 gctcgatatc aaattacgcc ccgccctgcc actcatcgca gtactgttgt aattcattaa
+     4561 gcattctgcc gacatggaag ccatcacaaa cggcatgatg aacctgaatc gccagcggca
+     4621 tcagcacctt gtcgccttgc gtataatatt tgcccatggt gaaaacgggg gcgaagaagt
+     4681 tgtccatatt ggccacgttt aaatcaaaac tggtgaaact cacccaggga ttggctgaga
+     4741 cgaaaaacat attctcaata aaccctttag ggaaataggc caggttttca ccgtaacacg
+     4801 ccacatcttg cgaatatatg tgtagaaact gccggaaatc gtcgtggtat tcactccaga
+     4861 gcgatgaaaa cgtttcagtt tgctcatgga aaacggtgta acaagggtga acactatccc
+     4921 atatcaccag ctcaccgtct ttcattgcca tacgaaattc cggatgagca ttcatcaggc
+     4981 gggcaagaat gtgaataaag gccggataaa acttgtgctt atttttcttt acggtcttta
+     5041 aaaaggccgt aatatccagc tgaacggtct ggttataggt acattgagca actgactgaa
+     5101 atgcctcaaa atgttcttta cgatgccatt gggatatatc aacggtggta tatccagtga
+     5161 tttttttctc cattttagct tccttagctc ctgaaaatct cgataactca aaaaatacgc
+     5221 ccggtagtga tcttatttca ttatggtgaa agttggaacc tcttacgtgc cgatcaacgt
+     5281 ctcattttcg ccagatatc
+//
+]]></de:content>
+      <de:fileName>pj5_00001.gb</de:fileName>
+    </de:sequenceFile>
+    <de:sequenceFile hash="46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1">
+      <de:format>Genbank</de:format>
+      <de:content><![CDATA[LOCUS       BMC_nterm_sig_pe         102 bp    DNA     linear       26-FEB-2010
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+SOURCE      
+  ORGANISM  
+FEATURES             Location/Qualifiers
+     misc_feature    55..102
+                     /label=gly_ser_linker
+     CDS             1..102
+                     /label=GFPuv
+     misc_feature    4..54
+                     /label=Clostridium_BMC_sig_pep
+BASE COUNT       33 a        14 c        29 g        26 t 
+ORIGIN
+        1 atggaaaata acgctttatt agaacaaata atcaatgaag ttttaaaaaa tatgggtggc 
+       61 agtggtagcg ggagctcggg tggctcaggc tctggttcca gt 
+//
+]]></de:content>
+      <de:fileName>BMC_nterm_sig_pep_GFPuv.gb</de:fileName>
+    </de:sequenceFile>
+    <de:sequenceFile hash="fbdc0cd5591545b773bce0741569577663dd940ca88bfd3b3dca98a3fc20fc39">
+      <de:format>Genbank</de:format>
+      <de:content><![CDATA[LOCUS       ccmN_nterm_sig_p         108 bp    DNA     linear       26-FEB-2010
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+SOURCE      
+  ORGANISM  
+FEATURES             Location/Qualifiers
+     misc_feature    4..60
+                     /label=ccmN_sig_pep
+     misc_feature    61..108
+                     /label=gly_ser_linker
+     CDS             1..108
+                     /label=GFPuv
+BASE COUNT       20 a        25 c        40 g        23 t 
+ORIGIN
+        1 atgaaggtct acggcaagga acagtttttg cggatgcgcc agagcatgtt ccccgatcgc 
+       61 ggtggcagtg gtagcgggag ctcgggtggc tcaggctctg gttccagt 
+//
+]]></de:content>
+      <de:fileName>ccmN_nterm_sig_pep_GFPuv.gb</de:fileName>
+    </de:sequenceFile>
+    <de:sequenceFile hash="de91216ea8484b510f9b055973f046ad3e8a11822971ca69e1029fd48f64c5b1">
+      <de:format>Genbank</de:format>
+      <de:content><![CDATA[LOCUS       ssrA_tag_GFPuv            33 bp    DNA     linear       26-FEB-2010
+DEFINITION  .
+SOURCE      .
+  ORGANISM  .
+COMMENT     
+            ApEinfo:methylated:1
+COMMENT     This file is created by Vector NTI
+            http://www.invitrogen.com/
+COMMENT     ORIGDB|GenBank
+COMMENT     VNTDBDATE|546964667|
+COMMENT     LSOWNER|
+COMMENT     VNTNAME|ssrA_tag_GFPuv|
+COMMENT     VNTAUTHORNAME|Nathan Hillson|
+COMMENT     VNTAUTHOREML|njhillson@lbl.gov|
+COMMENT     VNTOAUTHORNAME|UNKNOWN|
+FEATURES             Location/Qualifiers
+     misc_feature    1..33
+                     /vntifkey="21"
+                     /label=ssrA\tag
+     CDS             1..33
+                     /vntifkey="4"
+                     /label=GFPuv
+BASE COUNT        8 a         8 c        13 g         4 t 
+ORIGIN
+        1 gcggcgaacg atgaaaacta tgcgctggcg gcg 
+//
+]]></de:content>
+      <de:fileName>ssrA_tag_GFPuv.gb</de:fileName>
+    </de:sequenceFile>
+    <de:sequenceFile hash="c3f5be2050eb4ff8857531a116a49c90984ddaf6a0493f649c6d43a3b5e11c65">
+      <de:format>Genbank</de:format>
+      <de:content><![CDATA[LOCUS       ssrA_tag_enhance          39 bp    DNA     linear       26-FEB-2010
+DEFINITION  .
+SOURCE      .
+  ORGANISM  .
+COMMENT     
+            ApEinfo:methylated:1
+COMMENT     This file is created by Vector NTI
+            http://www.invitrogen.com/
+COMMENT     ORIGDB|GenBank
+COMMENT     VNTDBDATE|546964735|
+COMMENT     LSOWNER|
+COMMENT     VNTNAME|ssrA_tag_enhanced_GFPuv|
+COMMENT     VNTAUTHORNAME|Nathan Hillson|
+COMMENT     VNTAUTHOREML|njhillson@lbl.gov|
+COMMENT     VNTOAUTHORNAME|UNKNOWN|
+FEATURES             Location/Qualifiers
+     misc_feature    1..39
+                     /vntifkey="21"
+                     /label=ssrA\tag\enhanced
+     CDS             1..39
+                     /vntifkey="4"
+                     /label=GFPuv
+BASE COUNT       11 a         9 c        13 g         6 t 
+ORIGIN
+        1 gcggcgaacg atgaaaacta taactatgcg ctggcggcg 
+//
+]]></de:content>
+      <de:fileName>ssrA_tag_enhanced_GFPuv.gb</de:fileName>
+    </de:sequenceFile>
+  </de:sequenceFiles>
+  <de:partVOs>
+    <de:partVO id="1318886361742366">
+      <de:name>pS8c-vector_backbone</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>2016</de:startBP>
+      <de:stopBP>1238</de:stopBP>
+      <de:sequenceFileHash>23d714d34632e24f53c2095f05e79f17aded7ec22651c20e4b320f82bc2bf731</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361742634">
+          <de:fas/>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361747742">
+      <de:name>BMC_nterm_sig_pep</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>4</de:startBP>
+      <de:stopBP>54</de:stopBP>
+      <de:sequenceFileHash>46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361747000">
+          <de:fas/>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361752995">
+      <de:name>ccmN_nterm_sig_pep</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>4</de:startBP>
+      <de:stopBP>60</de:stopBP>
+      <de:sequenceFileHash>fbdc0cd5591545b773bce0741569577663dd940ca88bfd3b3dca98a3fc20fc39</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361752939">
+          <de:fas/>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361759464">
+      <de:name>long_gly_ser_linker</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>55</de:startBP>
+      <de:stopBP>102</de:stopBP>
+      <de:sequenceFileHash>46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361759096">
+          <de:fas/>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361765194">
+      <de:name>short_gly_ser_linker</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>55</de:startBP>
+      <de:stopBP>78</de:stopBP>
+      <de:sequenceFileHash>46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361765102">
+          <de:fas/>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361772274">
+      <de:name>GFPuv</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>1242</de:startBP>
+      <de:stopBP>1952</de:stopBP>
+      <de:sequenceFileHash>23d714d34632e24f53c2095f05e79f17aded7ec22651c20e4b320f82bc2bf731</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361772744">
+          <de:fas/>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361778876">
+      <de:name>ssrA_tag_5prime</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>1</de:startBP>
+      <de:stopBP>15</de:stopBP>
+      <de:sequenceFileHash>de91216ea8484b510f9b055973f046ad3e8a11822971ca69e1029fd48f64c5b1</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361778177">
+          <de:fas>Embed_in_primer_reverse</de:fas>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361784466">
+      <de:name>ssrA_tag_enhanced_5prime</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>1</de:startBP>
+      <de:stopBP>21</de:stopBP>
+      <de:sequenceFileHash>c3f5be2050eb4ff8857531a116a49c90984ddaf6a0493f649c6d43a3b5e11c65</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361784362">
+          <de:fas>Embed_in_primer_reverse</de:fas>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+    <de:partVO id="1318886361790379">
+      <de:name>ssrA_tag_3prime</de:name>
+      <de:revComp>false</de:revComp>
+      <de:startBP>16</de:startBP>
+      <de:stopBP>33</de:stopBP>
+      <de:sequenceFileHash>de91216ea8484b510f9b055973f046ad3e8a11822971ca69e1029fd48f64c5b1</de:sequenceFileHash>
+      <de:parts>
+        <de:part id="1318886361790741">
+          <de:fas>Embed_in_primer_forward</de:fas>
+        </de:part>
+      </de:parts>
+    </de:partVO>
+  </de:partVOs>
+  <de:eugeneRules/>
+  <de:j5Collection>
+    <de:isCircular>true</de:isCircular>
+    <de:j5Bins>
+      <de:j5Bin>
+        <de:binName>vector_backbone</de:binName>
+        <de:iconID>origin_of_replication</de:iconID>
+        <de:direction>forward</de:direction>
+        <de:dsf>false</de:dsf>
+        <de:binItems>
+          <de:partID>1318886361742634</de:partID>
+        </de:binItems>
+      </de:j5Bin>
+      <de:j5Bin>
+        <de:binName>nterm_sig_pep</de:binName>
+        <de:iconID>cds</de:iconID>
+        <de:direction>forward</de:direction>
+        <de:dsf>true</de:dsf>
+        <de:binItems>
+          <de:partID>1318886361747000</de:partID>
+          <de:partID>1318886361752939</de:partID>
+        </de:binItems>
+      </de:j5Bin>
+      <de:j5Bin>
+        <de:binName>gly_ser_linker</de:binName>
+        <de:iconID>cds</de:iconID>
+        <de:direction>forward</de:direction>
+        <de:dsf>false</de:dsf>
+        <de:binItems>
+          <de:partID>1318886361759096</de:partID>
+          <de:partID>1318886361765102</de:partID>
+        </de:binItems>
+      </de:j5Bin>
+      <de:j5Bin>
+        <de:binName>GFPuv</de:binName>
+        <de:iconID>cds</de:iconID>
+        <de:direction>forward</de:direction>
+        <de:dsf>false</de:dsf>
+        <de:binItems>
+          <de:partID>1318886361772744</de:partID>
+        </de:binItems>
+      </de:j5Bin>
+      <de:j5Bin>
+        <de:binName>ssrA_tag_5prime</de:binName>
+        <de:iconID>protein_stability_element</de:iconID>
+        <de:direction>forward</de:direction>
+        <de:dsf>true</de:dsf>
+        <de:binItems>
+          <de:partID>1318886361778177</de:partID>
+          <de:partID>1318886361784362</de:partID>
+        </de:binItems>
+      </de:j5Bin>
+      <de:j5Bin>
+        <de:binName>ssrA_tag_3prime</de:binName>
+        <de:iconID>protein_stability_element</de:iconID>
+        <de:direction>forward</de:direction>
+        <de:dsf>false</de:dsf>
+        <de:binItems>
+          <de:partID>1318886361790741</de:partID>
+        </de:binItems>
+      </de:j5Bin>
+    </de:j5Bins>
+  </de:j5Collection>
+</de:design>
