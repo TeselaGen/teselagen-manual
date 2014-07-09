@@ -30,9 +30,9 @@ a.home-bookmark {
 ul.articles {
   display: none !important;
 }
-li:active {
+/*li:active {
   display:block;
-}
+}*/
 
 
 /**************
