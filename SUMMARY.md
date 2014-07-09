@@ -8,7 +8,7 @@
     * [The SLIC, Gibson, CPEC and SLiCE assembly methods (and GeneArt Seamless Cloning)](chp/chp2/chp2_4.md)
     * [The Golden Gate assembly method (and MoClo and GoldenBraid)](chp/chp2/chp2_5.md)
 * [Synthetic Evolution](chp/chp3/chp3.md)
-    * [TeselaGens Synthetic Evolution Workflow](chp/chp3/chp3_1.md)
+    * [TeselaGen's Synthetic Evolution Workflow](chp/chp3/chp3_1.md)
     * [Bioinformatics and BioCAD preliminaries](chp/chp3/chp3_2.md)
 * [BioCAD demos](chp/chp4/chp4.md)
     * [DNA Sequence and Part Management](chp/chp4/chp4_1.md)

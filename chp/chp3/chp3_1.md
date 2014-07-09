@@ -1,4 +1,4 @@
-## TeselaGens Synthetic Evolution Workflow
+## TeselaGen's Synthetic Evolution Workflow
 
 TeselaGen's Synthetic Evolution workflow encompasses the Design, Build, Test, and Evolve phases of a rapid prototyping system for synthetic biology.
 

@@ -13,7 +13,7 @@ Returning to the previous DNA assembly challenge, here's how we could use BioBri
 
 ![BioBrick approach 2](../../images/pastedImage2.png)
 
-Note that there are many different possible routes (assembly trees) to put together this pathway using BioBricks. Some of the intermediate parts, such as the terminator fused to the promoter, need only be made once, and can be re-used multiple times. Recently, algorithms have been developed ([Densmore 2010](http://nar.oxfordjournals.org/cgi/content/full/gkq165v1)) to optimize the design of binary BioBrick assembly trees, and an automated in vivo BglBrick assembly process utilizing liquid-handling robotics has been demonstrated ([Leguia 2011](http://www.ncbi.nlm.nih.gov/pubmed/21601686)).
+Note that there are many different possible routes (assembly trees) to put together this pathway using BioBricks. Some of the intermediate parts, such as the terminator fused to the promoter, need only be made once, and can be re-used multiple times. Recently, algorithms have been developed ([Densmore 2010](http://nar.oxfordjournals.org/content/38/8/2607.full.pdf+html)) to optimize the design of binary BioBrick assembly trees, and an automated in vivo BglBrick assembly process utilizing liquid-handling robotics has been demonstrated ([Leguia 2011](http://www.ncbi.nlm.nih.gov/pubmed/21601686)).
 
 #### BioBrick limitations and obstacles
 
