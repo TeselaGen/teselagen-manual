@@ -1,0 +1,12 @@
+LOCUS       signal_pep                63 bp ds-DNA     linear       26-MAR-2011
+ACCESSION   
+VERSION     
+KEYWORDS    .
+FEATURES             Location/Qualifiers
+     CDS             1..63
+                     /label="signal_peptide"
+                     /translation="GSKVYGKEQFLRMRQSMFPDR"
+ORIGIN      
+        1 ggcagcaagg tctacggcaa ggaacagttt ttgcggatgc gccagagcat gttccccgat
+       61 cgc     
+//

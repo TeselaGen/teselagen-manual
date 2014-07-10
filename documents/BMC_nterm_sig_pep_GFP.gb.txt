@@ -1,0 +1,17 @@
+LOCUS       BMC_nterm_sig_pe         102 bp    DNA     linear       26-FEB-2010
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+SOURCE      
+  ORGANISM  
+FEATURES             Location/Qualifiers
+     misc_feature    55..102
+                     /label=gly_ser_linker
+     CDS             1..102
+                     /label=GFPuv
+     misc_feature    4..54
+                     /label=Clostridium_BMC_sig_pep
+BASE COUNT       33 a        14 c        29 g        26 t 
+ORIGIN
+        1 atggaaaata acgctttatt agaacaaata atcaatgaag ttttaaaaaa tatgggtggc 
+       61 agtggtagcg ggagctcggg tggctcaggc tctggttcca gt 
+//
