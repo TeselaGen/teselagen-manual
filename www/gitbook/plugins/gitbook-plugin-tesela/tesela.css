@@ -9,7 +9,7 @@ a.contribute-link {
 }
 
 a.sharing-link {
-    display: none !important;
+    display: all !important;
 }
 a.count-watch {
     display: none !important;
