@@ -2,12 +2,9 @@
 
 #### Demonstration video:
 
-Here is a demonstration video:
+Here is a demonstration video that goes through this process:
 
 [![Video2](../../images/video2.png)](https://www.youtube.com/watch?v=R2nSnvTXrpo)
-
-that goes through this process.
-
 
 #### Narrative
 

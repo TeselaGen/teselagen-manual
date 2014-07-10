@@ -2,11 +2,9 @@
 
 #### Demonstration video:
 
-Here is a demonstration video:
+Here is a demonstration video that goes through the process of importing and managing DNA sequences and parts:
 
 [![Video1](../../images/video1.png)](https://www.youtube.com/watch?v=iJr7AkwSTtY)
-
-that goes through the process of importing and managing DNA sequences and parts.
 
 #### Narrative:
 

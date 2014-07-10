@@ -2,9 +2,9 @@
 
 DeviceEditor design files are based upon XML, and contain all of the information required to fully recapitulate designs on the DeviceEditor canvas. Third-party bioCAD tools can output DeviceEditor design files for integration with DeviceEditor and thereby j5 DNA assembly design automation.
 
-Here is the XML schema for DeviceEditor format design files: [design.xsd](http://j5.jbei.org/DeviceEditor_manual/attachments/design.xsd)
+Here is the XML schema for DeviceEditor format design files: [design.xsd](../../documents/design.xsd)
 
-Here is an example DeviceEditor design: [DeviceEditor_example.xml](http://j5.jbei.org/DeviceEditor_manual/attachments/DeviceEditor_example.xml)
+Here is an example DeviceEditor design: [DeviceEditor_example.xml](../../documents/DeviceEditor_example.xml)
 
 ![DE format](../../images/Screen_Shot_2014-07-03.png)
 
