@@ -1,0 +1,13 @@
+LOCUS       gfpuv_sigpep_XhoI_           1 bp ds-DNA   linear       02-MAY-2010
+ACCESSION   gfpuv_sigpep_XhoI_silent
+VERSION     gfpuv_sigpep_XhoI_silent.1
+KEYWORDS    .
+COMMENT     
+FEATURES             Location/Qualifiers
+     CDS             1..1
+                     /label=GFPuv
+     misc_feature    1..1
+                     /label=XhoI_silent_mutation
+ORIGIN
+        1 a     
+//

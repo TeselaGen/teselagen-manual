@@ -1,0 +1,3 @@
+// Rules preventing multiple instances of the same gene
+// Rules preventing multiple instances of gene orthologs
+// Rules forcing use of one gene with another
