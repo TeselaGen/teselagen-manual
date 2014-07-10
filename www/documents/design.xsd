@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://jbei.org/device_editor"
+    xmlns:de="http://jbei.org/device_editor"
+    elementFormDefault="qualified">
+    <xs:element name="design">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:version" />
+                <xs:element ref="de:sequenceFiles" />
+                <xs:element ref="de:partVOs" />
+                <xs:element ref="de:eugeneRules" />
+                <xs:element ref="de:j5Collection"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="version">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="4.4" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="sequenceFiles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:sequenceFile" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sequenceFile">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:format" />
+                <xs:element ref="de:content" />
+                <xs:element ref="de:fileName" />
+                <xs:element ref="de:icePartId" minOccurs="0" />
+                <xs:element ref="de:iceEntryURI" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="format">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Genbank" />
+                <xs:enumeration value="FASTA" />
+                <xs:enumeration value="jbei-seq" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="content" type="xs:string" />
+    <xs:element name="fileName" type="xs:string" />
+    <xs:element name="icePartId" type="xs:string" />
+    <xs:element name="iceEntryURI" type="xs:string" />
+    <xs:element name="partVOs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:partVO" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="partVO">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:name" />
+                <xs:group ref="de:seqInfo" minOccurs="0" />
+                <xs:element ref="de:parts" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="name" type="xs:string" />
+    <xs:group name="seqInfo">
+        <xs:sequence>
+            <xs:element ref="de:revComp" />
+            <xs:element ref="de:startBP" />
+            <xs:element ref="de:stopBP" />
+            <xs:element ref="de:fivePrimeInternalPreferredOverhangs" minOccurs="0"/>
+            <xs:element ref="de:threePrimeInternalPreferredOverhangs" minOccurs="0"/>
+            <xs:element ref="de:sequenceFileID" />
+        </xs:sequence>
+    </xs:group>
+    <xs:element name="revComp" type="xs:boolean" />
+    <xs:element name="startBP" type="xs:positiveInteger" />
+    <xs:element name="stopBP" type="xs:positiveInteger" />
+    <xs:element name="fivePrimeInternalPreferredOverhangs" type="xs:string" />
+    <xs:element name="threePrimeInternalPreferredOverhangs" type="xs:string" />
+    <xs:element name="sequenceFileID" type="xs:string" />
+    <xs:element name="parts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:part" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="part">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:fas" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fas">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="" />
+                <xs:enumeration value="DIGEST" />
+                <xs:enumeration value="Direct Synthesis" />
+                <xs:enumeration value="PCR" />
+                <xs:enumeration value="Embed_in_primer_reverse" />
+                <xs:enumeration value="Embed_in_primer_forward" />
+                <xs:enumeration value="Annealed Oligos"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="eugeneRules">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:eugeneRule" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="eugeneRule">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:name" />
+                <xs:element ref="de:negationOperator" />
+                <xs:element ref="de:operand1ID" />
+                <xs:element ref="de:compositionalOperator" />
+                <xs:group ref="de:operand2" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="negationOperator" type="xs:boolean" />
+    <xs:element name="operand1ID" type="xs:string" />
+    <xs:element name="compositionalOperator">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AFTER" />
+                <xs:enumeration value="BEFORE" />
+                <xs:enumeration value="WITH" />
+                <xs:enumeration value="THEN" />
+                <xs:enumeration value="NEXTTO" />
+                <xs:enumeration value="MORETHAN" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:group name="operand2">
+        <xs:choice>
+            <xs:element ref="de:operand2ID" />
+            <xs:element ref="de:operand2Number" />
+        </xs:choice>
+    </xs:group>
+    <xs:element name="operand2ID" type="xs:string" />
+    <xs:element name="operand2Number" type="xs:nonNegativeInteger" />
+    <xs:element name="j5Collection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:isCircular" />
+                <xs:element ref="de:j5Bins" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="isCircular" type="xs:boolean" />
+    <xs:element name="j5Bins">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:j5Bin" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="j5Bin">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:binName" />
+                <xs:element ref="de:iconID" />
+                <xs:element ref="de:direction" />
+                <xs:element ref="de:dsf" />
+                <xs:element ref="de:fro" minOccurs="0" />
+                <xs:element ref="de:extra5PrimeBps" minOccurs="0" />
+                <xs:element ref="de:extra3PrimeBps" minOccurs="0" />
+                <xs:element ref="de:binItems" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="binName" type="xs:string" />
+    <xs:element name="iconID">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="assembly-scar" />
+                <xs:enumeration value="blunt-restriction-site" />
+                <xs:enumeration value="cds" />
+                <xs:enumeration value="five-prime-overhang" />
+                <xs:enumeration value="five-prime-sticky-restriction-site" />
+                <xs:enumeration value="insulator" />
+                <xs:enumeration value="operator" />
+                <xs:enumeration value="origin-of-replication" />
+                <xs:enumeration value="primer-binding-site" />
+                <xs:enumeration value="promoter" />
+                <xs:enumeration value="protease-site" />
+                <xs:enumeration value="protein-stability-element" />
+                <xs:enumeration value="restriction-enzyme-recognition-site" />
+                <xs:enumeration value="ribonuclease-site" />
+                <xs:enumeration value="ribosome-entry-site" />
+                <xs:enumeration value="rna-stability-element" />
+                <xs:enumeration value="signature" />
+                <xs:enumeration value="terminator" />
+                <xs:enumeration value="three-prime-overhang" />
+                <xs:enumeration value="three-prime-sticky-restriction-site" />
+                <xs:enumeration value="user-defined" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="direction">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="forward" />
+                <xs:enumeration value="reverse" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="dsf" type="xs:boolean" />
+    <xs:element name="fro" type="string" />
+    <xs:element name="extra5PrimeBps" type="xs:int" />
+    <xs:element name="extra3PrimeBps" type="xs:int" />
+    <xs:element name="binItems">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="de:partID" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="partID" type="xs:string" />
+</xs:schema>
