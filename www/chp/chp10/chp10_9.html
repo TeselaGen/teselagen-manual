@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.9" data-basepath="../.." data-revision="1404952246765">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.9" data-basepath="../.." data-revision="1405020362621">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1992,16 +1992,16 @@
 <p>NOTE: not all software packages (e.g. CloneManager from SciEd Central) export properly formatted GenBank files. As such, you may experience errors when attempting to convert these &quot;GenBank&quot;-like files. One work-around is to open your GenBank file with VectorEditor:
 <a href="http://j5.jbei.org/VectorEditor/VectorEditor.html" target="_blank">http://j5.jbei.org/VectorEditor/VectorEditor.html</a>
 and resave the file (File -&gt; Download Genbank). VectorEditor is more tolerant of misformatted GenBank files than j5, and passaging a &quot;GenBank&quot;-like file through VectorEditor will resolve many common issues. If VectorEditor will not even open your &quot;Genbank&quot; file, it is likely that your file is too improperly formatted to be processed. (Note also that VectorEditor itself can now facilitate the SBOL XML &lt;-&gt; Genbank conversion process; it does so through calling the j5 XML RPC web-services!)</p>
-<p>Here is an example GenBank file that we might like to convert to SBOL XML format: <a href="http://j5.jbei.org/j5manual/attachments/pBbS8c-RFP0.gb" target="_blank">pBbS8c-RFP.gb</a></p>
-<p>We can use j5 to convert this to SBOL XML. Here is the result: <a href="http://j5.jbei.org/j5manual/attachments/pBbS8c-RFP.xml" target="_blank">pBbS8c-RFP.xml</a></p>
+<p>Here is an example GenBank file that we might like to convert to SBOL XML format: <a href="../../documents/pBbS8c-RFP0.gb.txt">pBbS8c-RFP.gb</a></p>
+<p>We can use j5 to convert this to SBOL XML. Here is the result: <a href="../../documents/pBbS8c-RFP.xml">pBbS8c-RFP.xml</a></p>
 <p>Now, we can again use j5 to convert this SBOL XML file back to GenBank format. To do this, we have two options:</p>
 <p>1) Convert SBOL XML to GenBank (clean)
 2) Convert SBOL XML to GenBank (preserve SBOL information)</p>
 <p>The first option is generally recommended, as this keeps the resulting GenBank file as clean and as easily visualizable as possible. Furthermore, if you subsequently use DNA editing software which does not know how to properly deal with the extra SBOL information, the extra SBOL information will potentially quickly become corrupted.</p>
-<p>Here is the result of converting the above SBOL XML file pBbS8c-RFP.xml back to GenBank format in a clean manner: <a href="http://j5.jbei.org/j5manual/attachments/pBbS8c-RFP_clean.gb" target="_blank">pBbS8c-RFP_clean.gb</a></p>
+<p>Here is the result of converting the above SBOL XML file pBbS8c-RFP.xml back to GenBank format in a clean manner: <a href="../../documents/pBbS8c-RFP_clean.gb.txt">pBbS8c-RFP_clean.gb</a></p>
 <p>Note that since SBOL does not yet capture the concept of &quot;circular&quot; pieces of DNA, any GenBank sequences covered from SBOL XML will be &quot;linear&quot;. </p>
 <p>The second option is only useful if you are certain that a subsequent step involving the GenBank file is aware of how to handle the embedded SBOL XML information. Currently, only j5 can do this, because there isn&#39;t a standardized way to embed SBOL information within GenBank files. This functionality is currently being offered to the community only to provide one example of how embedding SBOL information within GenBank files may be accomplished. Note that since j5 can directly import SBOL XML files during the assembly design process, it is not necessary to convert SBOL XML files to GenBank files before using j5.</p>
-<p>Here is the result of converting the above SBOL XML file pBbS8c-RFP.xml back to GenBank format in a manner that preserves SBOL information: <a href="http://j5.jbei.org/j5manual/attachments/pBbS8c-RFP_SBOL.gb" target="_blank">pBbS8c-RFP_SBOL.gb</a></p>
+<p>Here is the result of converting the above SBOL XML file pBbS8c-RFP.xml back to GenBank format in a manner that preserves SBOL information: <a href="../../documents/pBbS8c-RFP_SBOL.gb.txt">pBbS8c-RFP_SBOL.gb</a></p>
 
                     
                     </section>

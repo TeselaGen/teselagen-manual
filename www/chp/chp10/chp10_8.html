@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.8" data-basepath="../.." data-revision="1404952246765">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.8" data-basepath="../.." data-revision="1405020362621">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1994,33 +1994,33 @@
 <p><img src="../../images/pastedImage44.png" alt=""></p>
 <h4 id="step-1-create-the-source-plate-list-file-and-the-zipped-plate-files-file-">Step 1 - Create the source plate list file and the zipped plate files file:</h4>
 <p>Once we have the j5 assembly file (e.g. myassemblyfilelist_condensed.csv, below) for which we&#39;d like to distribute the PCR reactions across a multi-well plate, we need to create two input files for j5, the source plate list file and the zipped plate files file.  Using an existing source plate list file as a starting point (e.g. plate_list.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our source plate list CSV file (stylized for clarity, click to view larger version):</p>
-<p>Here is the actual csv file: <a href="http://j5.jbei.org/j5manual/attachments/plate_list0.csv" target="_blank">plate_list.csv</a></p>
+<p>Here is the actual csv file: <a href="../../documents/plate_list0.csv">plate_list.csv</a></p>
 <p>In this particular example, we&#39;ll have one source plate file &quot;oligos_plate.csv&quot; that will describe a multi-well plate containing the oligos required for our assembly, and another source plate file &quot;templates_plate.csv&quot; that similarly describes a plate containing the PCR templates for our assembly. You can use these two files (you can find them contained within the zippled_plates.zip file below) as template starting points for your future use, modifying them to suit your needs with MS Excel, another spreadsheet program, or even a text editor. The organization of the oligos and PCR templates in the multi-well source plates is not important; you can arrange the oligos how ever you like (or how they came arrayed in 96-well format from a DNA oligo synthesis company such as IDT or Bioneer).
-Now, we make a zip file that contains all of the source plate files: <a href="http://j5.jbei.org/j5manual/attachments/zipped_plates0.zip" target="_blank">zipped_plates.zip</a></p>
+Now, we make a zip file that contains all of the source plate files: <a href="../../documents/zipped_plates0.zip">zipped_plates.zip</a></p>
 <h4 id="step-2-make-any-modifications-to-the-downstream-automation-assembly-parameters-that-you-require-">Step 2 - Make any modifications to the downstream automation assembly parameters that you require:</h4>
 <p>The default values for the downstream automation parameters will be appropriate for a 96-well format PCR setup, using a thermocycler block similar the one depicted above that has six annealing temperature zones (with adjacent zones that must be within 5 degrees C of each other). If your thermocycler is not 96-well format, you don&#39;t have the capacity to do annealing temperature gradients (or if your machine has a different configuration), or if you would like to make other modifications (such as changing the minimal liquid volume that you or your robot can accurately pipette), download the following template input file:
-Downstream automation parameters file: <a href="http://j5.jbei.org/j5manual/attachments/downstream_automation0.csv" target="_blank">downstream_automation_parameters.csv</a></p>
+Downstream automation parameters file: <a href="../../documents/downstream_automation0.csv">downstream_automation_parameters.csv</a></p>
 <p>and use MS Excel, another spreadsheet program, or even a text editor, to modify the downstream automation parameters, as you see fit. </p>
 <h4 id="step-3-use-j5-to-distribute-the-pcr-reactions-">Step 3 - Use j5 to distribute the PCR reactions:</h4>
 <p>Follow the directions on the stand alone simplified web interface documentation page for using j5 to distribute PCR reactions. For the purposes of this example, the input files you will upload are:</p>
 <ul>
-<li>Downstream automation parameters file: <a href="http://j5.jbei.org/j5manual/attachments/downstream_automation.csv" target="_blank">downstream_automation_parameters.csv</a> </li>
-<li>Source plate list file: <a href="http://j5.jbei.org/j5manual/attachments/plate_list.csv" target="_blank">plate_list.csv</a></li>
-<li>Zipped source plate files file: <a href="http://j5.jbei.org/j5manual/attachments/zipped_plates.zip" target="_blank">zipped_plates.zip</a></li>
-<li>j5 assembly file: <a href="http://j5.jbei.org/j5manual/attachments/myassemblyfilelist_co2.csv" target="_blank">myassemblyfilelist_condensed.csv</a></li>
+<li>Downstream automation parameters file: <a href="../../documents/downstream_automation.csv">downstream_automation_parameters.csv</a> </li>
+<li>Source plate list file: <a href="../../documents/plate_list.csv">plate_list.csv</a></li>
+<li>Zipped source plate files file: <a href="../../documents/zipped_plates.zip">zipped_plates.zip</a></li>
+<li>j5 assembly file: <a href="../../documents/myassemblyfilelist_co2.csv">myassemblyfilelist_condensed.csv</a></li>
 </ul>
-<p>Here is a representative zip file resulting from this particular distribute PCR reactions example: <a href="http://j5.jbei.org/j5manual/attachments/j5_njhillson_20120706.zip" target="_blank">j5_njhillson_20120706130016.zip</a></p>
+<p>Here is a representative zip file resulting from this particular distribute PCR reactions example: <a href="../../documents/j5_njhillson_20120706.zip">j5_njhillson_20120706130016.zip</a></p>
 <h4 id="step-4-check-the-resulting-distribute-pcr-reactions-files-">Step 4 - Check the resulting distribute PCR reactions files:</h4>
 <p>Opening the distribute PCR reactions file with a spreadsheet program such as Excel or OpenOffice provides a glance at the designed arrangement of the PCR reactions in the multi-well plate, as well as the designed optimal annealing temperature(s) of the thermocycler block (see the distribute PCR reactions file documentation for more information).</p>
-<p>Here is the distribute PCR reactions file for this particular example using the identical input files as listed above: <a href="http://j5.jbei.org/j5manual/attachments/myassemblyfilelist_co1.csv" target="_blank">myassemblyfilelist_condensed_distribute_pcr.csv</a></p>
+<p>Here is the distribute PCR reactions file for this particular example using the identical input files as listed above: <a href="../../documents/myassemblyfilelist_co1.csv">myassemblyfilelist_condensed_distribute_pcr.csv</a></p>
 <p>Note that the arrangements of the 18 PCR reactions and the thermocycler zone annealing temperature gradient in this file matches that shown schematically in the figure above. </p>
 <p>In addition to the distribute PCR reactions file, j5 will also output a file that is specifically intended for use with the NextGen (eXeTeK) expression workstation robotics platform. This NextGen file has essentially the same content as the PCR Reactions subsection of the distribute PCR reactions file, except the plate wells are specified by index instead of by standard well nomenclature (e.g. 1-96 instead of A01-H12; the indexes increase sequentially down a given column and in leap across columns). The NextGen file has a few additional columns that are NextGen-specific, and lacks several columns that are not NextGen-relevant (see the NextGen (eXeTek) expression workstation control file documentation for more information).</p>
-<p>Here is the NextGen file for this particular example using the identical input files as listed above: <a href="http://j5.jbei.org/j5manual/attachments/myassemblyfilelist_co0.csv" target="_blank">myassemblyfilelist_condensed_distribute_pcr_NextGen.csv</a></p>
+<p>Here is the NextGen file for this particular example using the identical input files as listed above: <a href="../../documents/myassemblyfilelist_co0.csv">myassemblyfilelist_condensed_distribute_pcr_NextGen.csv</a></p>
 <p>In addition to the NextGen file, j5 will also output PR-PR configuration files. These files are related to the distribute PCR reactions file and the NextGen control file, but are distinct in that there is a separate PR-PR configuration file for each PCR plate to be prepared, and they currently include JBEI robot-specific configurations that can be modified as needed to suit other institutional configurations. See the PR-PR configuration file documentation for more information).
-Here is the PR-PR configuration file for this particular example using the identical input files as listed above: <a href="http://j5.jbei.org/j5manual/attachments/assemblytoautomate_di.pr" target="_blank">assemblytoautomate_distribute_pcr_PR_PR_1.pr</a></p>
+Here is the PR-PR configuration file for this particular example using the identical input files as listed above: <a href="../../documents/assemblytoautomate_di.pr.txt">assemblytoautomate_distribute_pcr_PR_PR_1.pr</a></p>
 <h4 id="step-5-check-the-resulting-updated-plate-list-and-zipped-plate-files-files-">Step 5 - Check the resulting updated plate list and zipped plate files files:</h4>
 <p>You will note that the resulting plate list file and the zipped plate files file have been updated.</p>
-<p>The plate list file now additionally contains entries for any new PCR plates (stylized for clarity, click <a href="http://j5.jbei.org/j5manual/attachments/pastedImage54.pdf" target="_blank">here</a> to view larger version)</p>
+<p>The plate list file now additionally contains entries for any new PCR plates (stylized for clarity, click <a href="../../images/pastedImage54.pdf">here</a> to view larger version)</p>
 <p>In addition, the liquid volumes of the oligos and the PCR templates used in the PCR plates have been subtracted from the source plates (stylized for clarity, click to view larger version):</p>
 <p><img src="../../images/pastedImage61.png" alt=""></p>
 <p>n this particular example, the PCR template &quot;pj5_00001&quot; started out in the source plate with 100 uL, but after 5 uL being dispensed in to each of 10 PCR reactions, only 50 uL remains available. If we had run out of &quot;pj5_00001&quot; template, j5 would have returned an error message. This is a useful precaution against not having enough available PCR template, oligos, etc., available in the source plate to set up all of the PCR reactions. If each well can hold a maximum volume, say 100 uL, it is possible to fill more than one source well with the same PCR template or oligo.</p>
