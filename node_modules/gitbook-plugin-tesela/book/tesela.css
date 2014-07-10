@@ -9,7 +9,7 @@ a.contribute-link {
 }
 
 a.sharing-link {
-    display: all !important;
+    display: none !important;
 }
 a.count-watch {
     display: none !important;
@@ -19,7 +19,7 @@ a.count-star {
 }
 
 a.home-bookmark {
-    display: none !important;
+    display: all !important;
 }
 .gitbook-link {
     display: none !important;
