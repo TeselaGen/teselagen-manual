@@ -1,0 +1,20 @@
+// Rules preventing multiple instances of the same gene
+Rule r1(NOT HMGS_SC_CO MORETHAN 1);
+Rule r2(NOT HMGR_SC_CO MORETHAN 1);
+Rule r3(NOT HMGS_SA MORETHAN 1);
+Rule r4(NOT HMGR_SA MORETHAN 1);
+Rule r5(NOT MK_SC_CO MORETHAN 1);
+Rule r6(NOT PMK_SC_CO_f MORETHAN 1);
+Rule r7(NOT ispA-O MORETHAN 1);
+Rule r8(NOT idi-O MORETHAN 1);
+Rule r9(NOT atoB MORETHAN 1);
+
+// Rules preventing multiple instances of gene orthologs
+Rule r10(NOT HMGS_SC_CO WITH HMGS_SA);
+Rule r11(NOT HMGR_SC_CO WITH HMGR_SA);
+
+// Rules forcing use of one gene with another
+Rule r12(HMGS_SC_CO THEN HMGR_SC_CO);
+Rule r13(HMGS_SA THEN HMGR_SA);
+Rule r14(HMGR_SC_CO THEN HMGS_SC_CO);
+Rule r15(HMGR_SA THEN HMGS_SA);
