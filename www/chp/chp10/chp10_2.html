@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.2" data-basepath="../.." data-revision="1405105948709">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.2" data-basepath="../.." data-revision="1405112805527">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2014,7 +2014,7 @@
 <h6 id="pcm62-prha-t7sl-">pCM62-Prha-T7SL:</h6>
 <p>tetA/tetR cassette: bps 3966-5936 (reverse complement)</p>
 <h4 id="step-2-create-the-sequences-list-file-and-zipped-sequences-file-">Step 2 - Create the sequences list file and zipped sequences file:</h4>
-<p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity, click to view larger version):</p>
+<p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage75.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/seqListFile0.csv">seqListFile.csv</a></p>
 <p>Now, we make a zip file that contains all of the genbank sequence files: <a href="../../documents/sequences0.zip">sequences.zip</a></p>
@@ -2024,17 +2024,17 @@
 <p>The next part to define is the rifR cassette. The relevant portion of the pSROI sequence (as stated above) is bps 3427-4200. We define the part, RifR, accordingly, with its part source, pSROI, start bp, 3427, and end bp, 4200. In this case, the rifR cassette sequence is on the top strand of pSROI, so it will be defined as not being the reverse complement. The resulting part definition for RifR is shown below.</p>
 <p>The next part to define is the specR cassette. The relevant portion of the MAGE-01 sequence (as stated above) is bps 1-1087. We define the part, SpecR, accordingly, with its part source, MAGE-01, start bp, 1, and end bp, 1087. In this case, the specR cassette sequence is on the top strand of MAGE-01, so it will be defined as not being the reverse complement. The resulting part definition for SpecR is shown below.</p>
 <p>The final part to define is the tetA/tetR cassette. The relevant portion of the pCM62-Prha-T7SL sequence (as stated above) is bps 3966-5936. We define the part, TetA, accordingly, with its part source, pCM62-Prha-T7SL-, start bp, 3966, and end bp, 5936. In this case, the tetA/tetR cassette sequence is on the bottom strand of pCM62-Prha-T7SL, so it will be defined as being the reverse complement. The resulting part definition for TetA is shown below.</p>
-<p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity, click to view larger version):</p>
+<p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage85.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/partListFile0.csv">partListFile.csv</a></p>
-<p>It is absolutely crucial here to note that, as described in the parts list file documentation, the part source column refers to the sequence display ID within the sequence file (e.g. pCM62-Prha-T7SL-), and not to the file name of the genbank sequence file itself (e.g. pCM62-Prha-T7SL-RFP.gb). If you open up the genbank file pCM62-Prha-T7SL-RFP.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like (click to view a larger version):</p>
+<p>It is absolutely crucial here to note that, as described in the parts list file documentation, the part source column refers to the sequence display ID within the sequence file (e.g. pCM62-Prha-T7SL-), and not to the file name of the genbank sequence file itself (e.g. pCM62-Prha-T7SL-RFP.gb). If you open up the genbank file pCM62-Prha-T7SL-RFP.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like:</p>
 <p><img src="../../images/page1image368.png" alt=""></p>
 <p>The sequence display ID immediately follows the LOCUS, in this case it is pCM62-Prha-T7SL-, and it is this sequence display ID that should be included in the parts list file, as we have done it above.</p>
 <h4 id="step-4-create-the-target-part-ordering-list-file-">Step 4 - Create the target part ordering list file:</h4>
 <p>Now we need to define, in a target part ordering file, the order and combinations we would like the DNA parts defined above to be assembled in. For this particular assembly, we&#39;ll be assembling the vector backbone in the forward direction and all of the resistance genes parts in the reverse direction. This example will not forcibly set relative overlap positions. We will allow j5 to identify an optimal set of overlaps for the collective set of combinations, and then j5 will enforce those overlap selections when assembling each given construct. </p>
 <p>The first combinatorial bin for this assembly contains the linearized vector backbone (the backbone bin, which contains only one part, the vector_backbone). Since we defined the pJWT00001 vector backbone part above as being not in the reverse compliment direction, if we assemble it in the forward direction, we will end up with a vector backbone with the same orientation as that found in the pJWT00001 plasmid. The resulting target bin and part ordering entries for the linearized vector backbone are shown below (for more information about the formatting of combinatorial target part ordering list files, see the target part ordering file documentation).</p>
 <p>The next combinatorial bin for this assembly contains the resistance genes (the resistance_cassette bin, which contains four variants, the GentR, RifR, SpecR and TetA parts). We&#39;ll assemble these in the reverse direction. The resulting target bin and part ordering entries for the resistance genes are shown below.</p>
-<p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity, click to view larger version):</p>
+<p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity, click <a href="../../images/pastedImage101A.png">here</a> to view larger version):</p>
 <p><img src="../../images/pastedImage101.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/targetListFile0.csv">targetListFile.csv</a></p>
 <h4 id="step-5-create-the-eugene-rules-list-file-">Step 5 - Create the Eugene rules list file:</h4>

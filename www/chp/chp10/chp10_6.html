@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.6" data-basepath="../.." data-revision="1405105948709">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.6" data-basepath="../.." data-revision="1405112805527">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1985,7 +1985,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_54">
+                    <section class="normal" id="section-gitbook_55">
                     
                         <h2 id="combinatorial-golden-gate-assembly">Combinatorial Golden Gate assembly</h2>
 <p>The following is a step-by-step example of how to use j5 to design a combinatorial Golden Gate assembly. This example specifically addresses how to use direct synthesis firewalls. This example uses the stand alone simplified web interface for j5.</p>
@@ -2031,7 +2031,7 @@ ssrA tag 3&#39;: bps 16-33 (without the &quot;TAA&quot; stop codon)</p>
 <p>None.</p>
 <p>So, we will not have to make any (silent) mutations.</p>
 <h4 id="step-2-create-the-sequences-list-file-and-zipped-sequences-file-">Step 2 - Create the sequences list file and zipped sequences file:</h4>
-<p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity, click to view larger version):</p>
+<p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage160.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/myseqlist_pS8c-sig_pe0.csv">myseqlist_pS8c-sig.pep_linker_gfpuv_ssrA.csv</a></p>
 <p>Now, we make a zip file that contains all of the genbank sequence files: <a href="../../documents/myseqs_pS8c-sig_pep_l0.zip">myseqs_pS8c-sig.pep_linker_gfpuv_ssrA.zip</a></p>
@@ -2045,10 +2045,10 @@ ssrA tag 3&#39;: bps 16-33 (without the &quot;TAA&quot; stop codon)</p>
 <p>The next part to define is the 5&#39; end of the standard ssrA tag. The relevant portion of ssrA_tag_GFPuv (as stated above) is bps 1-15. We define the part, ssrA_tag_5prime, accordingly, with its part source, ssrA_tag_GFPuv, start bp, 1, and end bp, 15. In this case, the 5&#39; end of the standard ssrA tag sequence is on the top strand of ssrA_tag_GFPuv, so it will be defined as not being the reverse complement. The resulting part definition for the ssrA_tag_5prime is shown below.</p>
 <p>The next part to define is the 5&#39; end of the enhanced ssrA tag. The relevant portion of ssrA_tag_enhanced_GFPuv (as stated above) is bps 1-21. We define the part, ssrA_tag_enhanced_5prime, accordingly, with its part source, ssrA_tag_enhance, start bp, 1, and end bp, 21. In this case, the 5&#39; end of the enhanced ssrA tag sequence is on the top strand of ssrA_tag_enhanced_GFPuv, so it will be defined as not being the reverse complement. The resulting part definition for the ssrA_tag_enhanced_5prime is shown below.</p>
 <p>The final part to define is the 3&#39; end of the ssrA tag. The relevant portion of ssrA_tag_GFPuv (as stated above) is bps 16-33. We define the part, ssrA_tag_3prime, accordingly, with its part source, ssrA_tag_GFPuv, start bp, 16, and end bp, 33. In this case, the 3&#39; end of the ssrA tag sequence is on the top strand of ssrA_tag_GFPuv, so it will be defined as not being the reverse complement. The resulting part definition for the ssrA_tag_3prime is shown below.</p>
-<p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity, click to view larger version):</p>
+<p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage79.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/partslist_pS8c-sig_pe0.csv">partslist_pS8c-sig.pep_linker_gfpuv_ssrA.csv</a></p>
-<p>It is absolutely crucial here to note that, as described in the <a href="../chp12/chp12_3.html">parts list file</a> documentation, the part source column refers to the sequence display ID within the sequence file (e.g. BMC_nterm_sig_pe), and not to the file name of the genbank sequence file itself (e.g. BMC_nterm_sig_pep_GFPuv.gb). If you open up the genbank file BMC_nterm_sig_pep_GFPuv.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like (click to view a larger version):</p>
+<p>It is absolutely crucial here to note that, as described in the <a href="../chp12/chp12_3.html">parts list file</a> documentation, the part source column refers to the sequence display ID within the sequence file (e.g. BMC_nterm_sig_pe), and not to the file name of the genbank sequence file itself (e.g. BMC_nterm_sig_pep_GFPuv.gb). If you open up the genbank file BMC_nterm_sig_pep_GFPuv.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like:</p>
 <p><img src="../../images/pastedImage86.png" alt=""></p>
 <p>The sequence display ID immediately follows the LOCUS, in this case it is BMC_nterm_sig_pe, and it is this sequence display ID that should be included in the parts list file, as we have done it above.</p>
 <h4 id="step-4-create-the-target-part-ordering-list-file-">Step 4 - Create the target part ordering list file:</h4>
@@ -2059,7 +2059,7 @@ ssrA tag 3&#39;: bps 16-33 (without the &quot;TAA&quot; stop codon)</p>
 <p>The next combinatorial bin for this assembly contains gfpuv (the GFPuv bin, which contains only one part, GFPuv). We&#39;ll assemble gfpuv in the forward direction. The resulting target bin and part ordering entries for gfpuv are shown below.</p>
 <p>The next combinatorial bin for this assembly contains the 5&#39; ssrA tags (the ssrA_tag_5prime bin, which contains two variants, the ssrA_tag_5prime and ssrA_tag_enhanced_5prime parts). We&#39;ll assemble the 5&#39; ssrA tags in the forward direction for a translational fusion with the preceeding gfpuv coding sequence. In order to share the oligo-embedding burden between the forward (vector backbone amplification) and reverse (gfpuv amplification) primers, we will will force the assembly strategies for the 5&#39; ssrA tags to be &quot;Embed_in_primer_reverse&quot; for this bin and for these parts. Since we will be enforcing a direct synthesis firewall after the 5&#39; ssrA tags, we will set the direct synthesis firewall to &quot;TRUE&quot; for this bin. The resulting target bin and part ordering entries for the 5&#39; ssrA tags are shown below.</p>
 <p>The next combinatorial bin for this assembly contains the 3&#39; ssrA tag (the ssrA_tag_3prime bin, which contains only one part, ssrA_tag_3prime). We&#39;ll assemble the 3&#39; ssrA tag in the forward direction for a translational fusion with the preceeding gfpuv coding sequence. In order to share the oligo-embedding burden between the forward (vector backbone amplification) and reverse (gfpuv amplification) primers, we will will force the assembly strategy for the 3&#39; ssrA tag to be &quot;Embed_in_primer_forward&quot; for this bin and for this part. The resulting target bin and part ordering entries for the 3&#39; ssrA tag are shown below.</p>
-<p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity, click to view larger version):</p>
+<p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage89.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/targetpartorderlist_p5.csv">targetpartorderlist_pS8c-sig.pep_linker_gfpuv_ssrA.csv</a></p>
 <h4 id="step-5-create-the-eugene-rules-list-file-">Step 5 - Create the Eugene rules list file:</h4>

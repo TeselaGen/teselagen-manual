@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1405105948709">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1405112805527">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2010,21 +2010,21 @@ umuD: <a href="../../documents/umuD_tag_GFPuv.gb.txt">umuD_tag_GFPuv.gb</a>
 <p>None.</p>
 <p>So, we will not have to make any (silent) mutations.</p>
 <h4 id="step-2-create-the-sequences-list-file-and-zipped-sequences-file-">Step 2 - Create the sequences list file and zipped sequences file:</h4>
-<p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity, click to view larger version):</p>
+<p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage88.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/myseqlist_pS8c-umuD_g0.csv">myseqlist_pS8c-umuD_gfpuv_sig.pep.csv</a></p>
 <p>Now, we make a zip file that contains all of the genbank sequence file: <a href="../../documents/myseqs_pS8c-umuD_gfpu0.zip">myseqs_pS8c-umuD_gfpuv_sig.pep.zip</a></p>
 <h4 id="step-3-create-the-parts-list-file-">Step 3 - Create the parts list file:</h4>
 <p>Now we need to define, in a parts list file, the DNA parts that we will assemble together. The first part to define is the linearized vector backbone. The relevant portion of the pS8c-gfpuv_sig.pep plasmid (as stated above) is bps 1239-1235. We define the part, pS8c-gfpuv_sig.pep_vector_backbone, accordingly, with its part source, pj5_00001, start bp, 1239, and end bp, 1235. We are free to define the vector backbone in either orientation (reverse compliment or not); here we define it as not the reverse compliment. The resulting part definition for the linearized vector backbone is shown below.</p>
 <p>The next part to define is the UmuD N-terminus. The relevant portion of the umuD sequence (as stated above) is bps 1-126. We define the part, umuD_tag, accordingly, with its part source, umuD_tag_GFPuv, start bp, 1, and end bp, 126. In this case, the umuD sequence is on the top strand of umuD_tag_GFPuv, so it will be defined as not being the reverse complement. The resulting part definition for the umuD_tag is shown below.</p>
-<p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity, click to view larger version)</p>
+<p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity)</p>
 <p><img src="../../images/pastedImage49.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/partslist_pS8c-umuD_g0.csv">partslist_pS8c-umuD_gfpuv_sig.pep.csv</a></p>
 <h4 id="step-4-create-the-target-part-ordering-list-file-">Step 4 - Create the target part ordering list file:</h4>
 <p>Now we need to define, in a target part ordering file, the order we would like the DNA parts defined above to be assembled in. For this particular assembly, we&#39;ll be assembling all of the parts in the same direction (forward). For more information about how to assemble in the reverse direction, please see the target part ordering file documentation. Although this example assembly will use Golden Gate, the option to forcibly set a relative Golden Gate overhang positions will not be taken here, since this assembly is not explicitly part of a larger combinatorial assembly project (for example, introducing a series of N-terminal tags upstream of GFPuv). For the same reason, there is little justification for applying direct synthesis firewalls (for more information about forced relative overhang positions, and direct synthesis firewalls, refer to the target part ordering file documentation).</p>
 <p>The first part in the order for this assembly is the linearized vector backbone. Since we defined the linearized vector backbone part above as being not in the reverse compliment direction, if we assemble it in the forward direction, we will end up with a vector backbone with the same orientation as that found in the pS8c-gfpuv_sig.pep plasmid. The resulting target part ordering entry for the linearized vector backbone is shown below.</p>
 <p>The next part in the order for this assembly is the UmuD N-terminus. We&#39;ll assemble the UmuD N-terminus in the forward direction for a translational fusion with the gfpuv_sig.pep coding sequence that follows. The resulting target part ordering entry for the UmuD N-terminus is shown below.</p>
-<p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity, click to view larger version):</p>
+<p>Using an existing target part ordering list file as a starting point (e.g. targetpartorderlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our target part ordering list file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage80.png" alt=""></p>
 <p>Here is the actual csv file: <a href="../../documents/targetpartorderlist_p4.csv">targetpartorderlist_pS8c-umuD_gfpuv_sig.pep.csv</a></p>
 <h4 id="step-5-create-the-eugene-rules-list-file-">Step 5 - Create the Eugene rules list file:</h4>
