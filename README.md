@@ -17,7 +17,7 @@ For business inquiries or other questions, please contact: Contact [at] Teselage
     * The SLIC, Gibson, CPEC and SLiCE assembly methods (and GeneArt Seamless Cloning)
     * The Golden Gate assembly method (and MoClo and GoldenBraid)
 3. Synthetic Evolution
-    * TeselaGens Synthetic Evolution Workflow
+    * TeselaGen's Synthetic Evolution Workflow
     * Bioinformatics and BioCAD preliminaries
 4. BioCAD demos
     * DNA Sequence and Part Management

@@ -19,7 +19,7 @@ a.count-star {
 }
 
 a.home-bookmark {
-    display: all !important;
+    display: none !important;
 }
 .gitbook-link {
     display: none !important;
