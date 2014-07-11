@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="14.3" data-basepath="../.." data-revision="1405112805527">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="14.3" data-basepath="../.." data-revision="1405115090396">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2016,7 +2016,7 @@ Specifies the overall name of the PCR reactions recipe (&quot;PCR_reactions&quot
 <p>MAKE line:
 Specifies to make the PCR reactions recipe, which PCR destination plate to use, the wells in the PCR plate that correspond with each of the PCR reactions in the recipe, and how to mix the prepared reactions.</p>
 <p>In the example shown below, the &quot;PCR_reactions&quot; recipe is to be made, the plate &quot;assemblytoautomate_PCR_plate_1&quot; (defined above in the PLATE subsection) is the destination plate, wells &quot;A1,B1,C1,A3,B3,A5,B5,A7,B7,A9,B9,C9,D9,E9,F9,G9,A11,B11&quot; correspond with the ordered PCR reactions in the &quot;PCR_reactions&quot; recipe, the aspiration/dispensing style is the default (the liquid is to be dispensed at the bottom of the well, and liquid is to be aspirated from the bottom of the well (&quot;LC_W_Bot_Bot&quot;)), and mixing is accomplished by pipetting 10uL up-and-down 8 times (&quot;MIX:10x8&quot;).</p>
-<p>Here is an example PR-PR Distribute PCR reactions configuration file (stylized for clarity; click to see an enlarged version):</p>
+<p>Here is an example PR-PR Distribute PCR reactions configuration file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage30.png" alt=""></p>
 <p>PR-PR keywords are highlighted in bold (e.g. &quot;TABLE&quot;, &quot;PLATE&quot;, &quot;COMPONENT&quot;, &quot;VOLUME&quot;, &quot;RECIPE&quot;, and &quot;MAKE&quot;). JBEI robot-specific configurations that can be modified as needed (described above) are colored in blue (e.g. &quot;Table_JBEI_1.ewt&quot;, &quot;PL1&quot;). The documentation section (&quot;&quot;&quot;&quot;…&quot;&quot;&quot;&quot;) and all comment (i.e. ignored) lines (#…) are colored in red. </p>
 <p>Here is the actual PR-PR Distribute PCR reactions configuration file (assemblytoautomate_distribute_pcr_PR_PR_1.pr):
