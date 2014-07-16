@@ -15,7 +15,7 @@ With a part cell selected (active) in the design canvas, if no part has been alr
 
 ###### CHANGING A PART'S DEFINITION:
 
-With a part selected (active) in the design canvas, clicking the "Change part definition" button in the panel on the right side of the DeviceEditor display will pop-up a "Specify Part Definition" dialog, which will allow you to change the definition of the part. In this dialog, you can change the name of the part (an alternate method to the one described immediately above), the portion of the part source sequence that corresponds to the part (e.g. toggle between "Whole Sequence" and "Specified Sequence"; and adjust the "StartBP" and "StopBP"), and whether or not the part is located on the complement strand of the part source.
+With a part selected (active) in the design canvas, clicking the "Change Part Definition" button in the panel on the right side of the DeviceEditor display will pop-up a "Specify Part Definition" dialog, which will allow you to change the definition of the part. In this dialog, you can change the name of the part (an alternate method to the one described immediately above), the portion of the part source sequence that corresponds to the part (e.g. toggle between "Whole Sequence" and "Specified Sequence"; and adjust the "StartBP" and "StopBP"), and whether or not the part is located on the complement strand of the part source.
 
 Note: if you would like to change the sequence containing the part (the part source), you will need to re-map the desired sequence to the part.
 
