@@ -1,4 +1,4 @@
-Teselagen Manual
+Teselagen's Manual
 ==
 Teselagen's Manual, based on Gitbook
 
