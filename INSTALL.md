@@ -1,6 +1,6 @@
-Teselagen Manual
+Teselagen's Manual
 ==
-Teselagen's Manual, based on Gitbook
+Teselagen's Manual, based on Gitbook.
 
 Instructions to edit/compile manual within localhost
 --
