@@ -1,4 +1,4 @@
 language: ruby
 rvm:
   - 2.0.0
-install: test-script.sh
+script: test-script.sh
