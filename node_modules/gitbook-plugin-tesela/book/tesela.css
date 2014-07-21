@@ -85,3 +85,18 @@ ul.articles {
 a img {
     border: none;
 }
+
+.book-header:before{
+   /* content: url("file://localhost/Users/eabeliuk/Desktop/TeselaGen/code/gitbook/teselagen-manual/www/images/tesela_logo.png");  */
+   content:url("http://www.teselagen.com/manual/images/tesela_logo.png"); 
+   position: absolute;
+   margin: 10px;
+   z-index: 999999;
+}
+
+.toggle-summary{
+  padding-left: 150px !important;
+}
+
+
+
