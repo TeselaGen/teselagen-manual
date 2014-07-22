@@ -1,6 +1,6 @@
 ####10. Specific examples of using j5
 
-######[10.1 SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning](chp10_1.html)
+######[10.1 SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning)](chp10_1.html)
 ######[10.2 Combinatorial SLIC, Gibson, CPEC assembly](chp10_2.html)
 ######[10.3 Mock assembly](chp10_3.html)
 ######[10.4 Combinatorial Mock assembly](chp10_4.html)
