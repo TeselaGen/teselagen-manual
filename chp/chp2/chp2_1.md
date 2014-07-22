@@ -1,6 +1,6 @@
 ## The DNA assembly challenge
 
-Simply put, the DNA assembly challenge is to take a set of double-stranded DNA sequence fragments, and stitch them together in the proper order and proper orientation to yield a single, potentially circular, assembled DNA sequence. These DNA sequence fragments are often referred to as "parts" in the synthetic biology lexicon, especially when the fragments are each associated with a particular biological function, such as a promoter, a coding sequence, a terminator, etc. Here in this manual, "parts" simply refer to generalized DNA sequences.
+Simply put, the DNA assembly challenge is to take a set of double-stranded DNA sequence fragments, and stitch them together in the proper order and proper orientation to yield a single, potentially circular, assembled DNA sequence. These DNA sequence fragments are often referred to as "parts" in the synthetic biology lexicon, especially when the fragments are each associated with a particular biological function, such as a promoter, a coding sequence, a terminator, etc. Here in this manual, <b>"parts"</b> simply refer to generalized DNA sequences.
 
 Here is an example DNA assembly:
 
