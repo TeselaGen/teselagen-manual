@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="14.1" data-basepath="../.." data-revision="1406265735815">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="14.1" data-basepath="../.." data-revision="1406328216403">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1994,57 +1994,57 @@
 <p>Here is an example first line header:</p>
 <p><img src="../../images/pastedImage67.png" alt=""></p>
 <p>If any problems are encountered when inputting the downstream automation parameters file, or if more than six source plates are utilized (no PR-PR configuration files output), j5 will place the resulting warning messages immediately following the first line header.</p>
-<p>PCR Reactions subsection:
+<p><b>PCR Reactions</b> subsection:
 displays how the PCR reactions will be arranged on the resulting multi-well plates.</p>
-<p>Index column fields:
+<p><b>Index column</b> fields:
 A sequential order of the PCR reactions, starting with &quot;1&quot;, arranged from lowest to highest optimal annealing temperature.</p>
-<p>TEMPLATE_PLATE column fields:
+<p><b>TEMPLATE_PLATE</b> column fields:
 The name of the multi-well plate serving as the source of the PCR template for this row&#39;s PCR reaction.</p>
-<p>TEMPLATE_WELL column fields:
+<p><b>TEMPLATE_WELL</b> column fields:
 The name of the well (e.g. &quot;A01&quot;) containing the PCR template for this row&#39;s PCR reaction.</p>
-<p>TEMPLATE_VOLUME column fields:
+<p><b>TEMPLATE_VOLUME</b> column fields:
 The volume (in uL) of the PCR template to be used for this row&#39;s PCR reaction.</p>
-<p>PRIMER1_PLATE column fields:
+<p><b>PRIMER1_PLATE</b> column fields:
 The name of the multi-well plate serving as the source of the forward primer for this row&#39;s PCR reaction.</p>
-<p>PRIMER1_WELL column fields:
+<p><b>PRIMER1_WELL</b> column fields:
 The name of the well (e.g. &quot;A01&quot;) containing the forward primer for this row&#39;s PCR reaction.</p>
-<p>PRIMER1_VOLUME column fields:
+<p><b>PRIMER1_VOLUME</b> column fields:
 The volume (in uL) of the forward primer to be used for this row&#39;s PCR reaction.</p>
-<p>PRIMER2_PLATE column fields:
+<p><b>PRIMER2_PLATE</b> column fields:
 The name of the multi-well plate serving as the source of the reverse primer for this row&#39;s PCR reaction.</p>
-<p>PRIMER2_WELL column fields:
+<p><b>PRIMER2_WELL</b> column fields:
 The name of the well (e.g. &quot;A01&quot;) containing the reverse primer for this row&#39;s PCR reaction.</p>
-<p>PRIMER2_VOLUME column fields:
+<p><b>PRIMER2_VOLUME</b> column fields:
 The volume (in uL) of the reverse primer to be used for this row&#39;s PCR reaction.</p>
-<p>WATER_VOLUME column fields:
+<p><b>WATER_VOLUME</b> column fields:
 The volume (in uL) of water to be added to this row&#39;s PCR reaction.</p>
-<p>OUTPUT_PLATE column fields:
+<p><b>OUTPUT_PLATE</b> column fields:
 The name of the multi-well PCR plate serving as the destination for this row&#39;s PCR reaction.</p>
-<p>OUTPUT_WELL column fields:
+<p><b>OUTPUT_WELL</b> column fields:
 The name of the well (e.g. &quot;A01&quot;) serving as the destination for this row&#39;s PCR reaction.</p>
-<p>REACTION_NUMBER column fields:
+<p><b>REACTION_NUMBER</b> column fields:
 The number corresponding to the PCR Reaction ID Number in the input j5 assembly file for this PCR row&#39;s reaction.</p>
-<p>OPTIMAL_ANNEALING_TEMP column fields:
+<p><b>OPTIMAL_ANNEALING_TEMP</b> column fields:
 The optimal annealing temperature (in degrees C) for this row&#39;s PCR reaction. This is calculated as 2 degrees C above the minimum 3&#39;-only Tm of the forward and reverse primers for this row&#39;s PCR reaction, as specified in the input j5 assembly file.</p>
-<p>THERMOCYCLER_BLOCK column fields:
+<p><b>THERMOCYCLER_BLOCK</b> column fields:
 The thermocycler block assigned to this row&#39;s PCR reaction. Note that the zone numbering starts with &quot;0&quot;.</p>
-<p>THERMOCYCLER_ZONE column fields:
+<p><b>THERMOCYCLER_ZONE</b> column fields:
 The thermocycler zone assigned to this row&#39;s PCR reaction. Note that the zone numbering starts with &quot;0&quot;.</p>
-<p>THERMOCYCLER_ZONE_ANNEALING_TEMP column fields:
+<p><b>THERMOCYCLER_ZONE_ANNEALING_TEMP</b> column fields:
 The designed annealing temperature (in degrees C) for the thermocycler zone selected for this row&#39;s PCR reaction. </p>
-<p>EXPECTED_SIZE column fields:
+<p><b>EXPECTED_SIZE</b> column fields:
 The anticipated size (in b[) for the product of this row&#39;s PCR reaction. </p>
-<p>Sequence column fields:
+<p><b>SEQUENCE</b> column fields:
 The sequence of each part is extracted from the master sequences based on their definitions in the parts list file.</p>
 <p>Here is an example PCR Reactions subsection (stylized for clarity, click <a href="../../images/pastedImage93A.png">here</a> to see an enlarged version):</p>
 <p><img src="../../images/pastedImage93.png" alt=""></p>
-<p>Thermocycler Blocks subsection:
+<p><b>Thermocycler Blocks</b> subsection:
 displays the designed annealing temperature zone gradients for each of the thermocycler blocks.</p>
-<p>BLOCK_ID column fields:
+<p><b>BLOCK_ID</b> column fields:
 The thermocycler block assigned to this row&#39;s PCR reaction. Note that the zone numbering starts with &quot;0&quot;.</p>
-<p>BLOCK_ZONE column fields:
+<p><b>BLOCK_ZONE</b> column fields:
 The thermocycler zone assigned to this row&#39;s PCR reaction. Note that the zone numbering starts with &quot;0&quot;.</p>
-<p>BLOCK_ZONE_ANNEALING_TEMP column fields:
+<p><b>BLOCK_ZONE_ANNEALING_TEMP</b> column fields:
 The designed annealing temperature (in degrees C) for the thermocycler zone selected for this row&#39;s PCR reaction. </p>
 <p>Here is an example Thermocycler Blocks subsection (stylized for clarity):</p>
 <p><img src="../../images/pastedImage97.png" alt=""></p>

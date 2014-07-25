@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.1" data-basepath="../.." data-revision="1406265735815">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.1" data-basepath="../.." data-revision="1406328216403">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1990,8 +1990,8 @@
                     <section class="normal" id="section-gitbook_49">
                     
                         <h2 id="slic-gibson-cpec-assembly-and-geneart-seamless-cloning">SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning)</h2>
-<p>The following is a step-by-step example of how to use j5 to design a SLIC/Gibson/CPEC/SLiCE assembly. This example specifically addresses how to use a restriction enzyme linearized (digested) vector backbone, how to introduce point mutations (in this case to remove internal BglBrick sites), how a preliminary SOEing step may be used to assemble small DNA fragments before proceeding to SLIC/Gibson (CPEC/SLiCE does not require this preliminary step), and how a small part (such as a RBS) may be embedded within a primer. This example uses the stand alone simplified web interface for j5.</p>
-<p>Here is a DeviceEditor .xml design file that you can use to quickly recapitulate the design described below in DeviceEditor <a href="../../documents/SLIC_Gibson_CPEC_example.xml">SLIC_Gibson_CPEC_example.xml</a>.</p>
+<p>The following is a step-by-step example of how to use j5 to design a SLIC/Gibson/CPEC/SLiCE assembly. This example specifically addresses how to use a restriction enzyme linearized (digested) vector backbone, how to introduce point mutations (in this case to remove internal BglBrick sites), how a preliminary SOEing step may be used to assemble small DNA fragments before proceeding to SLIC/Gibson (CPEC/SLiCE does not require this preliminary step), and how a small part (such as a RBS) may be embedded within a primer.</p>
+<p>Here is a DeviceEditor .xml design file that you can use to quickly recapitulate the design described below in DeviceEditor: <a href="../../documents/SLIC_Gibson_CPEC_example.xml">SLIC_Gibson_CPEC_example.xml</a>.</p>
 <p>Here is an example assembly that we might like j5 to design for us with SLIC/Gibson/CPEC/SLiCE in mind:</p>
 <p><img src="../../images/pastedImage20.png" alt="j5 examples 20"></p>
 <p>We start with the vector pBbS8c-rfp, and linearize the vector backbone by EcoRI/XhoI digest.  For more information about the advantages and disadvantages of using a digest linearized vector backbone, please refer to the brief survey of j5 functionality. Using the vector pGFPuv_sig.pep as template, we will PCR amplify the gfpuv_sig.pep coding sequence, introducing two silent mutations in the process to remove internal XhoI and BamHI sites. The ribosomal binding site (RBS) found upstream of rfp in pBbS8c-rfp will be incorporated upstream of the gfpuv_sig.pep coding sequence (via embedding it in the forward primer oligo). These linearized vector backbone and PCR fragments will then be assembled together using SOE, then SLIC/Gibson, or alternatively CPEC/SLiCE, to yield the desired construct. Note that there are no BglBrick sites in the resulting assembly (we won&#39;t recreate the EcoRI and XhoI sites during the assembly process), because we want to use a large portion (extending beyond the gfpuv_sig.pep coding sequence) of this plasmid in another BglBrick for a downstream construction project.</p>
@@ -2076,7 +2076,7 @@ gfpuv_sigpep_BamHI_silent (<a href="../../documents/gfpuv_sigpep_BamHI_si.gb.txt
 <p>Here is a representative zip file resulting from this particular SLIC/Gibson/CPEC/SLiCE example: <a href="../../documents/j5_J5_20120106173226.zip">j5_J5_20120106173226.zip</a></p>
 <h4 id="step-9---check-to-make-sure-that-the-resulting-assembled-plasmid-is-really-what-you-wanted">Step 9 - Check to make sure that the resulting assembled plasmid is really what you wanted:</h4>
 <p>Unzip the j5 zipped results file, and open the assembled DNA sequence file with a vector editor such as the JBEI Registry Vector Editor, VectorNTI, ApE or Gentle.
-For this particular example (using the identical input files as listed above), the assembled DNA sequence file is: <a href="http://j5.jbei.org/j5manual/attachments/pj5_00001.gb" target="_blank">pj5_00001.gb</a></p>
+For this particular example (using the identical input files as listed above), the assembled DNA sequence file is: <a href="../../documents/pj5_00001.gb.txt">pj5_00001.gb</a></p>
 <p>Here is the plasmid map of the assembled DNA sequence:</p>
 <p><img src="../../images/pastedImage24.png" alt="j5 examples 24"></p>
 <p>Note that ths plasmid map matches our design scheme (see the very top of this page), and that there are no XhoI or BamHI (or EcoRI or BglII) sites in the vector, so we are good to go for our downstream processes.</p>

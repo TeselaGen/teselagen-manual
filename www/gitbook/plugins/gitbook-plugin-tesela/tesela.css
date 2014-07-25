@@ -25,6 +25,15 @@ a.home-bookmark {
     display: none !important;
 }
 
+#reduce-font-size {
+    display: none !important;
+}
+#enlarge-font-size {
+    display: none !important;
+}
+
+
+/****************/
 /* side menu */
 
 ul.articles {
