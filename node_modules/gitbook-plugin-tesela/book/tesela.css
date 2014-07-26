@@ -36,9 +36,12 @@ a.home-bookmark {
 /****************/
 /* side menu */
 
-ul.articles {
+/* This conflicts with slideToggle */
+/*ul.articles {
   display: block !important;
 }
+*/
+
 /*ul:active {
   display:block;
 }

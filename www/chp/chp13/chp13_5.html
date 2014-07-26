@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.5" data-basepath="../.." data-revision="1406328216403">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.5" data-basepath="../.." data-revision="1406344310645">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1991,46 +1991,46 @@
                     
                         <h2 id="golden-gate-assembly-output-file">Golden Gate assembly output file</h2>
 <p>The Golden Gate assembly j5 output file is a CSV file that contains all of the information resulting from the Golden Gate assembly design process. The first line in the file is a header line that just serves to identify the assembly method selected (e.g. &quot;Golden Gate&quot;), as well as the version of j5 used to generate the assembly (e.g. &quot;v0.1alpha&quot;) and the date that the assembly was designed (e.g. &quot;4/7/2010&quot;).</p>
-<p>Assembly Parameters subsection:
-displays the j5 parameters selected for the assembly design process, which were dictated by the j5 parameters file.</p>
+<h4 id="assembly-parameters-subsection">Assembly Parameters subsection:</h4>
+<p>displays the j5 parameters selected for the assembly design process, which were dictated by the j5 parameters file.</p>
 <p>Here is an example first line header and Assembly Parameters subsection (truncated after the fourth column, stylized for clarity):</p>
 <p><img src="../../images/pastedImage74.png" alt=""></p>
-<p>Assembly Pieces (Golden Gate) subsection:
-displays the assembly pieces that will be required for the assembly.</p>
-<p>ID Number column fields:
+<h4 id="assembly-pieces-golden-gate-subsection">Assembly Pieces (Golden Gate) subsection:</h4>
+<p>displays the assembly pieces that will be required for the assembly.</p>
+<p><strong>ID Number</strong> column fields:
 The assembly pieces are enumerated starting with &quot;0&quot;.</p>
-<p>Type column fields:
+<p><strong>Type</strong> column fields:
 The type of reaction from which the assembly piece was derived. This could be either &quot;PCR&quot;, &quot;SOE&quot;, &quot;Annealed Oligos&quot; or &quot;Direct Synthesis&quot;.</p>
-<p>Type ID Number column fields:
+<p><strong>Type ID Number</strong> column fields:
 The assembly pieces are enumerated starting with &quot;0&quot; separately for each of the following three types: 1) PCR/SOE, 2) Annealed Oligos, 3) Direct Synthesis/PCR.</p>
-<p>First Target Part column fields:
+<p><strong>First Target Part</strong> column fields:
 The first target part in the Target Part Ordering/Selection/Strategy subsection above, that is embedded within the assembly piece.</p>
-<p>Core Target Part column fields:
+<p><strong>Core Target Part</strong> column fields:
 The target part that is either at the core of a PCR/SOE reaction derived assembly piece (i.e. not the flanking parts that were embedded in the oligo primers), or the last target part embedded within a direct synthesis derived assembly piece.</p>
-<p>Last Target Part column fields:
+<p><strong>Last Target Part</strong> column fields:
 The last target part in the Target Part Ordering/Selection/Strategy subsection above, that is embedded within the assembly piece.</p>
-<p>Overhang with Previous column fields:
+<p><strong>Overhang with Previous</strong> column fields:
 The Golden Gate overhang sequence shared with the previous assembly piece. For linear DNA products, this field will be blank for the first assembly piece.</p>
-<p>Overhang with Next column fields:
+<p><strong>Overhang with Next</strong> column fields:
 The Golden Gate overhang sequence shared with the next assembly piece. For linear DNA products, this field will be blank for the last assembly piece.</p>
-<p>Relative Overhang Position column fields:
+<p><strong>Relative Overhang Position</strong> column fields:
 The relative overhang position between this assembly piece, and the next. See the target part order list file documentation for more information. For linear DNA products, this field will be blank for the last assembly piece.</p>
-<p>Length column fields:
+<p><strong>Length</strong> column fields:
 The length of the assembly piece in bps.</p>
-<p>Sequence column fields:
+<p><strong>Sequence</strong> column fields:
 The sequence of the assembly piece.</p>
 <p>Here is an example Assembly Pieces (SLIC/Gibson/CPEC/SLiCE) subsection (stylized for clarity; the oligo names are truncated as displayed):</p>
 <p><img src="../../images/pastedImage60.png" alt=""></p>
-<p>Other subsections:
-are identical to those described for the j5 SLIC/Gibson/CPEC/SLiCE assembly design output file.</p>
+<h4 id="other-subsections">Other subsections:</h4>
+<p>are identical to those described for the j5 SLIC/Gibson/CPEC/SLiCE assembly design output file.</p>
 <p>Depending on the particular assembly, a number of warning messages may follow the Assembly Pieces (Golden Gate) subsection. These concern the presence of type IIs endonuclease sites or highly homologous sequence repeats within the final assembled vector. A warning message may notify you that the recognition sequence for the Golden Gate type IIs endonuclease is present one or more times in the final assembled vector, and where these site(s) are located. The recognition site sequence is defined in the j5 parameters file. Depending on the overhangs generated by cleaving at these sites, the sites may reduce the efficiency of the assembly, or disrupt it all together.</p>
 <p>Here is an example type IIs endonuclease site warning message that may follow the Assembly Pieces (Golden Gate) subsection (click <a href="../../images/pastedImage510A.png">here</a> to see enlarged version):</p>
 <p><img src="../../images/pastedImage510.png" alt=""></p>
 <p>Warning messages are also issued if homologous sequences repeats are encountered in the final assembled vector. The criteria (minimum homologous sequence length, and maximum fraction of mismatches) for determining significant homologous sequence repeats are configurable within the set of j5 parameters.</p>
 <p>Here is an example homologous sequence repeat warning message that may follow the Assembly Pieces (Golden Gate) subsection (click <a href="../../images/pastedImage34A.png">here</a> to see enlarged version):</p>
 <p><img src="../../images/pastedImage34.png" alt=""></p>
-<p>Example j5 output Golden Gate assembly file:
-Here is an example j5 Golden Gate assembly output CSV file: <a href="../../documents/pj5_000020.csv">pj5_00002.csv</a></p>
+<h4 id="example-j5-output-golden-gate-assembly-file">Example j5 output Golden Gate assembly file:</h4>
+<p>Here is an example j5 Golden Gate assembly output CSV file: <a href="../../documents/pj5_000020.csv">pj5_00002.csv</a></p>
 
                     
                     </section>

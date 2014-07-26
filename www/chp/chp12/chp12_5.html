@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="12.5" data-basepath="../.." data-revision="1406328216403">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="12.5" data-basepath="../.." data-revision="1406344310645">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1995,30 +1995,31 @@
 If any of the specified design rules are broken, j5 terminates the assembly design and returns an error message.</p>
 <p>Combinatorial Golden-gate and Combinatorial SLIC/Gibson/CPEC/SLiCE assemblies designed with j5:
 j5 skips combinations of parts that break any of the specified design rules.</p>
-<p>Rule syntax: Rule rule_name([NOT] operand1 compositional_operator operand2);</p>
+<h5 id="rule-syntax">Rule syntax:</h5>
+<p>Rule <i>rule_name</i>([NOT] <i>operand1 compositional_operator operand2</i>);</p>
 <p>The [NOT] is an optional rule negation operator.</p>
-<p>The rule_name currently has no significant effect on the j5 design process, other than providing a name for the first rule in the list that was broken that resulted in j5 not pursuing the assembly.</p>
-<p>operand1 is a part name specified in the parts list file.</p>
-<p>compositional_operator is one of the following six operators: &quot;AFTER&quot;, &quot;BEFORE&quot;, &quot;WITH&quot;, &quot;THEN&quot;, &quot;NEXTTO&quot;, or &quot;MORETHAN&quot;.</p>
-<p>operand2 is either an integral copy number (if the compositional_operator is &quot;MORETHAN&quot;) or a part name specified in the parts list file (if the compositional_operator is &quot;AFTER&quot;, &quot;BEFORE&quot;, &quot;WITH&quot;, &quot;THEN&quot;, or &quot;NEXTTO&quot;).</p>
+<p>The <i>rule_name</i> currently has no significant effect on the j5 design process, other than providing a name for the first rule in the list that was broken that resulted in j5 not pursuing the assembly.</p>
+<p><i>operand1</i> is a part name specified in the parts list file.</p>
+<p><i>compositional_operator</i> is one of the following six operators: &quot;AFTER&quot;, &quot;BEFORE&quot;, &quot;WITH&quot;, &quot;THEN&quot;, &quot;NEXTTO&quot;, or &quot;MORETHAN&quot;.</p>
+<p><i>operand2</i> is either an integral copy number (if the <i>compositional_operator</i> is &quot;MORETHAN&quot;) or a part name specified in the parts list file (if the <i>compositional_operator</i> is &quot;AFTER&quot;, &quot;BEFORE&quot;, &quot;WITH&quot;, &quot;THEN&quot;, or &quot;NEXTTO&quot;).</p>
 <p><strong>AFTER</strong> operator:
-Rule rule_name([NOT] operand1 AFTER operand2);
-Rules utilizing the AFTER operator (or its [NOT] negated version) only apply to those devices that contain both part operand1 and part operand2. In the same linear construct, all instances of part operand1 must occur after (to the 3&#39; of) all instances of part operand2. Note that this is equivalent to Rule rule_name(operand2 BEFORE operand1). This rule is ignored for circular constructs. Note that the AFTER operator does not take into consideration the directionalities (forward/reverse) of operand1 and operand2.</p>
+Rule <i>rule_name</i>([NOT] <i>operand1</i> AFTER <i>operand2</i>);
+Rules utilizing the AFTER operator (or its [NOT] negated version) only apply to those devices that contain both part <i>operand1</i> and part <i>operand2</i>. In the same linear construct, all instances of part <i>operand1</i> must occur after (to the 3&#39; of) all instances of part <i>operand2</i>. Note that this is equivalent to Rule <i>rule_name</i>(<i>operand2</i> BEFORE <i>operand1</i>). This rule is ignored for circular constructs. Note that the AFTER operator does not take into consideration the directionalities (forward/reverse) of <i>operand1</i> and <i>operand2</i>.</p>
 <p><strong>BEFORE</strong> operator:
-Rule rule_name([NOT] operand1 BEFORE operand2);
-Rules utilizing the BEFORE operator (or its [NOT] negated version) only apply to those devices that contain both part operand1 and part operand2. In the same linear construct, all instances of part operand1 must occur before (to the 5&#39; of) all instances of part operand2. Note that this is equivalent to Rule rule_name(operand2 AFTER operand1). This rule is currently ignored for circular constructs. Note that the BEFORE operator does not take into consideration the directionalities (forward/reverse) of operand1 and operand2.</p>
+Rule <i>rule_name</i>([NOT] <i>operand1</i> BEFORE <i>operand2</i>);
+Rules utilizing the BEFORE operator (or its [NOT] negated version) only apply to those devices that contain both part <i>operand1</i> and part <i>operand2</i>. In the same linear construct, all instances of part <i>operand1</i> must occur before (to the 5&#39; of) all instances of part <i>operand2</i>. Note that this is equivalent to Rule <i>rule_name</i>(<i>operand2</i> AFTER <i>operand1</i>). This rule is currently ignored for circular constructs. Note that the BEFORE operator does not take into consideration the directionalities (forward/reverse) of <i>operand1</i> and <i>operand2</i>.</p>
 <p><strong>WITH</strong> operator:
-Rule rule_name([NOT] operand1 WITH operand2);
-Part operand1 and part operand2 must both occur in every construct. Note that this definition of the WITH operator is different from (and much more strict than) its original implementation in j5, which has been migrated to the THEN operator. For backwards compatibility, the NOTWITH operator is currently supported and equivalent to (NOT operand1 WITH operand2), although support for NOTWITH may be deprecated going forward.</p>
+Rule <i>rule_name</i>([NOT] <i>operand1</i> WITH <i>operand2</i>);
+Part <i>operand1</i> and part <i>operand2</i> must both occur in every construct. Note that this definition of the WITH operator is different from (and much more strict than) its original implementation in j5, which has been migrated to the THEN operator. For backwards compatibility, the NOTWITH operator is currently supported and equivalent to (NOT <i>operand1</i> WITH <i>operand2</i>), although support for NOTWITH may be deprecated going forward.</p>
 <p><strong>THEN</strong> operator:
-Rule rule_name([NOT] operand1 THEN operand2);
-Rules utilizing the THEN operator (or its [NOT] negated version) only apply to those devices that contain part operand1. Part operand1 only occurs if part operand2 also occurs in the same construct.  This is a useful rule to set if you are designing a combinatorial library where some of the parts require the presence of specific partner parts. Note that this rule is not symmetric, so operand1 THEN operand2 does not imply operand2 THEN operand1. Note that the THEN operator is equivalent to the original implementation of the WITH operator in j5.</p>
+Rule <i>rule_name</i>([NOT] <i>operand1</i> THEN <i>operand2</i>);
+Rules utilizing the THEN operator (or its [NOT] negated version) only apply to those devices that contain part <i>operand1</i>. Part <i>operand1</i> only occurs if part <i>operand2</i> also occurs in the same construct.  This is a useful rule to set if you are designing a combinatorial library where some of the parts require the presence of specific partner parts. Note that this rule is not symmetric, so <i>operand1</i> THEN <i>operand2</i> does not imply <i>operand2</i> THEN <i>operand1</i>. Note that the THEN operator is equivalent to the original implementation of the WITH operator in j5.</p>
 <p><strong>NEXTTO</strong> operator:
-Rule rule_name([NOT] operand1 NEXTTO operand2);
-Rules utilizing the NEXTTO operator (or its [NOT] negated version) only apply to those devices that contain part operand1. In the same construct, all instances of part operand1 must occur immediately before or immediately after an instance of part operand2. Note that this rule is not symmetric, so operand1 NEXTTO operand2 does not imply operand2 NEXTO operand1.</p>
+Rule <i>rule_name</i>([NOT] <i>operand1</i> NEXTTO <i>operand2</i>);
+Rules utilizing the NEXTTO operator (or its [NOT] negated version) only apply to those devices that contain part <i>operand1</i>. In the same construct, all instances of part <i>operand1</i> must occur immediately before or immediately after an instance of part operand2. Note that this rule is not symmetric, so <i>operand1</i> NEXTTO <i>operand2</i> does not imply <i>operand2</i> NEXTO operand1.</p>
 <p><strong>MORETHAN</strong> operator:
-Rule rule_name([NOT] operand1 MORETHAN operand2);
-Part operand1 must occur more than operand2 times in each construct. This is a useful rule to set if you are designing a combinatorial library where you would like to have the order of parts shuffled (which requires placing the same part in multiple target part bins (see the target part list file documentation for more information), and you would like the copy number of each part above a certain threshold (i.e. you are not interested in assembling a plasmid without a gene present at least once). For backwards compatibility, the NOTMORETHAN operator is currently supported and equivalent to (NOT operand1 MORETHAN operand2), although support for NOTMORETHAN may be deprecated going forward.</p>
+Rule <i>rule_name</i>([NOT] <i>operand1</i> MORETHAN <i>operand2</i>);
+Part <i>operand1</i> must occur more than <i>operand2</i> times in each construct. This is a useful rule to set if you are designing a combinatorial library where you would like to have the order of parts shuffled (which requires placing the same part in multiple target part bins (see the target part list file documentation for more information), and you would like the copy number of each part above a certain threshold (i.e. you are not interested in assembling a plasmid without a gene present at least once). For backwards compatibility, the NOTMORETHAN operator is currently supported and equivalent to (NOT <i>operand1</i> MORETHAN <i>operand2</i>), although support for NOTMORETHAN may be deprecated going forward.</p>
 <p>Here is an <strong>example Eugene rules list file</strong> (stylized for clarity):</p>
 <p><img src="../../images/pastedImage28.png" alt="Eugene rules list"></p>
 <p>In this example, note that the seemingly redundant rules that contain the THEN operator need to be defined twice to ensure a symmetric dependency.</p>

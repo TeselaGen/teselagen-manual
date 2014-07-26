@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.2" data-basepath="../.." data-revision="1406328216403">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.2" data-basepath="../.." data-revision="1406344310645">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2000,38 +2000,38 @@
 <p>Depending on the particular assembly, a number of warning messages may immediately precede the Target Bin Selected Relative Overlap Positions and Extra 5&#39;/3&#39; CPEC bps subsection. These include warnings that one or more assembly junctions are over-constrained, precluding full combinatorial assembly piece re-use and increasing costs. When an assembly junction is over constrained, j5 relaxes the constraint of a constant overlap for the assembly junction. </p>
 <p>Here is an example of the warning messages that may immediately precede the Target Bin Selected Relative Overlap Positions and Extra 5&#39;/3&#39; CPEC bps subsection (click <a href="../../images/pastedImage33A.png">here</a> to see enlarged version):</p>
 <p><img src="../../images/pastedImage33.png" alt=""></p>
-<p>ID Number column fields:
+<p><strong>ID Number</strong> column fields:
 each combinatorial target bin is enumerated, starting with &quot;0&quot;.</p>
-<p>Name column fields:
+<p><strong>Name</strong> column fields:
 the name of the combinatorial bin, as provided in the target part order list file.</p>
-<p>Relative Overlap Position (bp) column fields:
+<p><strong>Relative Overlap Position (bp)</strong> column fields:
 The selected relative overlap position between this combinatorial bin, and the next. See the target part order list file documentation for more information. Note that these relative overlaps are derived from the results of designing a template SLIC/Gibson/CPEC/SLiCE assembly (see the Brief survey of j5 functionality for more information), and as such, the relative overlap positions for some combinatorial bins will remain &quot;unspecified&quot;. This is often the case if a combinatorial bin contains parts that will be embedded within and oligo, or if the combinatorial bin will be embedded within (but not at the right terminus) of a direct synthesis piece. For linear DNA products, this field will be blank for the last target bin.</p>
-<p>Extra 5&#39; CPEC bps column fields:
+<p><strong>Extra 5&#39; CPEC bps</strong> column fields:
 The number of extra bps at the 3&#39; end of the overlap for the assembly junction preceding (5&#39; of) this combinatorial bin. For linear DNA products, this field will be blank for the last target bin.</p>
-<p>Extra 3&#39; CPEC bps column fields:
+<p><strong>Extra 3&#39; CPEC bps</strong> column fields:
 The number of extra bps at the 5&#39; end of the overlap for the assembly junction following (3&#39; of) this combinatorial bin. For linear DNA products, this field will be blank for the last target bin.</p>
 <p>Here is an example Target Bin Selected Relative Overhang Positions subsection (stylized for clarity):</p>
 <p><img src="../../images/pastedImage50.png" alt=""></p>
 <p>Combinations of Assembly Pieces subsection:
 displays which assembly pieces to combine together to generate each of the desired combinatorial variants.</p>
-<p>Variant Number column fields:
+<p><strong>Variant Number</strong> column fields:
 each assembly combination is enumerated, starting with &quot;0&quot;.</p>
-<p>Name column fields:
+<p><strong>Name</strong> column fields:
 the name of the resulting plasmid for this combination, generated as described in the master plasmids list file documentation section.</p>
-<p>Assembly Method column fields:
+<p><strong>Assembly Method</strong> column fields:
 the assembly method selected to generate this combinatorial variant. For combinatorial SLIC/Gibson/CPEC/SLiCE assembly, this will always be &quot;SLIC/Gibson/CPEC&quot;. However, when condensing multiple arbitrary j5 assembly files, see the j5 Condense multiple j5 assembly files output file documentation, this might also include &quot;Golden Gate&quot;.</p>
-<p>Bin N -
-Part(s) column fields:
+<p>Bin N -</p>
+<p><strong>Part(s)</strong> column fields:
 The part(s) embedded within assembly piece N for this combinatorial variant, using the same notation described in the Oligo Synthesis subsection, see the j5 SLIC/Gibson/CPEC/SLiCE assembly design output file documentation.</p>
-<p>Assembly Piece ID Number column fields:
+<p><strong>Assembly Piece ID Number</strong> column fields:
 The ID Number, referencing the Assembly Pieces (Golden Gate) subsection (or the Assembly Pieces (SLIC/Gibson/CPEC/SLiCE) subsection when condensing multiple arbitrary j5 assembly files), of the assembly piece N for this combinatorial variant.</p>
 <p>Here is an example Combinations of Assembly Pieces subsection (stylized for clarity):</p>
 <p><img src="../../images/pastedImage81.png" alt=""></p>
-<p>Other subsections:
-are identical to those described for the j5 SLIC/Gibson/CPEC/SLiCE assembly design output file.</p>
+<h4 id="other-subsections">Other subsections:</h4>
+<p>are identical to those described for the j5 SLIC/Gibson/CPEC/SLiCE assembly design output file.</p>
 <p>NOTE: several warning messages (including those related to primer design difficulties) are not output in the Combinatorial SLIC/Gibson/CPEC/SLiCE output file. They are only listed in the SLIC/Gibson/CPEC/SLiCE assembly design output files for each individual assembly. As such, it is important to check the individual assembly design output files for these warnings before pursuing the combinatorial collection of assemblies.</p>
-<p>Example j5 output combinatorial SLIC/Gibson/CPEC/SLiCE assembly file:
-Here is an example j5 combinatorial SLIC/Gibson/CPEC/SLiCE assembly output CSV file: <a href="../../documents/pGG_00005_combinatori1.csv">pGG_00005_combinatorial.csv</a></p>
+<h4 id="example-j5-output-combinatorial-slicgibsoncpecslice-assembly-file">Example j5 output combinatorial SLIC/Gibson/CPEC/SLiCE assembly file:</h4>
+<p>Here is an example j5 combinatorial SLIC/Gibson/CPEC/SLiCE assembly output CSV file: <a href="../../documents/pGG_00005_combinatori1.csv">pGG_00005_combinatorial.csv</a></p>
 
                     
                     </section>

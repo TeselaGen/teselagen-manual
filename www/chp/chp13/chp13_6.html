@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.6" data-basepath="../.." data-revision="1406328216403">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.6" data-basepath="../.." data-revision="1406344310645">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1991,43 +1991,43 @@
                     
                         <h2 id="combinatorial-golden-gate-assembly-output-file">Combinatorial Golden Gate assembly output file</h2>
 <p>The combinatorial Golden Gate assembly j5 output file is a CSV file that contains all of the information resulting from the combinatorial Golden Gate assembly design process. The first line in the file is a header line that just serves to identify the assembly method selected (e.g. &quot;Combinatorial Golden Gate&quot;), as well as the version of j5 used to generate the assembly (e.g. &quot;v0.1alpha&quot;) and the date that the assembly was designed (e.g. &quot;12/13/2010&quot;).</p>
-<p>Assembly Parameters subsection:
-displays the j5 parameters selected for the assembly design process, which were dictated by the j5 parameters file.</p>
+<h4 id="assembly-parameters-subsection">Assembly Parameters subsection:</h4>
+<p>displays the j5 parameters selected for the assembly design process, which were dictated by the j5 parameters file.</p>
 <p>Here is an example first line header and Assembly Parameters subsection (truncated after the fourth column, stylized for clarity):</p>
 <p><img src="../../images/pastedImage1000.png" alt=""></p>
-<p>Target Bin Selected Relative Overhang Positions subsection:
-displays the j5 selected relative overhang positions for the combinatorial target bins.</p>
+<h4 id="target-bin-selected-relative-overhang-positions-subsection">Target Bin Selected Relative Overhang Positions subsection:</h4>
+<p>displays the j5 selected relative overhang positions for the combinatorial target bins.</p>
 <p>Depending on the particular assembly, a number of warning messages may immediately precede the Target Bin Selected Relative Overhang Positions subsection. These include warnings that one or more assembly junctions are over-constrained, precluding full combinatorial assembly piece re-use and increasing costs. When an assembly junction is over constrained, j5 relaxes the constraint of a constant overhang for the assembly junction. </p>
 <p>Here is an example of the warning messages that may immediately precede the Target Bin Selected Relative Overhang Positions subsection (click <a href="../../images/pastedImage330A.png">here</a> to see enlarged version):</p>
 <p><img src="../../images/pastedImage330.png" alt=""></p>
-<p>ID Number column fields:
+<p><strong>ID Number</strong> column fields:
 each combinatorial target bin is enumerated, starting with &quot;0&quot;.</p>
-<p>Name column fields:
+<p><strong>Name</strong> column fields:
 the name of the combinatorial bin, as provided in the target part order list file.</p>
-<p>Relative Overhang Position (bp) column fields:
+<p><strong>Relative Overhang Position (bp)</strong> column fields:
 The selected relative overhang position between this combinatorial bin, and the next. See the target part order list file documentation for more information. Note that these relative overhangs are derived from the results of designing a template Golden Gate assembly (see the Brief survey of j5 functionality for more information), and as such, the relative overhang positions for some combinatorial bins will remain &quot;unspecified&quot;. This is often the case if a combinatorial bin contains parts that will be embedded within and oligo, or if the combinatorial bin will be embedded within (but not at the right terminus) of a direct synthesis piece. For linear DNA products, this field will be blank for the first target bin.</p>
 <p>Here is an example Target Bin Selected Relative Overhang Positions subsection (stylized for clarity):</p>
 <p><img src="../../images/pastedImage170.png" alt=""></p>
 <h4 id="combinations-of-assembly-pieces-subsection">Combinations of Assembly Pieces subsection:</h4>
 <p>displays which assembly pieces to combine together to generate each of the desired combinatorial variants.</p>
-<p>Variant Number column fields:
+<p><strong>Variant Number</strong> column fields:
 each assembly combination is enumerated, starting with &quot;0&quot;.</p>
-<p>Name column fields:
+<p><strong>Name</strong> column fields:
 the name of the resulting plasmid for this combination, generated as described in the master plasmids list file documentation section.</p>
-<p>Assembly Method column fields:
+<p><strong>Assembly Method</strong> column fields:
 the assembly method selected to generate this combinatorial variant. For combinatorial Golden Gate assembly, this will always be &quot;Golden Gate&quot;. However, when condensing multiple arbitrary j5 assembly files, see the j5 Condense multiple j5 assembly files output file documentation, this might also include &quot;SLIC/Gibson/CPEC&quot;.</p>
-<p>Bin N -
-Part(s) column fields:
+<p><strong>Bin N -</strong> </p>
+<p><strong>Part(s)</strong> column fields:
 The part(s) embedded within assembly piece N for this combinatorial variant, using the same notation described in the Oligo Synthesis subsection, see the j5 SLIC/Gibson/CPEC/SLiCE assembly design output file documentation.</p>
-<p>Assembly Piece ID Number column fields:
+<p><strong>Assembly Piece ID Number</strong> column fields:
 The ID Number, referencing the Assembly Pieces (Golden Gate) subsection (or the Assembly Pieces (SLIC/Gibson/CPEC/SLiCE) subsection when condensing multiple arbitrary j5 assembly files), of the assembly piece N for this combinatorial variant.</p>
 <p>Here is an example Combinations of Assembly Pieces subsection (stylized for clarity, click <a href="../../images/pastedImage200A.png">here</a> to see enlarged version):</p>
 <p><img src="../../images/pastedImage200.png" alt=""></p>
 <h4 id="other-subsections">Other subsections:</h4>
 <p>are identical to those described for the j5 SLIC/Gibson/CPEC/SLiCE assembly design output and/or Golden Gate assembly design output file.</p>
 <p>NOTE: several warning messages (including those related to primer design difficulties and Golden Gate type IIs endonuclease recognition sites found within the final assembled vector) are not output in the Combinatorial Golden Gate output file. They are only listed in the Golden Gate assembly design output files for each individual assembly. As such, it is important to check the individual assembly design output files for these warnings before pursuing the combinatorial collection of assemblies.</p>
-<p>Example j5 output combinatorial Golden Gate assembly file:
-Here is an example j5 combinatorial Golden Gate assembly output CSV file: <a href="../../documents/pj5_00003_combinatori0.csv">pj5_00003_combinatorial.csv</a></p>
+<h4 id="example-j5-output-combinatorial-golden-gate-assembly-file">Example j5 output combinatorial Golden Gate assembly file:</h4>
+<p>Here is an example j5 combinatorial Golden Gate assembly output CSV file: <a href="../../documents/pj5_00003_combinatori0.csv">pj5_00003_combinatorial.csv</a></p>
 
                     
                     </section>

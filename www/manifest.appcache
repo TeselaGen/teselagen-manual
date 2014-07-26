@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1406328216404
+# Revision 1406344310645
 
 CACHE:
 index.html
@@ -131,7 +131,6 @@ gitbook/style.css
 gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 gitbook/plugins/gitbook-plugin-tesela/footer.html
 gitbook/plugins/gitbook-plugin-tesela/tesela.css
-gitbook/plugins/gitbook-plugin-tesela/tesela.css~
 gitbook/plugins/gitbook-plugin-tesela/tesela.js
 
 NETWORK:

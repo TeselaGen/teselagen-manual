@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.1" data-basepath="../.." data-revision="1406328216403">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="13.1" data-basepath="../.." data-revision="1406344310645">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2077,7 +2077,7 @@ The oligos are enumerated starting with &quot;0&quot;.</p>
 The oligo name prefix (initials followed by a number) is generated as described in the master oligos list file documentation. The next portion of the oligo name is generated from the name of the part that the oligo primes for PCR, and additionally from the names of any parts that may be embedded within the oligo. Each part name is enclosed by parenthesis, and any two part names are separated by an underscore (e.g. &quot;(long<em>gly_ser_linker)</em>(GFPuv)&quot;). The names of the parts may be appended with &quot;_rc&quot; to indicate that the target part will be assembled in the reverse direction. The ordering of the part names with in the oligo name corresponds with the target ordering of the parts in the final assembly. Alternatively, the next portion of the oligo is the name of the direct synthesis piece that the oligo primes for PCR. The oligo name is appended with &quot;_pure_forward&quot; to indicate a forward primer that does not contain flanking sequence that does not necessarily anneal to the template, &quot;_forward&quot; to indicate a forward primer that may contain 5&#39; flanking sequence that may not anneal to the template; &quot;_pure_reverse&quot; and &quot;_reverse&quot; are analogous, referring to the reverse primers.</p>
 <p><strong>First Target Part</strong> column fields:
 The first target part in the Target Part Ordering/Selection/Strategy subsection above, that is either primed by, or is embedded within, the oligo. If the oligo primes a direct synthesis piece for PCR, this field will be empty.</p>
-<p><strong>Last Target Par</strong>t column fields:
+<p><strong>Last Target Part</strong> column fields:
 The last target part in the Target Part Ordering/Selection/Strategy subsection above, that is either primed by, or is embedded within, the oligo. If the oligo primes a direct synthesis piece for PCR, this field will be empty.</p>
 <p><strong>Length</strong> column fields:
 The length of the oligo in bps.</p>
@@ -2122,7 +2122,7 @@ The sequence of the annealed oligos. This includes the 5&#39; single-stranded ov
 <p><img src="../../images/pastedImage280.png" alt=""></p>
 <h4 id="pcr-reactions-subsection">PCR Reactions subsection:</h4>
 <p>displays the PCR reactions that will be required for the assembly.</p>
-<p>ID Number column fields:
+<p><strong>ID Number</strong> column fields:
 The PCR reactions are enumerated starting with &quot;0&quot;.</p>
 <p><strong>Primary Template</strong> column fields:
 The sequence that serves as the primary template for the PCR reaction. By default, the original sequence template will be the primary template. However, when the user requests that j5 output &quot;pure&quot; primers (see the Brief survey of j5 functionality for more information), j5 suggests first amplifying from the original template using &quot;pure&quot; primers, see the Oligo Synthesis subsection above, and then re-amplifying the &quot;pure&quot; PCR product with the full-length primers (potentially containing 5&#39; flanking sequence). Thus, the primary template for the &quot;pure&quot; PCR reactions will be the original sequence template (e.g. a plasmid), and the primary template for the re-amplification with full length primers will be the related &quot;pure&quot; PCR reaction product. If the PCR reaction is amplifying a direct synthesis piece, the name of the direct synthesis piece (e.g. &quot;dsj5_00001&quot;) will be displayed in this field. </p>
@@ -2207,16 +2207,16 @@ The length of the resulting plasmid in bps.</p>
 The sequence of the resulting plasmid. Note that either a FASTA, Genbank, or jbei-seq format sequence file for the plasmid is also generated as part of the j5 output. The sequence presented here is just presented as a reference for the user.</p>
 <p>Here is an example Assembly Pieces (SLIC/Gibson/CPEC/SLiCE) subsection (stylized for clarity; the oligo names are truncated as displayed):</p>
 <p><img src="../../images/pastedImage29.png" alt=""></p>
-<p>Modifications/updates made to the j5 input files:
-as part of the j5 assembly design process.</p>
-<p>Master plasmids list file modifications:
+<h4 id="modificationsupdates-made-to-the-j5-input-files">Modifications/updates made to the j5 input files:</h4>
+<p>as part of the j5 assembly design process.</p>
+<p><strong>Master plasmids list file</strong> modifications:
 The resulting assembled plasmid is appended as an entry to the master plasmids list file, providing the generated plasmid name (the alias column field is left empty for the user to fill in, if desired), the contents of the plasmid (generated by sequentially listing all of the target parts assembled into the resulting plasmid, using the same notation described in the Oligo Synthesis subsection, above), the length of the resulting plasmid in bps, and the plasmid sequence. See the master plasmids list file documentation section or more information.</p>
-<p>Master oligos list file modifications:
+<p><strong>Master oligos list file</strong> modifications:
 The new oligos required to complete the assembly are appended as entries to the master oligos list file, providing the generated oligo name, the length of the oligo in bps, the full-length Tm of the oligo, the Tm of the oligo 3&#39; sequence that was designed to anneal to the template, and the oligo sequence. See the master oligos list file documentation section or more information.</p>
-<p>Master direct syntheses list file modifications:
+<p><strong>Master direct syntheses list file</strong> modifications:
 The new direct synthesis pieces required to complete the assembly are appended as entries to the master direct syntheses list file, providing the generated direct synthesis piece name (the alias column field is left empty for the user to fill in, if desired), the contents of the direct synthesis piece (generated by sequentially listing all of the target parts embedded into the direct synthesis piece, using the same notation described in the Oligo Synthesis subsection, above), the length of the direct synthesis piece in bps, and the direct synthesis piece sequence. See the master direct syntheses list  documentation section or more information.</p>
-<p>Example j5 output SLIC/Gibson/CPEC/SLiCE assembly file:
-Here is an example j5 SLIC/Gibson/CPEC/SLiCE assembly output CSV file: <a href="../../documents/pj5_000010.csv">pj5_00001.csv</a></p>
+<h4 id="bexample-j5-output-slicgibsoncpecslice-assembly-fileb"><b>Example j5 output SLIC/Gibson/CPEC/SLiCE assembly file</b>:</h4>
+<p>Here is an example j5 SLIC/Gibson/CPEC/SLiCE assembly output CSV file: <a href="../../documents/pj5_000010.csv">pj5_00001.csv</a></p>
 
                     
                     </section>
