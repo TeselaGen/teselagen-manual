@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="9" data-basepath="../.." data-revision="1406345704892">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="9" data-basepath="../.." data-revision="1406347878201">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2015,7 +2015,7 @@
 <script src="../../gitbook/app.js"></script>
 
     
-    <script src="../../gitbook/plugins/gitbook-plugin-tesela/tesela.js?v2"></script>
+    <script src="../../gitbook/plugins/gitbook-plugin-tesela/tesela.js"></script>
     
 
     
@@ -2035,5 +2035,5 @@ require(["gitbook"], function(gitbook) {
 
         
     </body>
-    
+    <script> $(function(){ 	    $('.summary > .chapter > a').click(function() { 		    $(this).parent().find('> ul').slideToggle(); 		    return false; 		}); 	    $('.chapter ').find('> a').first().on('click', function(){ 		    window.location = '/manual/';    		}); 	    $('.summary > .chapter > a').parent().find('> ul').hide(); }); </script>
 </html>
