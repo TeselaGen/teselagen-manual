@@ -5,7 +5,7 @@ $(function() {
             });
 
         $(".chapter ").find('> a').first().on('click', function(){
-		window.location = "/";   
+		window.location = "/manual/";   
 	    });
 
 
