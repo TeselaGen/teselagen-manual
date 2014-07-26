@@ -1,4 +1,4 @@
-$(function() {
+$( document ).ready(function() {
         $(".summary > .chapter > a").click(function() {
                 $(this).parent().find('> ul').slideToggle();
                 return false;
