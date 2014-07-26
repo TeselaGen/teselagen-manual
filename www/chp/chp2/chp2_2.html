@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="2.2" data-basepath="../.." data-revision="1406408347951">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="2.2" data-basepath="../.." data-revision="1406409593904">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2019,10 +2019,6 @@
 <script src="../../gitbook/app.js"></script>
 
     
-    <script src="../../gitbook/plugins/gitbook-plugin-tesela/tesela.js?v=1406408347955"></script>
-    
-
-    
     <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
@@ -2039,5 +2035,5 @@ require(["gitbook"], function(gitbook) {
 
         
     </body>
-    
+    <script> $( document ).ready(function() { 	    $('.summary > .chapter > a').click(function() { 		    $(this).parent().find('> ul').slideToggle(); 		    return false; 		}); 	    $('.chapter ').find('> a').first().on('click', function(){ 		    window.location = '/manual/';    		}); 	    $('.summary > .chapter > a').parent().find('> ul').hide(); }); </script>
 </html>
