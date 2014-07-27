@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="2.4" data-basepath="../.." data-revision="1406433895263">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="2.4" data-basepath="../.." data-revision="1406437787561">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1987,7 +1987,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_62">
+                    <section class="normal" id="section-gitbook_61">
                     
                         <h2 id="the-slic-gibson-cpec-and-slice-assembly-methods-and-geneart-seamless-cloning">The SLIC, Gibson, CPEC and SLiCE assembly methods (and GeneArt Seamless Cloning)</h2>
 <p>SLIC, Gibson, CPEC, and SLiCE are related methods that offer standardized, scarless, (largely) sequence-independent, multi-part DNA assembly. Since the starting materials and final products are the same for these three methods, TeselaGen BETA provides a single design process for all of them. Some discussion of the advantages of each method over the others is provided below.</p>
@@ -2056,5 +2056,5 @@ require(["gitbook"], function(gitbook) {
 
         
     </body>
-    <script> $( document ).ready(function() {    $('.summary > .chapter > a').click(function() {        $(this).parent().find('> ul').slideToggle(); return false;   });    $('.chapter ').find('> a').first().on('click', function(){      window.location = '/manual/';  });   $('.articles > .chapter > a >').click(function() {  $('.summary > .chapter > ul').hide(); return false;  });  $('.summary > .chapter > a').parent().find('> ul').hide(); }); </script>
+    <script> $( document ).ready(function() {    $('.summary > .chapter > a').click(function() {   $(this).parent().find('> ul').slideToggle(); return false;   });    $('.chapter ').find('> a').first().on('click', function(){   window.location = '/manual/';  }); $( document ).ajaxComplete(function() { $('.summary > .chapter > ul').hide(); return false;  }); $('.summary > .chapter > a').parent().find('> ul').hide(); }); </script>
 </html>
