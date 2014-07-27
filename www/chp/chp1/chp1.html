@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="1" data-basepath="../.." data-revision="1406437787561">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="1" data-basepath="../.." data-revision="1406441105561">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1987,7 +1987,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_3">
+                    <section class="normal" id="section-gitbook_2">
                     
                         <h4 id="1-introduction-to-bio-cadcam">1. Introduction to Bio CAD/CAM</h4>
 <h6 id="11-from-specification-to-design-to-implementation-to-assaychp1_1md"><a href="chp1_1.html">1.1 From specification, to design, to implementation, to assay</a></h6>
@@ -2029,5 +2029,5 @@ require(["gitbook"], function(gitbook) {
 
         
     </body>
-    <script> $( document ).ready(function() {    $('.summary > .chapter > a').click(function() {   $(this).parent().find('> ul').slideToggle(); return false;   });    $('.chapter ').find('> a').first().on('click', function(){   window.location = '/manual/';  }); $( document ).ajaxComplete(function() { $('.summary > .chapter > ul').hide(); return false;  }); $('.summary > .chapter > a').parent().find('> ul').hide(); }); </script>
+    <script> $( document ).ready(function() {  $('.summary > .chapter > a').click(function() { $(this).parent().find('> ul').slideToggle(); return false; }); $('.chapter ').find('> a').first().on('click', function(){   window.location = '/manual/';  }); $('.summary > .chapter > ul').hide(); }); $( document ).ajaxSuccess(function() { $('.summary > .chapter > a').click(function() {   $(this).parent().find('> ul').slideToggle(); return false;   });  $('.chapter ').find('> a').first().on('click', function(){   window.location = '/manual/';  }); $('.summary > .chapter > ul').hide();  }); </script>
 </html>
