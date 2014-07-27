@@ -33,7 +33,7 @@ a.home-bookmark {
 }
 
 .bar .inner {
-background: rgb(0, 124, 171) !important;
+background: rgb(0, 124, 171);
 }
 
 /****************/

@@ -32,9 +32,16 @@ a.home-bookmark {
     display: none !important;
 }
 
+.bar .inner {
+background: rgb(0, 124, 171) !important;
+}
 
 /****************/
 /* side menu */
+
+i.fa-check {
+  display:none !important;
+}
 
 /* This conflicts with slideToggle */
 /*ul.articles {

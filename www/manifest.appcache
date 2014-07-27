@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1406443278815
+# Revision 1406447343246
 
 CACHE:
 chp/chp17/chp17.html
@@ -13,8 +13,8 @@ chp/chp11/chp11_3.html
 chp/chp12/chp12_3.html
 chp/chp12/chp12.html
 chp/chp12/chp12_10.html
-chp/chp12/chp12_12.html
 chp/chp12/chp12_11.html
+chp/chp12/chp12_12.html
 chp/chp12/chp12_2.html
 chp/chp12/chp12_1.html
 chp/chp12/chp12_4.html
@@ -24,8 +24,8 @@ chp/chp12/chp12_7.html
 chp/chp12/chp12_8.html
 chp/chp12/chp12_9.html
 chp/chp13/chp13.html
-chp/chp13/chp13_2.html
 chp/chp13/chp13_1.html
+chp/chp13/chp13_2.html
 chp/chp13/chp13_3.html
 chp/chp13/chp13_4.html
 chp/chp13/chp13_5.html
@@ -92,8 +92,8 @@ chp/chp7/chp7_3.html
 chp/chp7/chp7_4.html
 chp/chp7/chp7_5.html
 chp/chp8/chp8.html
-chp/chp9/chp9.html
 chp/chp8/chp8_1.html
+chp/chp9/chp9.html
 chp/chp9/chp9_1.html
 chp/chp9/chp9_2.html
 chp/chp9/chp9_3.html
@@ -131,6 +131,7 @@ gitbook/style.css
 gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 gitbook/plugins/gitbook-plugin-tesela/footer.html
 gitbook/plugins/gitbook-plugin-tesela/tesela.css
+gitbook/plugins/gitbook-plugin-tesela/tesela.css~
 gitbook/plugins/gitbook-plugin-tesela/tesela.js
 
 NETWORK:
