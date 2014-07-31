@@ -6,7 +6,7 @@ As described in the process flow for j5, given the (putatively combinatorial) se
 
 The following survey provides a brief overview of a typical j5 SLIC/Gibson/CPEC/SLiCE assembly design process, and then goes on to highlight a few j5 functionalities relating to Golden Gate assembly design, combinatorial assembly design, and condensing multiple assembly designs. Specific detailed step-by-step examples of how to use j5 are provided in the next section.
 
-The j5 assembly design process begins with the definition of the biological parts (sequences) to be assembled. Since j5 designs for the SLIC/Gibson/CPEC/SLiCE and Golden-gate assembly methods that are largely sequence independent, the defined parts do not need to be "packaged" in any particular format (as would be required for BioBricks, for example).
+The j5 assembly design process begins with the definition of the biological parts (sequences) to be assembled. Since j5 designs for the SLIC/Gibson/CPEC/SLiCE and Golden Gate assembly methods that are largely sequence independent, the defined parts do not need to be "packaged" in any particular format (as would be required for BioBricks, for example).
 
 Here is a typical list of defined parts (these would have been defined in a j5 parts list input file):
 
