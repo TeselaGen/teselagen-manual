@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1406447343245">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.5" data-basepath="../.." data-revision="1416267491671">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1997,8 +1997,8 @@
 <p>For this particular assembly, we want to translationally fuse the N-terminus of UmuD to a GFP variant. As was the case for the previous SLIC/Gibson/CPEC/SLiCE example, we would like the BglBrick restriction sites (EcoRI, BglII, BamHI and XhoI) to be absent from the resulting plasmid. We start with the vector pS8c-gfpuv_sig.pep (this was constructed in the previous SLIC/Gibson/CPEC/SLiCE example) and E. coli genomic DNA as the templates for PCR. We&#39;ll linearize the pS8c-gfpuv_sig.pep vector with PCR, introducing the flanking BsaI sites and Golden Gate overhangs in the process, and similarly amplify the 5&#39; coding portion of umuD. These two PCR products will then be assembled with the Golden Gate methodology.</p>
 <h4 id="step-1---collect-the-genbank-sequences-and-create-any-new-ones-for-the-assembly">Step 1 - Collect the genbank sequences (and create any new ones) for the assembly:</h4>
 <p>The first step is to collect all of the genbank sequence files from which we will derive the parts we want to assemble together. For the example above, we will be starting with the plasmid pS8c-gfpuv_sig.pep and (a fragment of) E. coli genomic DNA. The genbank files for these sequences are:</p>
-<p>pS8c-gfpuv_sig.pep: <a href="../../documents/pj5_000011.gb.txt">pj5_00001.gb</a>
-umuD: <a href="../../documents/umuD_tag_GFPuv.gb.txt">umuD_tag_GFPuv.gb</a>
+<p>pS8c-gfpuv_sig.pep: <a href="../../documents/pj5_000011.gb.txt">pj5_00001.gb</a></p>
+<p>umuD: <a href="../../documents/umuD_tag_GFPuv.gb.txt">umuD_tag_GFPuv.gb</a>
 (Note that the umuD sequence file has been pre-annotated for a translational fusion with the GFPuv variant.)</p>
 <p>The relevant portions of these sequences are:</p>
 <h6 id="ps8c-gfpuv_sigpep">pS8c-gfpuv_sig.pep:</h6>
@@ -2044,16 +2044,16 @@ umuD: <a href="../../documents/umuD_tag_GFPuv.gb.txt">umuD_tag_GFPuv.gb</a>
 <h4 id="step-7---make-any-modifications-to-the-j5-assembly-parameters-that-you-require">Step 7 - Make any modifications to the j5 assembly parameters that you require:</h4>
 <p>For the majority of assemblies (such as this particular example, which uses BsaI as the Golden Gate type IIs endonuclease), the default values for the j5 assembly parameters are perfectly fine. If you would like to use a type IIs endonuclease other than BsaI, you will need to make at least two changes to the default j5 assembly parameters. For example, to change from BsaI to AarI:</p>
 <p>Parameter:
-GOLDENGATERECOGNITIONSEQ
-Default (BsaI):
-GGTCTC
-Change to (for AarI):
+GOLDENGATERECOGNITIONSEQ</p>
+<p>Default (BsaI):
+GGTCTC</p>
+<p>Change to (for AarI):
 CACCTGC</p>
 <p>Parameter:
-GOLDENGATETERMINIEXTRASEQ
-Default (BsaI):
-CACACCAGGTCTCA
-Change to (for AarI):
+GOLDENGATETERMINIEXTRASEQ</p>
+<p>Default (BsaI):
+CACACCAGGTCTCA</p>
+<p>Change to (for AarI):
 CACCACACCTGCACCA</p>
 <p>Since BsaI and AarI cleavage both result in 4 bp overhangs, it is not necessary to change the parameter GOLDENGATEOVERHANGBPS. However, if the type IIs endonuclease that you would like use results in overhangs longer or shorter than 4 bp, you will need to adjust that parameter accordingly as well.</p>
 <p>Another important reason to modify the j5 assembly parameters is if you would like to construct a linear, rather than a circular piece of DNA.</p>

@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.6" data-basepath="../.." data-revision="1406447343245">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.6" data-basepath="../.." data-revision="1416267491671">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -2007,17 +2007,17 @@
 <p>(Note that the signaling peptide and ssrA tag sequence files have been pre-annotated for translational fusions with the GFPuv variant.)</p>
 <p>The relevant portions of these sequences are:</p>
 <h6 id="ps8c-gfpuv_sigpep">pS8c-gfpuv_sig.pep:</h6>
-<p>Linearized pS8c-gfpuv_sig.pep backbone: bps 2016-1238 (wrapping around the beginning/end of the sequence, includes the &quot;ATG start and &quot;TAA&quot; stop codons).
-gfpuv: bps 1242-1952</p>
+<p>Linearized pS8c-gfpuv_sig.pep backbone: bps 2016-1238 (wrapping around the beginning/end of the sequence, includes the &quot;ATG start and &quot;TAA&quot; stop codons)</p>
+<p>gfpuv: bps 1242-1952</p>
 <h6 id="bmc_nterm_sig_pep_gfpuv">BMC_nterm_sig_pep_GFPuv:</h6>
-<p>BMC signal peptide: bps 4-54 (without the &quot;ATG&quot; start codon)
-Short Gly/Ser linker: bps 55-78
-Long Gly/Ser linker: bps 55-102</p>
+<p>BMC signal peptide: bps 4-54 (without the &quot;ATG&quot; start codon)</p>
+<p>Short Gly/Ser linker: bps 55-78</p>
+<p>Long Gly/Ser linker: bps 55-102</p>
 <h6 id="ccmn_nterm_sig_pep_gfpuv">ccmN_nterm_sig_pep_GFPuv:</h6>
 <p>ccmN signal peptide: bps 4-60 (without the &quot;ATG&quot; start codon)</p>
 <h6 id="ssra_tag_gfpuv">ssrA_tag_GFPuv:</h6>
-<p>ssrA tag 5&#39;: bps 1-15
-ssrA tag 3&#39;: bps 16-33 (without the &quot;TAA&quot; stop codon)</p>
+<p>ssrA tag 5&#39;: bps 1-15</p>
+<p>ssrA tag 3&#39;: bps 16-33 (without the &quot;TAA&quot; stop codon)</p>
 <h6 id="ssra_tag_enhanced_gfpuv">ssrA_tag_enhanced_GFPuv:</h6>
 <p>ssrA tag 5&#39; enhanced: bps 1-21</p>
 <p>As noted above, and as described in the bioinformatics prerequisites section, we do not want any BglBrick sites in our resulting construct. We can use a sequence editor program such as the JBEI Registry Vector Editor, VectorNTI, ApE or Gentle to find any BglBrick sites (EcoRI, BglII, BamHI and XhoI) within the relevant portions of the above sequences:</p>
@@ -2079,16 +2079,16 @@ ssrA tag 3&#39;: bps 16-33 (without the &quot;TAA&quot; stop codon)</p>
 <h4 id="step-7---make-any-modifications-to-the-j5-assembly-parameters-that-you-require">Step 7 - Make any modifications to the j5 assembly parameters that you require:</h4>
 <p>For the majority of assemblies (such as this particular example, which uses BsaI as the Golden Gate type IIs endonuclease), the default values for the j5 assembly parameters are perfectly fine. If you would like to use a type IIs endonuclease other than BsaI, you will need to make at least two changes to the default j5 assembly parameters. For example, to change from BsaI to AarI:</p>
 <p>Parameter:
-GOLDENGATERECOGNITIONSEQ
-Default (BsaI):
-GGTCTC
-Change to (for AarI):
+GOLDENGATERECOGNITIONSEQ</p>
+<p>Default (BsaI):
+GGTCTC</p>
+<p>Change to (for AarI):
 CACCTGC</p>
 <p>Parameter:
-GOLDENGATETERMINIEXTRASEQ
-Default (BsaI):
-CACACCAGGTCTCA
-Change to (for AarI):
+GOLDENGATETERMINIEXTRASEQ</p>
+<p>Default (BsaI):
+CACACCAGGTCTCA</p>
+<p>Change to (for AarI):
 CACCACACCTGCACCA</p>
 <p>Since BsaI and AarI cleavage both result in 4 bp overhangs, it is not necessary to change the parameter GOLDENGATEOVERHANGBPS. However, if the type IIs endonuclease that you would like use results in overhangs longer or shorter than 4 bp, you will need to adjust that parameter accordingly as well.</p>
 <p>Another important reason to modify the j5 assembly parameters is if you would like to construct a linear, rather than a circular piece of DNA.</p>
@@ -2096,7 +2096,7 @@ CACCACACCTGCACCA</p>
 <p>j5 parameters file: <a href="../../documents/j5_parameters.csv">j5_parameters.csv</a></p>
 <p>You can use MS Excel, another spreadsheet program, or even a text editor, to modify the j5 parameters, as you see fit. See the j5 parameters file documentation for more information.</p>
 <h4 id="step-8---use-j5-to-design-the-combinatorial-golden-gate-assembly">Step 8 - Use j5 to design the combinatorial Golden Gate assembly:</h4>
-<p>Follow the directions on the stand alone simplified web interface documentation page for using j5 to design a combinatorial Golden Gate assembly. For the purposes of this example, the input files you will upload are (assuming the default j5 assembly parameters and the master plasmids, oligos, and direct syntheses lists that resulted from the previous Golden-gate example; note that following the directions above you likely have renamed the master plasmids, oligos, and direct syntheses lists file names with your own initials instead of &quot;j5_&quot;):</p>
+<p>Follow the directions on the stand alone simplified web interface documentation page for using j5 to design a combinatorial Golden Gate assembly. For the purposes of this example, the input files you will upload are (assuming the default j5 assembly parameters and the master plasmids, oligos, and direct syntheses lists that resulted from the previous Golden Gate example; note that following the directions above you likely have renamed the master plasmids, oligos, and direct syntheses lists file names with your own initials instead of &quot;j5_&quot;):</p>
 <ul>
 <li>j5 parameters file: <a href="../../documents/j5_parameters.csv">j5_parameters.csv</a></li>
 <li>Sequences list file: <a href="../../documents/myseqlist_pS8c-sig_pe.csv">myseqlist_pS8c-sig.pep_linker_gfpuv_ssrA.csv</a></li>

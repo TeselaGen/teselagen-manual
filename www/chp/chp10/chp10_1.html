@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.1" data-basepath="../.." data-revision="1406447343245">
+    <div class="book" data-github="TeselaGen/teselagen-manual" data-level="10.1" data-basepath="../.." data-revision="1416267491671">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1997,26 +1997,26 @@
 <p>We start with the vector pBbS8c-rfp, and linearize the vector backbone by EcoRI/XhoI digest.  For more information about the advantages and disadvantages of using a digest linearized vector backbone, please refer to the brief survey of j5 functionality. Using the vector pGFPuv_sig.pep as template, we will PCR amplify the gfpuv_sig.pep coding sequence, introducing two silent mutations in the process to remove internal XhoI and BamHI sites. The ribosomal binding site (RBS) found upstream of rfp in pBbS8c-rfp will be incorporated upstream of the gfpuv_sig.pep coding sequence (via embedding it in the forward primer oligo). These linearized vector backbone and PCR fragments will then be assembled together using SOE, then SLIC/Gibson, or alternatively CPEC/SLiCE, to yield the desired construct. Note that there are no BglBrick sites in the resulting assembly (we won&#39;t recreate the EcoRI and XhoI sites during the assembly process), because we want to use a large portion (extending beyond the gfpuv_sig.pep coding sequence) of this plasmid in another BglBrick for a downstream construction project.</p>
 <h4 id="step-1---collect-the-genbank-sequences-and-create-any-new-ones-for-the-assembly">Step 1 - Collect the genbank sequences (and create any new ones) for the assembly:</h4>
 <p>The first step is to collect all of the genbank sequence files from which we will derive the parts we want to assemble together. For the example above, we will be starting with the plasmids pBbS8c-rfp and pGFPuv_sig.pep. The genbank files for these two plasmids are:</p>
-<p>pBbS8c-rfp (<a href="../../documents/pBbS8c-RFP.gb.txt">pBbS8c-RFP.gb</a>):
-pGFPuv_sig.pep (<a href="../../documents/pGFPuv_sig_pep.gb.txt">pGFPuv_sig.pep.gb</a>):</p>
+<p>pBbS8c-rfp: (<a href="../../documents/pBbS8c-RFP.gb.txt">pBbS8c-RFP.gb</a>)</p>
+<p>pGFPuv_sig.pep: (<a href="../../documents/pGFPuv_sig_pep.gb.txt">pGFPuv_sig.pep.gb</a>)</p>
 <p>The relevant portions of these plasmids are:</p>
 <h6 id="pbbs8c-rfp">pBbS8c-rfp:</h6>
-<p>EcoRI/XhoI linearized pBbS8c-RFP backbone: bps 1933-1216 (wrapping around the beginning/end of the sequence, the EcoRI/XhoI recognition sites are included in their entireties)
-RBS: bps 1226-1245</p>
+<p>EcoRI/XhoI linearized pBbS8c-RFP backbone: bps 1933-1216 (wrapping around the beginning/end of the sequence, the EcoRI/XhoI recognition sites are included in their entireties)</p>
+<p>RBS: bps 1226-1245</p>
 <h6 id="pgfpuv_sigpep">pGFPuv_sig.pep:</h6>
 <p>gfpuv_sig.pep: bps 289-1072</p>
 <p>As noted above, and as described in the bioinformatics prerequisites section, we do not want any BglBrick sites in our resulting construct. We can use a sequence editor program such as the JBEI Registry Vector Editor, VectorNTI, ApE or Gentle to find any BglBrick sites (EcoRI, BglII, BamHI and XhoI) within the relevant portions of the pBbS8c-rfp and pGFPuv_sig.pep plasmids:</p>
 <h6 id="pbbs8c-rfp">pBbS8c-rfp:</h6>
-<p>EcoRI: bps 1211-1216
-XhoI: bps 1933-1938</p>
+<p>EcoRI: bps 1211-1216</p>
+<p>XhoI: bps 1933-1938</p>
 <h6 id="pgfpuv_sigpep">pGFPuv_sig.pep:</h6>
-<p>XhoI: bps 709-714
-BamHI: bps 808-813</p>
+<p>XhoI: bps 709-714</p>
+<p>BamHI: bps 808-813</p>
 <p>So we will have to make silent mutations in the coding sequence of gfpuv_sig.pep to disrupt the XhoI and BamHI sites, as well as ensure that we don&#39;t recreate the EcoRI and XhoI sites used to generate the linearized vector backbone after assembly (we&#39;ll do this by effectively making bp deletions at the ends of their recognition sequences, see below). Since we would like to have the silent mutations made to the gfpuv_sig.pep coding sequence annotated in the resulting genbank file of the assembled sequence, we also need to create two additional genbank sequence files that contain only a bp each, the bp of their respective silent mutations, annotated with two features spanning this bp, namely the coding sequence of the gfpuv variant as well as the silent point mutation:</p>
 <h6 id="silent-mutations-to-introduce-within-pgfpuv_sigpep">Silent mutations to introduce within pGFPuv_sig.pep:</h6>
 <p>XhoI: bps 709-714; silent mutation bp 714 g-&gt;a: ctcgag -&gt; ctcgaA (LE -&gt; LE):
-gfpuv_sigpep_XhoI_silent (<a href="../../documents/gfpuv_sigpep_XhoI_sil.gb.txt">gfpuv_sigpep_XhoI_silent.gb</a>):
-BamHI: bps 808-813; silent mutation bp 813 c-&gt;t: ggatcc -&gt; ggatcT (GS -&gt; GS):
+gfpuv_sigpep_XhoI_silent (<a href="../../documents/gfpuv_sigpep_XhoI_sil.gb.txt">gfpuv_sigpep_XhoI_silent.gb</a>)</p>
+<p>BamHI: bps 808-813; silent mutation bp 813 c-&gt;t: ggatcc -&gt; ggatcT (GS -&gt; GS):
 gfpuv_sigpep_BamHI_silent (<a href="../../documents/gfpuv_sigpep_BamHI_si.gb.txt">gfpuv_sigpep_BamHI_silent.gb</a>):</p>
 <h4 id="step-2---create-the-sequences-list-file-and-zipped-sequences-file">Step 2 - Create the sequences list file and zipped sequences file:</h4>
 <p>Once we have all of the genbank files we need for the assembly, we need to create two input files for j5, the sequences list and zipped sequences files.  Using an existing sequences list file as a starting point (e.g. myseqlist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our sequences list CSV file (stylized for clarity):</p>
@@ -2029,7 +2029,7 @@ gfpuv_sigpep_BamHI_silent (<a href="../../documents/gfpuv_sigpep_BamHI_si.gb.txt
 <p>The next parts to define concern the gfpuv_sig.pep coding sequence containing the silent point mutations disrupting the internal XhoI and BamHI sites. We split up the gfpuv_sig.pep coding sequence into five parts: its 5&#39; end, the XhoI silent mutation, its middle, the BamHI silent mutation, and its 3&#39; end. The relevant portions of the pGFPuv_sig.pep plasmid (as stated above) are, for the 5&#39; end (bps 289-713), the middle (bps 715-812), and the 3&#39; end (bps 814-1072). The XhoI silent mutation (1 bp) is the entire gfpuv_sigpep_XhoI_silent sequence, and the BamHI silent mutation (1 bp) is the entire gfpuv_sigpep_BamHI_silent sequence. We define the five gfpuv_sig.pep parts, gfpuv_sigpep_5prime. gfpuv_sigpep_XhoI_silent, gfpuv_sigpep_middle, gfpuv_sigpep_BamHI_silent and gfpuv_sigpep_3prime, accordingly. In this case, the gfpuv_sig.pep coding sequence is on the top strand of pGFPuv_sig.pep, so all five of its parts will be defined as not being the reverse complements. The resulting parts definitions for the gfpuv_sig.pep coding sequence are shown below.</p>
 <p>Using an existing parts list file as a starting point (e.g. partslist.csv), we can use MS Excel, another spreadsheet program, or even a text editor, to create our parts list file (stylized for clarity):</p>
 <p><img src="../../images/pastedImage22.png" alt="j5 examples 22"></p>
-<p>Hereis the actual csv file: <a href="../../documents/partslist_pS8c-gfpuv_.csv">partslist_pS8c-gfpuv_sig.pep.csv</a></p>
+<p>Here is the actual csv file: <a href="../../documents/partslist_pS8c-gfpuv_.csv">partslist_pS8c-gfpuv_sig.pep.csv</a></p>
 <p>It is absolutely crucial here to note that, as described in the parts list file documentation, the part source column refers to the sequence display ID within the sequence file (e.g. pGFPuv_cterm_signal), and not to the file name of the genbank sequence file itself (e.g. pGFPuv_sig.pep.gb). If you open up the genbank file pGFPuv_sig.pep.gb, presented above, with a text editor (e.g. notepad or TextEdit) the top of the file looks like:
 <img src="../../images/pastedImage23.png" alt=""></p>
 <p>The sequence display ID immediately follows the LOCUS, in this case it is pGFPuv_cterm_signal, and it is this sequence display ID that should be included in the parts list file, as we have done it above. Note that the same is true for the XhoI and BamHI silent mutation genbank files.</p>
