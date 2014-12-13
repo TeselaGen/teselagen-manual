@@ -5,7 +5,7 @@ $( document ).ready(function() {
            });
 
       $(".chapter ").find('> a').first().on('click', function(){
-	window.location = "/manual/";   
+	window.location = "/";   
     });
 
         $(".summary > .chapter > a").parent().find('> ul').hide();
