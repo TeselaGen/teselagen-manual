@@ -1,3 +1,8 @@
+a.pull-right {
+    display: none !important;
+}
+
+/*
 a.author-link {
     display: none !important;
 }
@@ -31,6 +36,8 @@ a.home-bookmark {
 #enlarge-font-size {
     display: none !important;
 }
+
+*/
 
 .bar .inner {
 background: rgb(0, 124, 171) !important;
@@ -105,21 +112,21 @@ a img {
     border: none;
 }
 
+/*
 .book-header {
     display: none;
 }
+*/
 
 .book-header:before{
    /* content: url("file://localhost/Users/eabeliuk/Desktop/TeselaGen/code/gitbook/teselagen-manual/www/images/tesela_logo.png");  */
  /*  content:url("http://help.teselagen.com/images/tesela_logo.png");  */
-   position: absolute;
+/*   position: absolute;
    margin: 0px;
    z-index: 999999;
 }
-
+*/
+    
 .toggle-summary{
   padding-left: 150px !important;
 }
-
-
-
