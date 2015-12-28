@@ -1,4 +1,12 @@
-a.pull-right {
+.book-search {
+    visibility: hidden !important;
+}
+
+.book-search input:hover {
+    visibility: visible !important;
+}
+
+.pull-right {
     display: none !important;
 }
 
