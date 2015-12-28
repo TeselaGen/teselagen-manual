@@ -2,7 +2,7 @@
     visibility: hidden !important;
 }
 
-.book-search input:hover {
+.book.with-search .book-summary .book-search {
     visibility: visible !important;
 }
 

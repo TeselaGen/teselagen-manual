@@ -57,7 +57,7 @@
         data-chapter-title="Eugene rules list file"
         data-filepath="chp/chp12/chp12_5.md"
         data-basepath="../.."
-        data-revision="Mon Dec 28 2015 00:18:08 GMT-0800 (PST)"
+        data-revision="Mon Dec 28 2015 02:12:56 GMT-0800 (PST)"
         data-innerlanguage="">
     
 
@@ -1704,10 +1704,6 @@ Part <i>operand1</i> must occur more than <i>operand2</i> times in each construc
 <script src="../../gitbook/app.js"></script>
 
     
-    <script src="../../gitbook/plugins/gitbook-plugin-tesela/tesela.js"></script>
-    
-
-    
     <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
     
 
@@ -1732,5 +1728,5 @@ require(["gitbook"], function(gitbook) {
 
         
     </body>
-    <script> $( document ).ajaxSuccess(function() { $('.summary > .chapter > a').click(function() {   $(this).parent().find('> ul').slideToggle(); return false;   });  $('.chapter ').find('> a').first().on('click', function(){   window.location = '/';  }); $('.summary > .chapter > ul').hide();  $('.articles > .active').parent().show();  }); </script>
+    <script> $( document ).ajaxSuccess(function() { $('.summary > .chapter > a').unbind('click').click(function() {   $(this).parent().find('> ul').slideToggle(); return false;   });  $('.chapter ').find('> a').first().on('click', function(){   window.location = '/';  }); $('.summary > .chapter > ul').hide();  $('.articles > .active').parent().show();  }); </script>
 </html>

@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $(".summary > .chapter > a").click(function() {
+    $(".summary > .chapter > a").unbind('click').click(function() {
                 $(this).parent().find('> ul').slideToggle();
                 return false;
            });
