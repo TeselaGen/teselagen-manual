@@ -93,10 +93,10 @@ i.fa-check {
 /* header */
 
 .top-bar {
-    height: 55px;
+    height: 60px;
 }
 .top-bar img {
-    height: 45px;
+    height: 40px;
     position: relative;
     top: 15px;
     left: 10px;
@@ -105,11 +105,15 @@ a img {
     border: none;
 }
 
+.book-header {
+    display: none;
+}
+
 .book-header:before{
    /* content: url("file://localhost/Users/eabeliuk/Desktop/TeselaGen/code/gitbook/teselagen-manual/www/images/tesela_logo.png");  */
-   content:url("http://help.teselagen.com/images/tesela_logo.png"); 
+ /*  content:url("http://help.teselagen.com/images/tesela_logo.png");  */
    position: absolute;
-   margin: 10px;
+   margin: 0px;
    z-index: 999999;
 }
 
