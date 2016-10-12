@@ -1,0 +1,24 @@
+LOCUS       umuD_tag_GFPuv           126 bp    DNA     linear   BCT 11-MAR-2010
+DEFINITION  Escherichia coli str. K-12 substr. MG1655, complete genome.
+ACCESSION   U00096 REGION: 1229990..1230409
+VERSION     U00096.2  GI:48994873
+DBLINK      Project:225
+KEYWORDS    .
+SOURCE      Escherichia coli str. K-12 substr. MG1655
+  ORGANISM  Escherichia coli str. K-12 substr. MG1655
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales;
+            Enterobacteriaceae; Escherichia.
+FEATURES             Location/Qualifiers
+     CDS             1..126
+                     /label=GFPuv
+     misc_feature    1..120
+                     /vntifkey="21"
+                     /label=umuD\Lon\tag
+     misc_feature    121..126
+                     /vntifkey="21"
+                     /label=Gly\Gly\linker
+ORIGIN      
+        1 atgttgttta tcaagcctgc ggatctccgc gaaattgtga cttttccgct atttagcgat
+       61 cttgttcagt gtggctttcc ttcaccggca gcagattacg ttgaacagcg catcgatctg
+      121 ggtggc
+//

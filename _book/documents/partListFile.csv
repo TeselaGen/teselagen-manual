@@ -1,0 +1,6 @@
+Part Name,Part Source (Sequence Display ID),Reverse Compliment?,Start (bp),End (bp)
+vector_backbone,pJWT00001,FALSE,3667,2880
+GentR,pSGI,FALSE,3427,4251
+RifR,pSROI,FALSE,3427,4200
+SpecR,MAGE-01,FALSE,1,1087
+TetA,pCM62-Prha-T7SL-,TRUE,3966,5936

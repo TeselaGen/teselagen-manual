@@ -1,0 +1,17 @@
+LOCUS       ccmN_nterm_sig_p         108 bp    DNA     linear       26-FEB-2010
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+SOURCE      
+  ORGANISM  
+FEATURES             Location/Qualifiers
+     misc_feature    4..60
+                     /label=ccmN_sig_pep
+     misc_feature    61..108
+                     /label=gly_ser_linker
+     CDS             1..108
+                     /label=GFPuv
+BASE COUNT       20 a        25 c        40 g        23 t 
+ORIGIN
+        1 atgaaggtct acggcaagga acagtttttg cggatgcgcc agagcatgtt ccccgatcgc 
+       61 ggtggcagtg gtagcgggag ctcgggtggc tcaggctctg gttccagt 
+//

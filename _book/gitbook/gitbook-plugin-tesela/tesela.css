@@ -1,0 +1,140 @@
+.book-search {
+    visibility: hidden !important;
+}
+
+.book.with-search .book-summary .book-search {
+    visibility: visible !important;
+}
+
+.pull-right {
+    display: none !important;
+}
+
+/*
+a.author-link {
+    display: none !important;
+}
+a.issues-link {
+    display: none !important;
+}
+a.contribute-link {
+    display: none !important;
+}
+
+a.sharing-link {
+    display: none !important;
+}
+a.count-watch {
+    display: none !important;
+}
+a.count-star {
+    display: none !important;
+}
+
+a.home-bookmark {
+    display: none !important;
+}
+.gitbook-link {
+    display: none !important;
+}
+
+#reduce-font-size {
+    display: none !important;
+}
+#enlarge-font-size {
+    display: none !important;
+}
+
+*/
+
+.bar .inner {
+background: rgb(0, 124, 171) !important;
+}
+
+/****************/
+/* side menu */
+
+i.fa-check {
+  display:none !important;
+}
+
+/* This conflicts with slideToggle */
+/*ul.articles {
+  display: block !important;
+}
+*/
+
+/*ul:active {
+  display:block;
+}
+*/
+
+/**************
+.book-summary {
+    width: 350px !important;
+}
+.book-body {
+    left: 350px !important;
+}
+
+***************/
+
+/* footer */
+
+#footer {
+  background: #003554;
+  display: table;
+  width: 100%;
+  height: 250px;
+  clear: both;
+}
+#footer_links {
+  background: none;
+  margin-top: 80px;
+}
+.footer-ul {
+  text-align: center;
+  color: white;
+}
+.footer-ul li {
+  display: inline-block;
+}
+.footer-ul li a {
+  font-size: 14px;
+  color: white;
+  margin: 0px 20px;
+}
+
+/* header */
+
+.top-bar {
+    height: 60px;
+}
+.top-bar img {
+    height: 40px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+a img {
+    border: none;
+}
+
+/*
+.book-header {
+    display: none;
+}
+*/
+
+.book-header:before{
+   /* content: url("file://localhost/Users/eabeliuk/Desktop/TeselaGen/code/gitbook/teselagen-manual/www/images/tesela_logo.png");  */
+ /*  content:url("http://help.teselagen.com/images/tesela_logo.png");  */
+/*   position: absolute;
+   margin: 0px;
+   z-index: 999999;
+}
+*/
+    
+.toggle-summary{
+  padding-left: 150px !important;
+}

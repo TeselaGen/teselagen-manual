@@ -1,0 +1,26 @@
+LOCUS       ssrA_tag_GFPuv            33 bp    DNA     linear       26-FEB-2010
+DEFINITION  .
+SOURCE      .
+  ORGANISM  .
+COMMENT     
+            ApEinfo:methylated:1
+COMMENT     This file is created by Vector NTI
+            http://www.invitrogen.com/
+COMMENT     ORIGDB|GenBank
+COMMENT     VNTDBDATE|546964667|
+COMMENT     LSOWNER|
+COMMENT     VNTNAME|ssrA_tag_GFPuv|
+COMMENT     VNTAUTHORNAME|Nathan Hillson|
+COMMENT     VNTAUTHOREML|njhillson@lbl.gov|
+COMMENT     VNTOAUTHORNAME|UNKNOWN|
+FEATURES             Location/Qualifiers
+     misc_feature    1..33
+                     /vntifkey="21"
+                     /label=ssrA\tag
+     CDS             1..33
+                     /vntifkey="4"
+                     /label=GFPuv
+BASE COUNT        8 a         8 c        13 g         4 t 
+ORIGIN
+        1 gcggcgaacg atgaaaacta tgcgctggcg gcg 
+//

@@ -1,0 +1,31 @@
+"Distribute Pcr Reactions j5 v0.1alpha 3/24/2011"
+
+"PCR Reactions:"
+Index,TEMPLATE_PLATE,TEMPLATE_WELL,TEMPLATE_VOLUME,PRIMER1_PLATE,PRIMER1_WELL,PRIMER1_VOLUME,PRIMER2_PLATE,PRIMER2_WELL,PRIMER2_VOLUME,WATER_VOLUME,OUTPUT_PLATE,OUTPUT_WELL,REACTION_NUMBER,OPTIMAL_ANNEALING_TEMP,THERMOCYCLER_BLOCK,THERMOCYCLER_ZONE,THERMOCYCLER_ZONE_ANNEALING_TEMP,EXPECTED_SIZE
+1,templates_plate,B01,5,oligos_plate,E03,5,oligos_plate,G03,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,A01,10,56.0,0,0,56.0,4522
+2,templates_plate,B01,5,oligos_plate,F03,5,oligos_plate,H03,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,B01,12,56.0,0,0,56.0,4621
+3,templates_plate,B01,5,oligos_plate,F03,5,oligos_plate,G04,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,C01,17,56.0,0,0,56.0,4627
+4,templates_plate,A01,5,oligos_plate,E01,5,oligos_plate,G01,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,A03,1,58.6,0,1,58.6,98
+5,templates_plate,A01,5,oligos_plate,F01,5,oligos_plate,H01,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,B03,4,58.6,0,1,58.6,137
+6,templates_plate,B01,5,oligos_plate,E02,5,oligos_plate,G02,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,A05,6,59.2,0,2,59.2,5296
+7,templates_plate,B01,5,oligos_plate,F02,5,oligos_plate,H02,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,B05,8,59.2,0,2,59.2,5325
+8,templates_plate,A01,5,oligos_plate,A01,5,oligos_plate,C01,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,A09,0,62.2,0,4,62.5,425
+9,templates_plate,A01,5,oligos_plate,B01,5,oligos_plate,D01,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,B09,3,62.2,0,4,62.5,496
+10,templates_plate,A01,5,oligos_plate,A02,5,oligos_plate,C02,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,C09,2,62.5,0,4,62.5,259
+11,templates_plate,A01,5,oligos_plate,B02,5,oligos_plate,D02,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,D09,5,62.5,0,4,62.5,308
+12,templates_plate,B01,5,oligos_plate,A04,5,oligos_plate,C04,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,E09,11,62.5,0,4,62.5,711
+13,templates_plate,B01,5,oligos_plate,B04,5,oligos_plate,D04,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,F09,13,62.5,0,4,62.5,804
+14,templates_plate,B01,5,oligos_plate,B04,5,oligos_plate,E04,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,G09,14,62.5,0,4,62.5,810
+15,templates_plate,B01,5,oligos_plate,F04,5,oligos_plate,D04,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,H09,15,62.5,0,4,62.5,780
+16,templates_plate,B01,5,oligos_plate,F04,5,oligos_plate,E04,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,A10,16,62.5,0,4,62.5,786
+17,templates_plate,C01,5,oligos_plate,A03,5,oligos_plate,C03,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,A11,7,63.8,0,5,63.8,126
+18,templates_plate,C01,5,oligos_plate,B03,5,oligos_plate,D03,5,0,myassemblyfilelist_condensed_PCR_PLATE_1,B11,9,63.8,0,5,63.8,157
+
+"Thermocycler Blocks:"
+"BLOCK ID","BLOCK ZONE",BLOCK_ZONE_ANNEALING_TEMP
+0,0,56
+0,1,58.6
+0,2,59.2
+0,3,59.3
+0,4,62.5
+0,5,63.8

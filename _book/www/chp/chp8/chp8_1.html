@@ -1,0 +1,2351 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <div class='top-bar'>         <a href='/'><img src='https://www.teselagen.com/img/teselagen_toplogo.png'></a></li>  </div>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>DeviceEditor format (.xml) design files | TeselaGen&#39;s Manual</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-tesela/tesela.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../chp/chp9/chp9.html" />
+    
+    
+    <link rel="prev" href="../../chp/chp8/chp8.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="8.1"
+        data-chapter-title="DeviceEditor format (.xml) design files"
+        data-filepath="chp/chp8/chp8_1.md"
+        data-basepath="../.."
+        data-revision="Mon Dec 28 2015 02:24:59 GMT-0800 (PST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chp/chp1/chp1.html">
+            
+                
+                    <a href="../../chp/chp1/chp1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Intro. to BioCAD/CAM
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chp/chp1/chp1_1.html">
+            
+                
+                    <a href="../../chp/chp1/chp1_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        From specification, to design, to implementation, to assay
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chp/chp2/chp2.html">
+            
+                
+                    <a href="../../chp/chp2/chp2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Intro. to DNA Assembly
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chp/chp2/chp2_1.html">
+            
+                
+                    <a href="../../chp/chp2/chp2_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        The DNA assembly challenge
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chp/chp2/chp2_2.html">
+            
+                
+                    <a href="../../chp/chp2/chp2_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        The traditional multiple cloning site approach
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chp/chp2/chp2_3.html">
+            
+                
+                    <a href="../../chp/chp2/chp2_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        The BioBrick approach
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chp/chp2/chp2_4.html">
+            
+                
+                    <a href="../../chp/chp2/chp2_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        The SLIC, Gibson, CPEC and SLiCE assembly methods (and GeneArt Seamless Cloning)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chp/chp2/chp2_5.html">
+            
+                
+                    <a href="../../chp/chp2/chp2_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        The Golden Gate assembly method (and MoClo and GoldenBraid)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chp/chp3/chp3.html">
+            
+                
+                    <a href="../../chp/chp3/chp3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Synthetic Evolution
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chp/chp3/chp3_1.html">
+            
+                
+                    <a href="../../chp/chp3/chp3_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        TeselaGen&#39;s Synthetic Evolution Workflow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chp/chp3/chp3_2.html">
+            
+                
+                    <a href="../../chp/chp3/chp3_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Bioinformatics and BioCAD preliminaries
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chp/chp4/chp4.html">
+            
+                
+                    <a href="../../chp/chp4/chp4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        BioCAD demos
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chp/chp4/chp4_1.html">
+            
+                
+                    <a href="../../chp/chp4/chp4_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        DNA Sequence and Part Management
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chp/chp4/chp4_2.html">
+            
+                
+                    <a href="../../chp/chp4/chp4_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Sequence Editing and Part Creation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chp/chp4/chp4_3.html">
+            
+                
+                    <a href="../../chp/chp4/chp4_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Designing with Device Editor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chp/chp4/chp4_4.html">
+            
+                
+                    <a href="../../chp/chp4/chp4_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Generating assembly instructions with J5
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chp/chp5/chp5.html">
+            
+                
+                    <a href="../../chp/chp5/chp5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Managing DNA sequences
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chp/chp5/chp5_1.html">
+            
+                
+                    <a href="../../chp/chp5/chp5_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Importing DNA sequences into your sequence library
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chp/chp5/chp5_2.html">
+            
+                
+                    <a href="../../chp/chp5/chp5_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Creating a sequence
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chp/chp5/chp5_3.html">
+            
+                
+                    <a href="../../chp/chp5/chp5_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Editing a sequence
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="chp/chp5/chp5_4.html">
+            
+                
+                    <a href="../../chp/chp5/chp5_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Sequence analysis tools
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="chp/chp5/chp5_5.html">
+            
+                
+                    <a href="../../chp/chp5/chp5_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Mapping sequence to parts
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="chp/chp6/chp6.html">
+            
+                
+                    <a href="../../chp/chp6/chp6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Managing columns
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="chp/chp6/chp6_1.html">
+            
+                
+                    <a href="../../chp/chp6/chp6_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Adding and removing columns
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="chp/chp6/chp6_2.html">
+            
+                
+                    <a href="../../chp/chp6/chp6_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Changing column SBOL Visual icons
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="chp/chp6/chp6_3.html">
+            
+                
+                    <a href="../../chp/chp6/chp6_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Changing column assembly orientations
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="chp/chp6/chp6_4.html">
+            
+                
+                    <a href="../../chp/chp6/chp6_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Changing column names
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="chp/chp6/chp6_5.html">
+            
+                
+                    <a href="../../chp/chp6/chp6_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        Controlling column assembly directives for j5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="chp/chp6/chp6_6.html">
+            
+                
+                    <a href="../../chp/chp6/chp6_6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        Changing the assembly product type (circular-linear)
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="chp/chp7/chp7.html">
+            
+                
+                    <a href="../../chp/chp7/chp7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Managing specific parts
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="chp/chp7/chp7_1.html">
+            
+                
+                    <a href="../../chp/chp7/chp7_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Editing a part&#39;s name or definition
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="chp/chp7/chp7_2.html">
+            
+                
+                    <a href="../../chp/chp7/chp7_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Changing the assembly strategy for a part
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="chp/chp7/chp7_3.html">
+            
+                
+                    <a href="../../chp/chp7/chp7_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Creating Eugene design specification rules
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="chp/chp7/chp7_4.html">
+            
+                
+                    <a href="../../chp/chp7/chp7_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Importing a set of Eugene design specification rules
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="chp/chp7/chp7_5.html">
+            
+                
+                    <a href="../../chp/chp7/chp7_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Cutting, copying, pasting parts
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="chp/chp8/chp8.html">
+            
+                
+                    <a href="../../chp/chp8/chp8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Design files
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="8.1" data-path="chp/chp8/chp8_1.html">
+            
+                
+                    <a href="../../chp/chp8/chp8_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        DeviceEditor format (.xml) design files
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="chp/chp9/chp9.html">
+            
+                
+                    <a href="../../chp/chp9/chp9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        DNA assembly protocol generator
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="chp/chp9/chp9_1.html">
+            
+                
+                    <a href="../../chp/chp9/chp9_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Bioinformatics/BioCAD prerequisites to SLIC/Gibson/CPEC/SLiCE and Golden Gate DNA assembly
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="chp/chp9/chp9_2.html">
+            
+                
+                    <a href="../../chp/chp9/chp9_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Process flow for j5 and integration with Registries of Biological Parts and BioCAD tools
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="chp/chp9/chp9_3.html">
+            
+                
+                    <a href="../../chp/chp9/chp9_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Brief survey of j5 functionality
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="chp/chp10/chp10.html">
+            
+                
+                    <a href="../../chp/chp10/chp10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Specific examples of using j5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="chp/chp10/chp10_1.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        SLIC, Gibson, CPEC assembly (and GeneArt® Seamless Cloning)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="chp/chp10/chp10_2.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Combinatorial SLIC, Gibson, CPEC assembly
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="chp/chp10/chp10_3.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        Mock assembly
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="chp/chp10/chp10_4.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Combinatorial Mock assembly
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="chp/chp10/chp10_5.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Golden Gate assembly
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="chp/chp10/chp10_6.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        Combinatorial Golden Gate assembly
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="chp/chp10/chp10_7.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.7.</b>
+                        
+                        Condensation of multiple j5 assembly files
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.8" data-path="chp/chp10/chp10_8.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.8.</b>
+                        
+                        Distribution of PCR reactions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.9" data-path="chp/chp10/chp10_9.html">
+            
+                
+                    <a href="../../chp/chp10/chp10_9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.9.</b>
+                        
+                        Conversion of SBOL XML &amp;lt;-&amp;gt; GenBank sequence files
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="chp/chp11/chp11.html">
+            
+                
+                    <a href="../../chp/chp11/chp11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        File formats used by j5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="chp/chp11/chp11_1.html">
+            
+                
+                    <a href="../../chp/chp11/chp11_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Comma separated value (.csv); FASTA (.fas) and Genbank (.gb) sequence files
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="chp/chp11/chp11_2.html">
+            
+                
+                    <a href="../../chp/chp11/chp11_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        jbei-seq format (.xml) sequence files
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="chp/chp11/chp11_3.html">
+            
+                
+                    <a href="../../chp/chp11/chp11_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        SBOL XML format (.xml) sequence files
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="chp/chp12/chp12.html">
+            
+                
+                    <a href="../../chp/chp12/chp12.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        j5 input files
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="chp/chp12/chp12_1.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        j5 parameters file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="chp/chp12/chp12_2.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        Sequences list file and zipped sequences file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="chp/chp12/chp12_3.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        Parts list file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="chp/chp12/chp12_4.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                        Target part order list file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="chp/chp12/chp12_5.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                        Eugene rules list file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="chp/chp12/chp12_6.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.6.</b>
+                        
+                        Master plasmids list file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="chp/chp12/chp12_7.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.7.</b>
+                        
+                        Master oligos list file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="chp/chp12/chp12_8.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.8.</b>
+                        
+                        Master direct syntheses list file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.9" data-path="chp/chp12/chp12_9.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.9.</b>
+                        
+                        Assembly files to condense list file and zipped assembly files file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10" data-path="chp/chp12/chp12_10.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.10.</b>
+                        
+                        Downstream automation parameters file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.11" data-path="chp/chp12/chp12_11.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.11.</b>
+                        
+                        Multi-well plate file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.12" data-path="chp/chp12/chp12_12.html">
+            
+                
+                    <a href="../../chp/chp12/chp12_12.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.12.</b>
+                        
+                        Source plate list file and zipped source plate files file
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="chp/chp13/chp13.html">
+            
+                
+                    <a href="../../chp/chp13/chp13.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        j5 output assembly files
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1" data-path="chp/chp13/chp13_1.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                        SLIC/Gibson/CPEC/SLiCE assembly output file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="chp/chp13/chp13_2.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                        Combinatorial SLIC/Gibson/CPEC/SLiCE assembly output file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="chp/chp13/chp13_3.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                        Mock Assembly output file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.4" data-path="chp/chp13/chp13_4.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.4.</b>
+                        
+                        Combinatorial Mock Assembly output file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.5" data-path="chp/chp13/chp13_5.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.5.</b>
+                        
+                        Golden Gate assembly output file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.6" data-path="chp/chp13/chp13_6.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.6.</b>
+                        
+                        Combinatorial Golden Gate assembly output file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.7" data-path="chp/chp13/chp13_7.html">
+            
+                
+                    <a href="../../chp/chp13/chp13_7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.7.</b>
+                        
+                        Condensed multiple j5 assembly files
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="chp/chp14/chp14.html">
+            
+                
+                    <a href="../../chp/chp14/chp14.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        j5 downstream automation
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1" data-path="chp/chp14/chp14_1.html">
+            
+                
+                    <a href="../../chp/chp14/chp14_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                        Distribute PCR reactions file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="chp/chp14/chp14_2.html">
+            
+                
+                    <a href="../../chp/chp14/chp14_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                        NextGen (eXeTek) expression workstation control file
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="chp/chp14/chp14_3.html">
+            
+                
+                    <a href="../../chp/chp14/chp14_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.3.</b>
+                        
+                        PR-PR distribute PCR reactions configuration (.pr) files
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="chp/chp15/chp15.html">
+            
+                
+                    <a href="../../chp/chp15/chp15.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        j5 error messages
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="15.1" data-path="chp/chp15/chp15_1.html">
+            
+                
+                    <a href="../../chp/chp15/chp15_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.1.</b>
+                        
+                        j5 input error messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="chp/chp15/chp15_2.html">
+            
+                
+                    <a href="../../chp/chp15/chp15_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.2.</b>
+                        
+                        SLIC/Gibson/CPEC/SLiCE or Golden Gate specific error messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="chp/chp15/chp15_3.html">
+            
+                
+                    <a href="../../chp/chp15/chp15_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.3.</b>
+                        
+                        Distribute PCR Reactions specific error messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="chp/chp15/chp15_4.html">
+            
+                
+                    <a href="../../chp/chp15/chp15_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.4.</b>
+                        
+                        Condense multiple j5 assembly files specific error messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15.5" data-path="chp/chp15/chp15_5.html">
+            
+                
+                    <a href="../../chp/chp15/chp15_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.5.</b>
+                        
+                        Internal error messages
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="chp/chp16/chp16.html">
+            
+                
+                    <a href="../../chp/chp16/chp16.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        Experimental protocols
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="16.1" data-path="chp/chp16/chp16_1.html">
+            
+                
+                    <a href="../../chp/chp16/chp16_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.1.</b>
+                        
+                        SLIC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.2" data-path="chp/chp16/chp16_2.html">
+            
+                
+                    <a href="../../chp/chp16/chp16_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.2.</b>
+                        
+                        Gibson
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.3" data-path="chp/chp16/chp16_3.html">
+            
+                
+                    <a href="../../chp/chp16/chp16_3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.3.</b>
+                        
+                        CPEC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.4" data-path="chp/chp16/chp16_4.html">
+            
+                
+                    <a href="../../chp/chp16/chp16_4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.4.</b>
+                        
+                        SLiCE
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.5" data-path="chp/chp16/chp16_5.html">
+            
+                
+                    <a href="../../chp/chp16/chp16_5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.5.</b>
+                        
+                        Golden Gate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16.6" data-path="chp/chp16/chp16_6.html">
+            
+                
+                    <a href="../../chp/chp16/chp16_6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.6.</b>
+                        
+                        5&#39; phosphorylation of annealed DNA oligos
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="chp/chp17/chp17.html">
+            
+                
+                    <a href="../../chp/chp17/chp17.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        Related publications
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="17.1" data-path="chp/chp17/chp17_1.html">
+            
+                
+                    <a href="../../chp/chp17/chp17_1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.1.</b>
+                        
+                        How to cite j5, and publications citing j5
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >TeselaGen&#39;s Manual</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="deviceeditor-format-xml-design-files">DeviceEditor format (.xml) design files</h2>
+<p>DeviceEditor design files are based upon XML, and contain all of the information required to fully recapitulate designs on the DeviceEditor canvas. Third-party bioCAD tools can output DeviceEditor design files for integration with DeviceEditor and thereby j5 DNA assembly design automation.</p>
+<p>Here is the XML schema for DeviceEditor format design files: <a href="../../documents/design.xsd">design.xsd</a></p>
+<p>Here is an example DeviceEditor design: <a href="../../documents/DeviceEditor_example.xml">DeviceEditor_example.xml</a></p>
+<p><img src="../../images/Screen_Shot_2014-07-03.png" alt="DE format"></p>
+<p>Several key aspects of this example design to highlight are:</p>
+<ol>
+<li>This is a combinatorial design, so there are multiple parts (e.g. &quot;BMC_nterm_sig_pep&quot; and &quot;ccmN_nterm_sig_pep&quot;) in the same collection column (e.g. &quot;nterm_sig_pep&quot;).</li>
+<li>A part has a Eugene design specification rule associated with it (&quot;short_gly_ser_linker&quot;).</li>
+<li>Forced assembly strategies have been set for several parts (e.g. &quot;ssrA_tag_3prime&quot;).</li>
+<li>Direct synthesis firewalls and forced relative overhang directives have been set for several collection columns (e.g. a direct synthesis firewall for column &quot;nterm_sig_pep&quot;, and a +2 forced relative overhang for column &quot;vector_backbone&quot;).</li>
+</ol>
+<p>Here is the stylized DeviceEditor design file for the above example:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;de:design xsi:schemaLocation=&quot;http://jbei.org/device_editor design.xsd&quot; xmlns:de=&quot;http://jbei.org/device_editor&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+  &lt;de:version&gt;4.1&lt;/de:version&gt;
+  &lt;de:sequenceFiles&gt;
+    &lt;de:sequenceFile hash=&quot;23d714d34632e24f53c2095f05e79f17aded7ec22651c20e4b320f82bc2bf731&quot;&gt;
+      &lt;de:format&gt;Genbank&lt;/de:format&gt;
+      &lt;de:content&gt;&lt;![CDATA[LOCUS       pj5_00001               5299 bp    dna     circular UNK 26-OCT-2009
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+KEYWORDS    ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; .
+FEATURES             Location/Qualifiers
+     CDS             complement(7..885)
+                     /label=araC
+     protein_bind    914..931
+                     /label=operator\O2
+     promoter        complement(1036..1064)
+                     /label=araC\promoter
+     protein_bind    1072..1093
+                     /label=operator\O1
+     misc_binding    1115..1128
+                     /label=CAP\site
+     protein_bind    1124..1162
+                     /label=Operator\I2\and\I1
+     promoter        1161..1188
+                     /label=pBAD\promoter
+     RBS             1216..1235
+                     /label=RBS
+     CDS             1236..2018
+                     /vntifkey=&quot;4&quot;
+                     /label=GFPuv
+     misc_feature    1661..1661
+                     /label=XhoI_silent_mutation
+     misc_feature    1760..1760
+                     /label=BamHI_silent_mutation
+     CDS             1953..2015
+                     /vntifkey=&quot;4&quot;
+                     /label=signal_peptide
+     terminator      2034..2162
+                     /label=dbl\term
+     rep_origin      complement(2164..4392)
+                     /label=pSC101**
+     terminator      4393..4498
+                     /label=T0
+     misc_marker     complement(4514..5173)
+                     /label=CmR
+ORIGIN 
+        1 gacgtcttat gacaacttga cggctacatc attcactttt tcttcacaac cggcacggaa
+       61 ctcgctcggg ctggccccgg tgcatttttt aaatacccgc gagaaataga gttgatcgtc
+      121 aaaaccaaca ttgcgaccga cggtggcgat aggcatccgg gtggtgctca aaagcagctt
+      181 cgcctggctg atacgttggt cctcgcgcca gcttaagacg ctaatcccta actgctggcg
+      241 gaaaagatgt gacagacgcg acggcgacaa gcaaacatgc tgtgcgacgc tggcgatatc
+      301 aaaattgctg tctgccaggt gatcgctgat gtactgacaa gcctcgcgta cccgattatc
+      361 catcggtgga tggagcgact cgttaatcgc ttccatgcgc cgcagtaaca attgctcaag
+      421 cagatttatc gccagcagct ccgaatagcg cccttcccct tgcccggcgt taatgatttg
+      481 cccaaacagg tcgctgaaat gcggctggtg cgcttcatcc gggcgaaaga accccgtatt
+      541 ggcaaatatt gacggccagt taagccattc atgccagtag gcgcgcggac gaaagtaaac
+      601 ccactggtga taccattcgc gagcctccgg atgacgaccg tagtgatgaa tctctcctgg
+      661 cgggaacagc aaaatatcac ccggtcggca aacaaattct cgtccctgat ttttcaccac
+      721 cccctgaccg cgaatggtga gattgagaat ataacctttc attcccagcg gtcggtcgat
+      781 aaaaaaatcg agataaccgt tggcctcaat cggcgttaaa cccgccacca gatgggcatt
+      841 aaacgagtat cccggcagca ggggatcatt ttgcgcttca gccatacttt tcatactccc
+      901 gccattcaga gaagaaacca attgtccata ttgcatcaga cattgccgtc actgcgtctt
+      961 ttactggctc ttctcgctaa ccaaaccggt aaccccgctt attaaaagca ttctgtaaca
+     1021 aagcgggacc aaagccatga caaaaacgcg taacaaaagt gtctataatc acggcagaaa
+     1081 agtccacatt gattatttgc acggcgtcac actttgctat gccatagcat ttttatccat
+     1141 aagattagcg gattctacct gacgcttttt atcgcaactc tctactgttt ctccataccc
+     1201 gtttttttgg gaatttttaa gaaggagata tacatatgag taaaggagaa gaacttttca
+     1261 ctggagttgt cccaattctt gttgaattag atggtgatgt taatgggcac aaattttctg
+     1321 tcagtggaga gggtgaaggt gatgcaacat acggaaaact tacccttaaa tttatttgca
+     1381 ctactggaaa actacctgtt ccatggccaa cacttgtcac tactttctct tatggtgttc
+     1441 aatgcttttc ccgttatccg gatcatatga aacggcatga ctttttcaag agtgccatgc
+     1501 ccgaaggtta tgtacaggaa cgcactatat ctttcaaaga tgacgggaac tacaagacgc
+     1561 gtgctgaagt caagtttgaa ggtgataccc ttgttaatcg tatcgagtta aaaggtattg
+     1621 attttaaaga agatggaaac attctcggac acaaactcga atacaactat aactcacaca
+     1681 atgtatacat cacggcagac aaacaaaaga atggaatcaa agctaacttc aaaattcgcc
+     1741 acaacattga agatggatct gttcaactag cagaccatta tcaacaaaat actccaattg
+     1801 gcgatggccc tgtcctttta ccagacaacc attacctgtc gacacaatct gccctttcga
+     1861 aagatcccaa cgaaaagcgt gaccacatgg tccttcttga gtttgtaact gctgctggga
+     1921 ttacacatgg catggatgag ctcggcggcg gcggcagcaa ggtctacggc aaggaacagt
+     1981 ttttgcggat gcgccagagc atgttccccg atcgctaaat cgagtaagga tctccaggca
+     2041 tcaaataaaa cgaaaggctc agtcgaaaga ctgggccttt cgttttatct gttgtttgtc
+     2101 ggtgaacgct ctctactaga gtcacactgg ctcaccttcg ggtgggcctt tctgcgttta
+     2161 tacctagggt acgggttttg ctgcccgcaa acgggctgtt ctggtgttgc tagtttgtta
+     2221 tcagaatcgc agatccggct tcagccggtt tgccggctga aagcgctatt tcttccagaa
+     2281 ttgccatgat tttttcccca cgggaggcgt cactggctcc cgtgttgtcg gcagctttga
+     2341 ttcgataagc agcatcgcct gtttcaggct gtctatgtgt gactgttgag ctgtaacaag
+     2401 ttgtctcagg tgttcaattt catgttctag ttgctttgtt ttactggttt cacctgttct
+     2461 attaggtgtt acatgctgtt catctgttac attgtcgatc tgttcatggt gaacagcttt
+     2521 gaatgcacca aaaactcgta aaagctctga tgtatctatc ttttttacac cgttttcatc
+     2581 tgtgcatatg gacagttttc cctttgatat gtaacggtga acagttgttc tacttttgtt
+     2641 tgttagtctt gatgcttcac tgatagatac aagagccata agaacctcag atccttccgt
+     2701 atttagccag tatgttctct agtgtggttc gttgtttttg cgtgagccat gagaacgaac
+     2761 cattgagatc atacttactt tgcatgtcac tcaaaaattt tgcctcaaaa ctggtgagct
+     2821 gaatttttgc agttaaagca tcgtgtagtg tttttcttag tccgttatgt aggtaggaat
+     2881 ctgatgtaat ggttgttggt attttgtcac cattcatttt tatctggttg ttctcaagtt
+     2941 cggttacgag atccatttgt ctatctagtt caacttggaa aatcaacgta tcagtcgggc
+     3001 ggcctcgctt atcaaccacc aatttcatat tgctgtaagt gtttaaatct ttacttattg
+     3061 gtttcaaaac ccattggtta agccttttaa actcatggta gttattttca agcattaaca
+     3121 tgaacttaaa ttcatcaagg ctaatctcta tatttgcctt gtgagttttc ttttgtgtta
+     3181 gttcttttaa taaccactca taaatcctca tagagtattt gttttcaaaa gacttaacat
+     3241 gttccagatt atattttatg aattttttta actggaaaag ataaggcaat atctcttcac
+     3301 taaaaactaa ttctaatttt tcgcttgaga acttggcata gtttgtccac tggaaaatct
+     3361 caaagccttt aaccaaagga ttcctgattt ccacagttct cgtcatcagc tctctggttg
+     3421 ctttagctaa tacaccataa gcattttccc tactgatgtt catcatctga gcgtattggt
+     3481 tataagtgaa cgataccgtc cgttctttcc ttgtagggtt ttcaatcgtg gggttgagta
+     3541 gtgccacaca gcataaaatt agcttggttt catgctccgt taagtcatag cgactaatcg
+     3601 ctagttcatt tgctttgaaa acaactaatt cagacataca tctcaattgg tctaggtgat
+     3661 tttaatcact ataccaattg agatgggcta gtcaatgata attactagtc cttttcccgg
+     3721 gtgatctggg tatctgtaaa ttctgctaga cctttgctgg aaaacttgta aattctgcta
+     3781 gaccctctgt aaattccgct agacctttgt gtgttttttt tgtttatatt caagtggtta
+     3841 taatttatag aataaagaaa gaataaaaaa agataaaaag aatagatccc agccctgtgt
+     3901 ataactcact actttagtca gttccgcagt attacaaaag gatgtcgcaa acgctgtttg
+     3961 ctcctctaca aaacagacct taaaacccta aaggcttaag tagcaccctc gcaagctcgg
+     4021 gcaaatcgct gaatattcct tttgtctccg accatcaggc acctgagtcg ctgtcttttt
+     4081 cgtgacattc agttcgctgc gctcacggct ctggcagtga atgggggtaa atggcactac
+     4141 aggcgccttt tatggattca tgcaaggaaa ctacccataa tacaagaaaa gcccgtcacg
+     4201 ggcttctcag ggcgttttat ggcgggtctg ctatgtggtg ctatctgact ttttgctgtt
+     4261 cagcagttcc tgccctctga ttttccagtc tgaccacttc ggattatccc gtgacaggtc
+     4321 attcagactg gctaatgcac ccagtaaggc agcggtatca tcaacaggct tacccgtctt
+     4381 actgtcccta gtgcttggat tctcaccaat aaaaaacgcc cggcggcaac cgagcgttct
+     4441 gaacaaatcc agatggagtt ctgaggtcat tactggatct atcaacagga gtccaagcga
+     4501 gctcgatatc aaattacgcc ccgccctgcc actcatcgca gtactgttgt aattcattaa
+     4561 gcattctgcc gacatggaag ccatcacaaa cggcatgatg aacctgaatc gccagcggca
+     4621 tcagcacctt gtcgccttgc gtataatatt tgcccatggt gaaaacgggg gcgaagaagt
+     4681 tgtccatatt ggccacgttt aaatcaaaac tggtgaaact cacccaggga ttggctgaga
+     4741 cgaaaaacat attctcaata aaccctttag ggaaataggc caggttttca ccgtaacacg
+     4801 ccacatcttg cgaatatatg tgtagaaact gccggaaatc gtcgtggtat tcactccaga
+     4861 gcgatgaaaa cgtttcagtt tgctcatgga aaacggtgta acaagggtga acactatccc
+     4921 atatcaccag ctcaccgtct ttcattgcca tacgaaattc cggatgagca ttcatcaggc
+     4981 gggcaagaat gtgaataaag gccggataaa acttgtgctt atttttcttt acggtcttta
+     5041 aaaaggccgt aatatccagc tgaacggtct ggttataggt acattgagca actgactgaa
+     5101 atgcctcaaa atgttcttta cgatgccatt gggatatatc aacggtggta tatccagtga
+     5161 tttttttctc cattttagct tccttagctc ctgaaaatct cgataactca aaaaatacgc
+     5221 ccggtagtga tcttatttca ttatggtgaa agttggaacc tcttacgtgc cgatcaacgt
+     5281 ctcattttcg ccagatatc
+//
+]]&gt;&lt;/de:content&gt;
+      &lt;de:fileName&gt;pj5_00001.gb&lt;/de:fileName&gt;
+    &lt;/de:sequenceFile&gt;
+    &lt;de:sequenceFile hash=&quot;46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1&quot;&gt;
+      &lt;de:format&gt;Genbank&lt;/de:format&gt;
+      &lt;de:content&gt;&lt;![CDATA[LOCUS       BMC_nterm_sig_pe         102 bp    DNA     linear       26-FEB-2010
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+SOURCE      
+  ORGANISM  
+FEATURES             Location/Qualifiers
+     misc_feature    55..102
+                     /label=gly_ser_linker
+     CDS             1..102
+                     /label=GFPuv
+     misc_feature    4..54
+                     /label=Clostridium_BMC_sig_pep
+BASE COUNT       33 a        14 c        29 g        26 t 
+ORIGIN
+        1 atggaaaata acgctttatt agaacaaata atcaatgaag ttttaaaaaa tatgggtggc 
+       61 agtggtagcg ggagctcggg tggctcaggc tctggttcca gt 
+//
+]]&gt;&lt;/de:content&gt;
+      &lt;de:fileName&gt;BMC_nterm_sig_pep_GFPuv.gb&lt;/de:fileName&gt;
+    &lt;/de:sequenceFile&gt;
+    &lt;de:sequenceFile hash=&quot;fbdc0cd5591545b773bce0741569577663dd940ca88bfd3b3dca98a3fc20fc39&quot;&gt;
+      &lt;de:format&gt;Genbank&lt;/de:format&gt;
+      &lt;de:content&gt;&lt;![CDATA[LOCUS       ccmN_nterm_sig_p         108 bp    DNA     linear       26-FEB-2010
+DEFINITION  promoter seq from pBAD33.
+ACCESSION   unknown
+SOURCE      
+  ORGANISM  
+FEATURES             Location/Qualifiers
+     misc_feature    4..60
+                     /label=ccmN_sig_pep
+     misc_feature    61..108
+                     /label=gly_ser_linker
+     CDS             1..108
+                     /label=GFPuv
+BASE COUNT       20 a        25 c        40 g        23 t 
+ORIGIN
+        1 atgaaggtct acggcaagga acagtttttg cggatgcgcc agagcatgtt ccccgatcgc 
+       61 ggtggcagtg gtagcgggag ctcgggtggc tcaggctctg gttccagt 
+//
+]]&gt;&lt;/de:content&gt;
+      &lt;de:fileName&gt;ccmN_nterm_sig_pep_GFPuv.gb&lt;/de:fileName&gt;
+    &lt;/de:sequenceFile&gt;
+    &lt;de:sequenceFile hash=&quot;7ded0adb8463aa8b7bfe30d093bc4f6d8718bd1182906f283b04d303860dd0f3&quot;&gt;
+      &lt;de:format&gt;FASTA&lt;/de:format&gt;
+      &lt;de:content&gt;&lt;![CDATA[&gt;ssrA_tag_enhance
+GCGGCGAACGATGAAAACTATAACTATGCGCTGGCGGCG
+]]&gt;&lt;/de:content&gt;
+      &lt;de:fileName&gt;ssrA_tag_enhance.fas&lt;/de:fileName&gt;
+    &lt;/de:sequenceFile&gt;
+    &lt;de:sequenceFile hash=&quot;fbb4e8715b6352478db1561d7229d0ef46ff83412c188fd71352a1418ddb43ab&quot;&gt;
+      &lt;de:format&gt;jbei-seq&lt;/de:format&gt;
+      &lt;de:content&gt;&lt;![CDATA[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;seq:seq
+  xmlns:seq=&quot;http://jbei.org/sequence&quot;
+  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+  xsi:schemaLocation=&quot;http://jbei.org/sequence seq.xsd&quot;
+&gt;
+&lt;seq:name&gt;ssrA_tag_GFPuv&lt;/seq:name&gt;
+&lt;seq:circular&gt;false&lt;/seq:circular&gt;
+&lt;seq:sequence&gt;gcggcgaacgatgaaaactatgcgctggcggcg&lt;/seq:sequence&gt;
+&lt;seq:features&gt;
+    &lt;seq:feature&gt;
+        &lt;seq:label&gt;ssrA tag&lt;/seq:label&gt;
+        &lt;seq:complement&gt;false&lt;/seq:complement&gt;
+        &lt;seq:type&gt;misc_feature&lt;/seq:type&gt;
+        &lt;seq:location&gt;
+            &lt;seq:genbankStart&gt;1&lt;/seq:genbankStart&gt;
+            &lt;seq:end&gt;33&lt;/seq:end&gt;
+        &lt;/seq:location&gt;
+        &lt;seq:attribute name=&quot;vntifkey&quot; quoted=&quot;true&quot; &gt;21&lt;/seq:attribute&gt;
+        &lt;seq:seqHash&gt;0d5535e13cc9708d0ff0289af2fae27e564b6bcbcd9242f5140d96957744a517&lt;/seq:seqHash&gt;
+    &lt;/seq:feature&gt;
+    &lt;seq:feature&gt;
+        &lt;seq:label&gt;GFPuv&lt;/seq:label&gt;
+        &lt;seq:complement&gt;false&lt;/seq:complement&gt;
+        &lt;seq:type&gt;CDS&lt;/seq:type&gt;
+        &lt;seq:location&gt;
+            &lt;seq:genbankStart&gt;1&lt;/seq:genbankStart&gt;
+            &lt;seq:end&gt;33&lt;/seq:end&gt;
+        &lt;/seq:location&gt;
+        &lt;seq:attribute name=&quot;vntifkey&quot; quoted=&quot;true&quot; &gt;4&lt;/seq:attribute&gt;
+        &lt;seq:seqHash&gt;0d5535e13cc9708d0ff0289af2fae27e564b6bcbcd9242f5140d96957744a517&lt;/seq:seqHash&gt;
+    &lt;/seq:feature&gt;
+&lt;/seq:features&gt;
+&lt;/seq:seq&gt;
+]]&gt;&lt;/de:content&gt;
+      &lt;de:fileName&gt;ssrA_tag_GFPuv.xml&lt;/de:fileName&gt;
+    &lt;/de:sequenceFile&gt;
+  &lt;/de:sequenceFiles&gt;
+  &lt;de:partVOs&gt;
+    &lt;de:partVO id=&quot;1318886361742366&quot;&gt;
+      &lt;de:name&gt;pS8c-vector_backbone&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;2016&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;1238&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;23d714d34632e24f53c2095f05e79f17aded7ec22651c20e4b320f82bc2bf731&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1318886361742634&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1318886361747742&quot;&gt;
+      &lt;de:name&gt;BMC_nterm_sig_pep&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;4&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;54&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1318886361747000&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1318886361752995&quot;&gt;
+      &lt;de:name&gt;ccmN_nterm_sig_pep&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;4&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;60&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;fbdc0cd5591545b773bce0741569577663dd940ca88bfd3b3dca98a3fc20fc39&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1318886361752939&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1318886361759464&quot;&gt;
+      &lt;de:name&gt;long_gly_ser_linker&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;55&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;102&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1318886361759096&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1318886361765194&quot;&gt;
+      &lt;de:name&gt;short_gly_ser_linker&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;55&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;78&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;46d943915b196da710b25db3127c75a1ba01da913d0b5bb2b17055f9b5a079a1&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1318886361765102&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1318886361772274&quot;&gt;
+      &lt;de:name&gt;GFPuv&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;1242&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;1952&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;23d714d34632e24f53c2095f05e79f17aded7ec22651c20e4b320f82bc2bf731&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1318886361772744&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1320793316351870&quot;&gt;
+      &lt;de:name&gt;ssrA_tag_5prime&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;1&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;15&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;fbb4e8715b6352478db1561d7229d0ef46ff83412c188fd71352a1418ddb43ab&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1320793316351783&quot;&gt;
+          &lt;de:fas/&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1320793317318921&quot;&gt;
+      &lt;de:name&gt;ssrA_tag_enhanced_5prime&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;1&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;21&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;7ded0adb8463aa8b7bfe30d093bc4f6d8718bd1182906f283b04d303860dd0f3&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1320793317318572&quot;&gt;
+          &lt;de:fas&gt;Embed_in_primer_reverse&lt;/de:fas&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+    &lt;de:partVO id=&quot;1320793489598076&quot;&gt;
+      &lt;de:name&gt;ssrA_tag_3prime&lt;/de:name&gt;
+      &lt;de:revComp&gt;false&lt;/de:revComp&gt;
+      &lt;de:startBP&gt;16&lt;/de:startBP&gt;
+      &lt;de:stopBP&gt;33&lt;/de:stopBP&gt;
+      &lt;de:sequenceFileHash&gt;fbb4e8715b6352478db1561d7229d0ef46ff83412c188fd71352a1418ddb43ab&lt;/de:sequenceFileHash&gt;
+      &lt;de:parts&gt;
+        &lt;de:part id=&quot;1320793489598961&quot;&gt;
+          &lt;de:fas&gt;Embed_in_primer_forward&lt;/de:fas&gt;
+        &lt;/de:part&gt;
+      &lt;/de:parts&gt;
+    &lt;/de:partVO&gt;
+  &lt;/de:partVOs&gt;
+  &lt;de:eugeneRules&gt;
+    &lt;de:eugeneRule&gt;
+      &lt;de:name&gt;Rule_1&lt;/de:name&gt;
+      &lt;de:negationOperator&gt;false&lt;/de:negationOperator&gt;
+      &lt;de:operand1ID&gt;1318886361765194&lt;/de:operand1ID&gt;
+      &lt;de:compositionalOperator&gt;THEN&lt;/de:compositionalOperator&gt;
+      &lt;de:operand2ID&gt;1318886361747742&lt;/de:operand2ID&gt;
+    &lt;/de:eugeneRule&gt;
+  &lt;/de:eugeneRules&gt;
+  &lt;de:j5Collection&gt;
+    &lt;de:isCircular&gt;true&lt;/de:isCircular&gt;
+    &lt;de:j5Bins&gt;
+      &lt;de:j5Bin&gt;
+        &lt;de:binName&gt;vector_backbone&lt;/de:binName&gt;
+        &lt;de:iconID&gt;origin-of-replication&lt;/de:iconID&gt;
+        &lt;de:direction&gt;forward&lt;/de:direction&gt;
+        &lt;de:dsf&gt;false&lt;/de:dsf&gt;
+        &lt;de:fro&gt;2&lt;/de:fro&gt;
+        &lt;de:binItems&gt;
+          &lt;de:partID&gt;1318886361742634&lt;/de:partID&gt;
+        &lt;/de:binItems&gt;
+      &lt;/de:j5Bin&gt;
+      &lt;de:j5Bin&gt;
+        &lt;de:binName&gt;nterm_sig_pep&lt;/de:binName&gt;
+        &lt;de:iconID&gt;cds&lt;/de:iconID&gt;
+        &lt;de:direction&gt;forward&lt;/de:direction&gt;
+        &lt;de:dsf&gt;true&lt;/de:dsf&gt;
+        &lt;de:binItems&gt;
+          &lt;de:partID&gt;1318886361747000&lt;/de:partID&gt;
+          &lt;de:partID&gt;1318886361752939&lt;/de:partID&gt;
+        &lt;/de:binItems&gt;
+      &lt;/de:j5Bin&gt;
+      &lt;de:j5Bin&gt;
+        &lt;de:binName&gt;gly_ser_linker&lt;/de:binName&gt;
+        &lt;de:iconID&gt;cds&lt;/de:iconID&gt;
+        &lt;de:direction&gt;forward&lt;/de:direction&gt;
+        &lt;de:dsf&gt;false&lt;/de:dsf&gt;
+        &lt;de:binItems&gt;
+          &lt;de:partID&gt;1318886361759096&lt;/de:partID&gt;
+          &lt;de:partID&gt;1318886361765102&lt;/de:partID&gt;
+        &lt;/de:binItems&gt;
+      &lt;/de:j5Bin&gt;
+      &lt;de:j5Bin&gt;
+        &lt;de:binName&gt;GFPuv&lt;/de:binName&gt;
+        &lt;de:iconID&gt;cds&lt;/de:iconID&gt;
+        &lt;de:direction&gt;forward&lt;/de:direction&gt;
+        &lt;de:dsf&gt;false&lt;/de:dsf&gt;
+        &lt;de:binItems&gt;
+          &lt;de:partID&gt;1318886361772744&lt;/de:partID&gt;
+        &lt;/de:binItems&gt;
+      &lt;/de:j5Bin&gt;
+      &lt;de:j5Bin&gt;
+        &lt;de:binName&gt;ssrA_tag_5prime&lt;/de:binName&gt;
+        &lt;de:iconID&gt;protein-stability-element&lt;/de:iconID&gt;
+        &lt;de:direction&gt;forward&lt;/de:direction&gt;
+        &lt;de:dsf&gt;true&lt;/de:dsf&gt;
+        &lt;de:binItems&gt;
+          &lt;de:partID&gt;1320793316351783&lt;/de:partID&gt;
+          &lt;de:partID&gt;1320793317318572&lt;/de:partID&gt;
+        &lt;/de:binItems&gt;
+      &lt;/de:j5Bin&gt;
+      &lt;de:j5Bin&gt;
+        &lt;de:binName&gt;ssrA_tag_3prime&lt;/de:binName&gt;
+        &lt;de:iconID&gt;protein-stability-element&lt;/de:iconID&gt;
+        &lt;de:direction&gt;forward&lt;/de:direction&gt;
+        &lt;de:dsf&gt;false&lt;/de:dsf&gt;
+        &lt;de:binItems&gt;
+          &lt;de:partID&gt;1320793489598961&lt;/de:partID&gt;
+        &lt;/de:binItems&gt;
+      &lt;/de:j5Bin&gt;
+    &lt;/de:j5Bins&gt;
+  &lt;/de:j5Collection&gt;
+&lt;/de:design&gt;
+</code></pre><p>Here is the XML schema for the DeviceEditor design file format:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;
+    targetNamespace=&quot;http://jbei.org/device_editor&quot;
+    xmlns:de=&quot;http://jbei.org/device_editor&quot;
+    elementFormDefault=&quot;qualified&quot;&gt;
+    &lt;xs:element name=&quot;design&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:version&quot; /&gt;
+                &lt;xs:element ref=&quot;de:sequenceFiles&quot; /&gt;
+                &lt;xs:element ref=&quot;de:partVOs&quot; /&gt;
+                &lt;xs:element ref=&quot;de:eugeneRules&quot; /&gt;
+                &lt;xs:element ref=&quot;de:j5Collection&quot;/&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;version&quot;&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+                &lt;xs:pattern value=&quot;4.1&quot; /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;sequenceFiles&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:sequenceFile&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+        &lt;xs:element name=&quot;sequenceFile&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:format&quot; /&gt;
+                &lt;xs:element ref=&quot;de:content&quot; /&gt;
+                &lt;xs:element ref=&quot;de:fileName&quot; /&gt;
+            &lt;/xs:sequence&gt;
+            &lt;xs:attribute name=&quot;hash&quot; type=&quot;xs:string&quot; /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;format&quot;&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+                &lt;xs:enumeration value=&quot;Genbank&quot; /&gt;
+                &lt;xs:enumeration value=&quot;FASTA&quot; /&gt;
+                &lt;xs:enumeration value=&quot;jbei-seq&quot; /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;content&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:element name=&quot;fileName&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:element name=&quot;partVOs&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:partVO&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;partVO&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:name&quot; /&gt;
+                &lt;xs:group ref=&quot;de:seqInfo&quot; minOccurs=&quot;0&quot; /&gt;
+                &lt;xs:element ref=&quot;de:parts&quot; /&gt;
+            &lt;/xs:sequence&gt;
+            &lt;xs:attribute name=&quot;id&quot; type=&quot;xs:string&quot; /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;name&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:group name=&quot;seqInfo&quot;&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element ref=&quot;de:revComp&quot; /&gt;
+            &lt;xs:element ref=&quot;de:startBP&quot; /&gt;
+            &lt;xs:element ref=&quot;de:stopBP&quot; /&gt;
+            &lt;xs:element ref=&quot;de:sequenceFileHash&quot; /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:group&gt;
+    &lt;xs:element name=&quot;revComp&quot; type=&quot;xs:boolean&quot; /&gt;
+    &lt;xs:element name=&quot;startBP&quot; type=&quot;xs:positiveInteger&quot; /&gt;
+    &lt;xs:element name=&quot;stopBP&quot; type=&quot;xs:positiveInteger&quot; /&gt;
+    &lt;xs:element name=&quot;sequenceFileHash&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:element name=&quot;parts&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:part&quot; maxOccurs=&quot;unbounded&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;part&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:fas&quot; /&gt;
+            &lt;/xs:sequence&gt;
+            &lt;xs:attribute name=&quot;id&quot; type=&quot;xs:string&quot; /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;fas&quot;&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+                &lt;xs:enumeration value=&quot;&quot; /&gt;
+                &lt;xs:enumeration value=&quot;DIGEST&quot; /&gt;
+                &lt;xs:enumeration value=&quot;Direct Synthesis&quot; /&gt;
+                &lt;xs:enumeration value=&quot;PCR&quot; /&gt;
+                &lt;xs:enumeration value=&quot;Embed_in_primer_reverse&quot; /&gt;
+                &lt;xs:enumeration value=&quot;Embed_in_primer_forward&quot; /&gt;
+                &lt;xs:enumeration value=&quot;Annealed Oligos&quot;&gt;&lt;/xs:enumeration&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;eugeneRules&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:eugeneRule&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;eugeneRule&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:name&quot; /&gt;
+                &lt;xs:element ref=&quot;de:negationOperator&quot; /&gt;
+                &lt;xs:element ref=&quot;de:operand1ID&quot; /&gt;
+                &lt;xs:element ref=&quot;de:compositionalOperator&quot; /&gt;
+                &lt;xs:group ref=&quot;de:operand2&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;negationOperator&quot; type=&quot;xs:boolean&quot; /&gt;
+    &lt;xs:element name=&quot;operand1ID&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:element name=&quot;compositionalOperator&quot;&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+                &lt;xs:enumeration value=&quot;AFTER&quot; /&gt;
+                &lt;xs:enumeration value=&quot;BEFORE&quot; /&gt;
+                &lt;xs:enumeration value=&quot;WITH&quot; /&gt;
+                &lt;xs:enumeration value=&quot;THEN&quot; /&gt;
+                &lt;xs:enumeration value=&quot;NEXTTO&quot; /&gt;
+                &lt;xs:enumeration value=&quot;MORETHAN&quot; /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:group name=&quot;operand2&quot;&gt;
+        &lt;xs:choice&gt;
+            &lt;xs:element ref=&quot;de:operand2ID&quot; /&gt;
+            &lt;xs:element ref=&quot;de:operand2Number&quot; /&gt;
+        &lt;/xs:choice&gt;
+    &lt;/xs:group&gt;
+    &lt;xs:element name=&quot;operand2ID&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:element name=&quot;operand2Number&quot; type=&quot;xs:nonNegativeInteger&quot; /&gt;
+    &lt;xs:element name=&quot;j5Collection&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:isCircular&quot; /&gt;
+                &lt;xs:element ref=&quot;de:j5Bins&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;isCircular&quot; type=&quot;xs:boolean&quot; /&gt;
+    &lt;xs:element name=&quot;j5Bins&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:j5Bin&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;j5Bin&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:binName&quot; /&gt;
+                &lt;xs:element ref=&quot;de:iconID&quot; /&gt;
+                &lt;xs:element ref=&quot;de:direction&quot; /&gt;
+                &lt;xs:element ref=&quot;de:dsf&quot; /&gt;
+                &lt;xs:element ref=&quot;de:fro&quot; minOccurs=&quot;0&quot; /&gt;
+                &lt;xs:element ref=&quot;de:extra5PrimeBps&quot; minOccurs=&quot;0&quot; /&gt;
+                &lt;xs:element ref=&quot;de:extra3PrimeBps&quot; minOccurs=&quot;0&quot; /&gt;
+                &lt;xs:element ref=&quot;de:binItems&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;binName&quot; type=&quot;xs:string&quot; /&gt;
+    &lt;xs:element name=&quot;iconID&quot;&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+                &lt;xs:enumeration value=&quot;assembly-scar&quot; /&gt;
+                &lt;xs:enumeration value=&quot;blunt-restriction-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;cds&quot; /&gt;
+                &lt;xs:enumeration value=&quot;five-prime-overhang&quot; /&gt;
+                &lt;xs:enumeration value=&quot;five-prime-sticky-restriction-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;insulator&quot; /&gt;
+                &lt;xs:enumeration value=&quot;operator&quot; /&gt;
+                &lt;xs:enumeration value=&quot;origin-of-replication&quot; /&gt;
+                &lt;xs:enumeration value=&quot;primer-binding-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;promoter&quot; /&gt;
+                &lt;xs:enumeration value=&quot;protease-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;protein-stability-element&quot; /&gt;
+                &lt;xs:enumeration value=&quot;restriction-enzyme-recognition-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;ribonuclease-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;ribosome-entry-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;rna-stability-element&quot; /&gt;
+                &lt;xs:enumeration value=&quot;signature&quot; /&gt;
+                &lt;xs:enumeration value=&quot;terminator&quot; /&gt;
+                &lt;xs:enumeration value=&quot;three-prime-overhang&quot; /&gt;
+                &lt;xs:enumeration value=&quot;three-prime-sticky-restriction-site&quot; /&gt;
+                &lt;xs:enumeration value=&quot;user-defined&quot; /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;direction&quot;&gt;
+        &lt;xs:simpleType&gt;
+            &lt;xs:restriction base=&quot;xs:string&quot;&gt;
+                &lt;xs:enumeration value=&quot;forward&quot; /&gt;
+                &lt;xs:enumeration value=&quot;reverse&quot; /&gt;
+            &lt;/xs:restriction&gt;
+        &lt;/xs:simpleType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;dsf&quot; type=&quot;xs:boolean&quot; /&gt;
+    &lt;xs:element name=&quot;fro&quot; type=&quot;xs:int&quot; /&gt;
+    &lt;xs:element name=&quot;extra5PrimeBps&quot; type=&quot;xs:int&quot; /&gt;
+    &lt;xs:element name=&quot;extra3PrimeBps&quot; type=&quot;xs:int&quot; /&gt;
+    &lt;xs:element name=&quot;binItems&quot;&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element ref=&quot;de:partID&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; /&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name=&quot;partID&quot; type=&quot;xs:string&quot; /&gt;
+&lt;/xs:schema&gt;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../chp/chp8/chp8.html" class="navigation navigation-prev " aria-label="Previous page: Design files"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../chp/chp9/chp9.html" class="navigation navigation-next " aria-label="Next page: DNA assembly protocol generator"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"tesela":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    <script> $( document ).ajaxSuccess(function() { $('.summary > .chapter > a').unbind('click').click(function() {   $(this).parent().find('> ul').slideToggle(); return false;   });  $('.chapter ').find('> a').first().on('click', function(){   window.location = '/';  }); $('.summary > .chapter > ul').hide();  $('.articles > .active').parent().show();  }); $('body').scrollTop(0) </script>
+</html>

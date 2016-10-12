@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xmlns="http://sbols.org/v1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:so="http://purl.obolibrary.org/obo/">
+  <DnaComponent rdf:about="http://j5.jbei.org/dc#43d03924-cffa-40b4-b670-af7b8041ba65">
+    <displayId>43d03924-cffa-40b4-b670-af7b8041ba65</displayId>
+    <name>pBbS8c-RFP</name>
+    <description>promoter seq from pBAD33.</description>
+    <dnaSequence>
+      <DnaSequence rdf:about="http://j5.jbei.org/ds#49c70611-b02f-497c-b07c-fa79ce40c65b">
+        <nucleotides>gacgtcttatgacaacttgacggctacatcattcactttttcttcacaaccggcacggaactcgctcgggctggccccggtgcattttttaaatacccgcgagaaatagagttgatcgtcaaaaccaacattgcgaccgacggtggcgataggcatccgggtggtgctcaaaagcagcttcgcctggctgatacgttggtcctcgcgccagcttaagacgctaatccctaactgctggcggaaaagatgtgacagacgcgacggcgacaagcaaacatgctgtgcgacgctggcgatatcaaaattgctgtctgccaggtgatcgctgatgtactgacaagcctcgcgtacccgattatccatcggtggatggagcgactcgttaatcgcttccatgcgccgcagtaacaattgctcaagcagatttatcgccagcagctccgaatagcgcccttccccttgcccggcgttaatgatttgcccaaacaggtcgctgaaatgcggctggtgcgcttcatccgggcgaaagaaccccgtattggcaaatattgacggccagttaagccattcatgccagtaggcgcgcggacgaaagtaaacccactggtgataccattcgcgagcctccggatgacgaccgtagtgatgaatctctcctggcgggaacagcaaaatatcacccggtcggcaaacaaattctcgtccctgatttttcaccaccccctgaccgcgaatggtgagattgagaatataacctttcattcccagcggtcggtcgataaaaaaatcgagataaccgttggcctcaatcggcgttaaacccgccaccagatgggcattaaacgagtatcccggcagcaggggatcattttgcgcttcagccatacttttcatactcccgccattcagagaagaaaccaattgtccatattgcatcagacattgccgtcactgcgtcttttactggctcttctcgctaaccaaaccggtaaccccgcttattaaaagcattctgtaacaaagcgggaccaaagccatgacaaaaacgcgtaacaaaagtgtctataatcacggcagaaaagtccacattgattatttgcacggcgtcacactttgctatgccatagcatttttatccataagattagcggattctacctgacgctttttatcgcaactctctactgtttctccatacccgtttttttgggaattcaaaagatcttttaagaaggagatatacatatggcgagtagcgaagacgttatcaaagagttcatgcgtttcaaagttcgtatggaaggttccgttaacggtcacgagttcgaaatcgaaggtgaaggtgaaggtcgtccgtacgaaggtacccagaccgctaaactgaaagttaccaaaggtggtccgctgccgttcgcttgggacatcctgtccccgcagttccagtacggttccaaagcttacgttaaacacccggctgacatcccggactacctgaaactgtccttcccggaaggtttcaaatgggaacgtgttatgaacttcgaagacggtggtgttgttaccgttacccaggactcctccctgcaagacggtgagttcatctacaaagttaaactgcgtggtaccaacttcccgtccgacggtccggttatgcagaaaaaaaccatgggttgggaagcttccaccgaacgtatgtacccggaagacggtgctctgaaaggtgaaatcaaaatgcgtctgaaactgaaagacggtggtcactacgacgctgaagttaaaaccacctacatggctaaaaaaccggttcagctgccgggtgcttacaaaaccgacatcaaactggacatcacctcccacaacgaagactacaccatcgttgaacagtacgaacgtgctgaaggtcgtcactccaccggtgcttaaggatccaaactcgagtaaggatctccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctctactagagtcacactggctcaccttcgggtgggcctttctgcgtttatacctagggtacgggttttgctgcccgcaaacgggctgttctggtgttgctagtttgttatcagaatcgcagatccggcttcagccggtttgccggctgaaagcgctatttcttccagaattgccatgattttttccccacgggaggcgtcactggctcccgtgttgtcggcagctttgattcgataagcagcatcgcctgtttcaggctgtctatgtgtgactgttgagctgtaacaagttgtctcaggtgttcaatttcatgttctagttgctttgttttactggtttcacctgttctattaggtgttacatgctgttcatctgttacattgtcgatctgttcatggtgaacagctttgaatgcaccaaaaactcgtaaaagctctgatgtatctatcttttttacaccgttttcatctgtgcatatggacagttttccctttgatatgtaacggtgaacagttgttctacttttgtttgttagtcttgatgcttcactgatagatacaagagccataagaacctcagatccttccgtatttagccagtatgttctctagtgtggttcgttgtttttgcgtgagccatgagaacgaaccattgagatcatacttactttgcatgtcactcaaaaattttgcctcaaaactggtgagctgaatttttgcagttaaagcatcgtgtagtgtttttcttagtccgttatgtaggtaggaatctgatgtaatggttgttggtattttgtcaccattcatttttatctggttgttctcaagttcggttacgagatccatttgtctatctagttcaacttggaaaatcaacgtatcagtcgggcggcctcgcttatcaaccaccaatttcatattgctgtaagtgtttaaatctttacttattggtttcaaaacccattggttaagccttttaaactcatggtagttattttcaagcattaacatgaacttaaattcatcaaggctaatctctatatttgccttgtgagttttcttttgtgttagttcttttaataaccactcataaatcctcatagagtatttgttttcaaaagacttaacatgttccagattatattttatgaatttttttaactggaaaagataaggcaatatctcttcactaaaaactaattctaatttttcgcttgagaacttggcatagtttgtccactggaaaatctcaaagcctttaaccaaaggattcctgatttccacagttctcgtcatcagctctctggttgctttagctaatacaccataagcattttccctactgatgttcatcatctgagcgtattggttataagtgaacgataccgtccgttctttccttgtagggttttcaatcgtggggttgagtagtgccacacagcataaaattagcttggtttcatgctccgttaagtcatagcgactaatcgctagttcatttgctttgaaaacaactaattcagacatacatctcaattggtctaggtgattttaatcactataccaattgagatgggctagtcaatgataattactagtccttttcccgggtgatctgggtatctgtaaattctgctagacctttgctggaaaacttgtaaattctgctagaccctctgtaaattccgctagacctttgtgtgttttttttgtttatattcaagtggttataatttatagaataaagaaagaataaaaaaagataaaaagaatagatcccagccctgtgtataactcactactttagtcagttccgcagtattacaaaaggatgtcgcaaacgctgtttgctcctctacaaaacagaccttaaaaccctaaaggcttaagtagcaccctcgcaagctcgggcaaatcgctgaatattccttttgtctccgaccatcaggcacctgagtcgctgtctttttcgtgacattcagttcgctgcgctcacggctctggcagtgaatgggggtaaatggcactacaggcgccttttatggattcatgcaaggaaactacccataatacaagaaaagcccgtcacgggcttctcagggcgttttatggcgggtctgctatgtggtgctatctgactttttgctgttcagcagttcctgccctctgattttccagtctgaccacttcggattatcccgtgacaggtcattcagactggctaatgcacccagtaaggcagcggtatcatcaacaggcttacccgtcttactgtccctagtgcttggattctcaccaataaaaaacgcccggcggcaaccgagcgttctgaacaaatccagatggagttctgaggtcattactggatctatcaacaggagtccaagcgagctcgatatcaaattacgccccgccctgccactcatcgcagtactgttgtaattcattaagcattctgccgacatggaagccatcacaaacggcatgatgaacctgaatcgccagcggcatcagcaccttgtcgccttgcgtataatatttgcccatggtgaaaacgggggcgaagaagttgtccatattggccacgtttaaatcaaaactggtgaaactcacccagggattggctgagacgaaaaacatattctcaataaaccctttagggaaataggccaggttttcaccgtaacacgccacatcttgcgaatatatgtgtagaaactgccggaaatcgtcgtggtattcactccagagcgatgaaaacgtttcagtttgctcatggaaaacggtgtaacaagggtgaacactatcccatatcaccagctcaccgtctttcattgccatacgaaattccggatgagcattcatcaggcgggcaagaatgtgaataaaggccggataaaacttgtgcttatttttctttacggtctttaaaaaggccgtaatatccagctgaacggtctggttataggtacattgagcaactgactgaaatgcctcaaaatgttctttacgatgccattgggatatatcaacggtggtatatccagtgatttttttctccattttagcttccttagctcctgaaaatctcgataactcaaaaaatacgcccggtagtgatcttatttcattatggtgaaagttggaacctcttacgtgccgatcaacgtctcattttcgccagatatc</nucleotides>
+      </DnaSequence>
+    </dnaSequence>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#5daac95c-a313-4964-a248-d0993d0beae5">
+        <bioStart>1161</bioStart>
+        <bioEnd>1188</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#b44c4691-370e-4043-9f77-79a2ddcf7911">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000167" />
+            <displayId>b44c4691-370e-4043-9f77-79a2ddcf7911</displayId>
+            <name>pBAD\promoter</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#41676b0d-62ee-4663-8155-7d304ec7ca6a">
+        <bioStart>1124</bioStart>
+        <bioEnd>1162</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#b21e3e51-4ee7-4b2f-9fc0-ee6ae6855b73">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000410" />
+            <displayId>b21e3e51-4ee7-4b2f-9fc0-ee6ae6855b73</displayId>
+            <name>Operator\I2\and\I1</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#2c90a17c-bdf2-4994-95c7-8a22b2764232">
+        <bioStart>1115</bioStart>
+        <bioEnd>1128</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#7e3e2984-88c8-4643-b658-5e0615728b2a">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000409" />
+            <displayId>7e3e2984-88c8-4643-b658-5e0615728b2a</displayId>
+            <name>CAP\site</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#997dd7c1-3152-4216-a91f-c75c7c78f14a">
+        <bioStart>1072</bioStart>
+        <bioEnd>1093</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#71428b53-a269-40c8-9f72-2d0e8c91d71f">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000410" />
+            <displayId>71428b53-a269-40c8-9f72-2d0e8c91d71f</displayId>
+            <name>operator\O1</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#8dcd21cc-7219-4bd0-a8df-9f0ea1b671e2">
+        <bioStart>914</bioStart>
+        <bioEnd>931</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#78c6b664-53c3-4199-8fe4-26b61fe776df">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000410" />
+            <displayId>78c6b664-53c3-4199-8fe4-26b61fe776df</displayId>
+            <name>operator\O2</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#85fed1cd-3f73-4b97-a9f6-5bea685278fb">
+        <bioStart>1036</bioStart>
+        <bioEnd>1064</bioEnd>
+        <strand>-</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#e8078e11-8c0b-4431-ae00-2e5243fb92b4">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000167" />
+            <displayId>e8078e11-8c0b-4431-ae00-2e5243fb92b4</displayId>
+            <name>araC\promoter</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#669f3a35-9fb1-4c3e-852b-47e17212343a">
+        <bioStart>7</bioStart>
+        <bioEnd>885</bioEnd>
+        <strand>-</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#410be08b-98bf-43ff-9d50-90023db6e8fb">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000316" />
+            <displayId>410be08b-98bf-43ff-9d50-90023db6e8fb</displayId>
+            <name>araC</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#6454154f-336e-4d13-9687-d864e3364f2f">
+        <bioStart>1226</bioStart>
+        <bioEnd>1245</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#8cb0c59a-a04e-47f6-a7d5-b74a56a3643b">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000139" />
+            <displayId>8cb0c59a-a04e-47f6-a7d5-b74a56a3643b</displayId>
+            <name>RBS</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#a75b3697-1c7d-427f-8afd-6686550700c4">
+        <bioStart>1948</bioStart>
+        <bioEnd>2076</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#d3b9fcea-3235-4c23-8ed3-f4565327a727">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000141" />
+            <displayId>d3b9fcea-3235-4c23-8ed3-f4565327a727</displayId>
+            <name>dbl\term</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#68400226-fad1-4deb-8633-528d8ba2f19e">
+        <bioStart>1246</bioStart>
+        <bioEnd>1923</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#617082cb-7ec4-4ea4-9907-88d0c4c455c8">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000316" />
+            <displayId>617082cb-7ec4-4ea4-9907-88d0c4c455c8</displayId>
+            <name>RFP</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#602158d1-681d-46b3-a543-d173d89078c0">
+        <bioStart>4307</bioStart>
+        <bioEnd>4412</bioEnd>
+        <strand>+</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#8f9a7e6d-946f-4b16-b18b-a91f1bd26dc2">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000141" />
+            <displayId>8f9a7e6d-946f-4b16-b18b-a91f1bd26dc2</displayId>
+            <name>T0</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#43f870fd-c1ef-4dad-bb9b-812fc89f047c">
+        <bioStart>2078</bioStart>
+        <bioEnd>4306</bioEnd>
+        <strand>-</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#e49d4804-acd6-4b8a-a7af-f1b9592e89f0">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000296" />
+            <displayId>e49d4804-acd6-4b8a-a7af-f1b9592e89f0</displayId>
+            <name>pSC101**</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+    <annotation>
+      <SequenceAnnotation rdf:about="http://j5.jbei.org/sa#ddd309e5-c653-4c5d-9d66-40d5ce5dfbd7">
+        <bioStart>4428</bioStart>
+        <bioEnd>5087</bioEnd>
+        <strand>-</strand>
+        <subComponent>
+          <DnaComponent rdf:about="http://j5.jbei.org/dc#c2c550dd-c6ad-441f-8615-9b6bc5e89437">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001645" />
+            <displayId>c2c550dd-c6ad-441f-8615-9b6bc5e89437</displayId>
+            <name>CmR</name>
+          </DnaComponent>
+        </subComponent>
+      </SequenceAnnotation>
+    </annotation>
+  </DnaComponent>
+</rdf:RDF>

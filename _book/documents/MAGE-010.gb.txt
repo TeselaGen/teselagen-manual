@@ -1,0 +1,29 @@
+LOCUS       MAGE-01                 1164 bp ds-DNA     linear       23-DEC-2011
+ACCESSION   MAGE-01
+VERSION     MAGE-01
+KEYWORDS    .
+FEATURES             Location/Qualifiers
+     misc_feature    77..1087
+                     /label="SpecR"
+ORIGIN      
+        1 ggatatccgg atgaaggcac gaacccagtg gacataaccc tgataaatgc ttcaataata
+       61 ttgaaaaagg aagagtatgc gctcacgcaa ctggtccaga accttgaccg aacgcagcgg
+      121 tggtaacggc gcagtggcgg ttttcatggc ttgttatgac tgtttttttg gggtacagtc
+      181 tatgcctcgg gcatccaagc agcaagcgcg ttacgccgtg ggtcgatgtt tgatgttatg
+      241 gagcagcaac gatgttacgc agcagggcag tcgccctaaa acaaagttaa acatcatgag
+      301 ggaagcggtg atcgccgaag tatcgactca actatcagag gtagttggcg tcatcgagcg
+      361 ccatctcgaa ccgacgttgc tggccgtaca tttgtacggc tccgcagtgg atggcggcct
+      421 gaagccacac agtgatattg atttgctggt tacggtgacc gtaaggcttg atgaaacaac
+      481 gcggcgagct ttgatcaacg accttttgga aacttcggct tcccctggag agagcgagat
+      541 tctccgcgct gtagaagtca ccattgttgt gcacgacgac atcattccgt ggcgttatcc
+      601 agctaagcgc gaactgcaat ttggagaatg gcagcgcaat gacattcttg caggtatctt
+      661 cgagccagcc acgatcgaca ttgatctggc tatcttgctg acaaaagcaa gagaacatag
+      721 cgttgccttg gtaggtccag cggcggagga actctttgat ccggttcctg aacaggatct
+      781 atttgaggcg ctaaatgaaa ccttaacgct atggaactcg ccgcccgact gggctggcga
+      841 tgagcgaaat gtagtgctta cgttgtcccg catttggtac agcgcagtaa ccggcaaaat
+      901 cgcgccgaag gatgtcgctg ccgactgggc aatggagcgc ctgccggccc agtatcagcc
+      961 cgtcatactt gaagctagac aggcttatct tggacaagaa gaagatcgct tggcctcgcg
+     1021 cgcagatcag ttggaagaat ttgtccacta cgtgaaaggc gagatcacca aggtagtcgg
+     1081 caaataattt gtccactacg tgaaaggcga gatcaccaag gtagtcggca aataatgtct
+     1141 aacaattcgt tcaagccgac ggat   
+//

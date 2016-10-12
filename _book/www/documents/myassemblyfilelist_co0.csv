@@ -1,0 +1,79 @@
+"Distribute Split and Pool Pcr Reactions j5 v2.7.0 5/1/2014"
+
+"Split PCR Reactions:"
+Index,TEMPLATE_PLATE,TEMPLATE_WELL,TEMPLATE_VOLUME,PRIMER1_PLATE,PRIMER1_WELL,PRIMER1_VOLUME,PCR_MIX_PLATE,PCR_MIX_WELL,PCR_MIX_VOLUME,OUTPUT_PLATE,OUTPUT_WELL,REACTION_NUMBER,OPTIMAL_ANNEALING_TEMP,THERMOCYCLER_BLOCK,THERMOCYCLER_ZONE,THERMOCYCLER_ZONE_ANNEALING_TEMP,EXPECTED_SIZE
+1,templates_plate,B01,6,oligos_plate,G03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A01,10_reverse,56.0,0,0,56.0,4522
+2,templates_plate,B01,6,oligos_plate,H03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B01,12_reverse,56.0,0,0,56.0,4621
+3,templates_plate,B01,6,oligos_plate,G04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,C01,17_reverse,56.0,0,0,56.0,4627
+4,templates_plate,A01,6,oligos_plate,G01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A03,1_reverse,58.6,0,1,58.9,98
+5,templates_plate,A01,6,oligos_plate,H01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B03,4_reverse,58.6,0,1,58.9,137
+6,templates_plate,B01,6,oligos_plate,G02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,C03,6_reverse,59.2,0,1,58.9,5296
+7,templates_plate,B01,6,oligos_plate,H02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,D03,8_reverse,59.2,0,1,58.9,5325
+8,templates_plate,B01,6,oligos_plate,E03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A05,10_forward,60.9,0,2,61.6,4522
+9,templates_plate,B01,6,oligos_plate,F03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B05,12_forward,60.9,0,2,61.6,4621
+10,templates_plate,B01,6,oligos_plate,F03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,C05,17_forward,60.9,0,2,61.6,4627
+11,templates_plate,A01,6,oligos_plate,E01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,D05,1_forward,62.1,0,2,61.6,98
+12,templates_plate,A01,6,oligos_plate,F01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,E05,4_forward,62.1,0,2,61.6,137
+13,templates_plate,A01,6,oligos_plate,A01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,F05,0_forward,62.2,0,2,61.6,425
+14,templates_plate,A01,6,oligos_plate,B01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,G05,3_forward,62.2,0,2,61.6,496
+15,templates_plate,A01,6,oligos_plate,A02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A07,2_forward,62.5,0,3,62.9,259
+16,templates_plate,A01,6,oligos_plate,B02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B07,5_forward,62.5,0,3,62.9,308
+17,templates_plate,B01,6,oligos_plate,A04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,C07,11_forward,62.5,0,3,62.9,711
+18,templates_plate,B01,6,oligos_plate,B04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,D07,13_forward,62.5,0,3,62.9,804
+19,templates_plate,B01,6,oligos_plate,B04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,E07,14_forward,62.5,0,3,62.9,810
+20,templates_plate,B01,6,oligos_plate,F04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,F07,15_forward,62.5,0,3,62.9,780
+21,templates_plate,B01,6,oligos_plate,F04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,G07,16_forward,62.5,0,3,62.9,786
+22,templates_plate,A01,6,oligos_plate,C01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,H07,0_reverse,62.9,0,3,62.9,425
+23,templates_plate,A01,6,oligos_plate,D01,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A08,3_reverse,62.9,0,3,62.9,496
+24,templates_plate,A01,6,oligos_plate,C02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B08,2_reverse,63.0,0,3,62.9,259
+25,templates_plate,A01,6,oligos_plate,D02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,C08,5_reverse,63.0,0,3,62.9,308
+26,templates_plate,B01,6,oligos_plate,E02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,D08,6_forward,63.4,0,3,62.9,5296
+27,templates_plate,B01,6,oligos_plate,F02,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,E08,8_forward,63.4,0,3,62.9,5325
+28,templates_plate,C01,6,oligos_plate,C03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,F08,7_reverse,63.8,0,3,62.9,126
+29,templates_plate,C01,6,oligos_plate,D03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,G08,9_reverse,63.8,0,3,62.9,157
+30,templates_plate,B01,6,oligos_plate,C04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A09,11_reverse,67.3,0,4,67.3,711
+31,templates_plate,B01,6,oligos_plate,D04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B09,13_reverse,67.3,0,4,67.3,804
+32,templates_plate,B01,6,oligos_plate,E04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,C09,14_reverse,67.3,0,4,67.3,810
+33,templates_plate,B01,6,oligos_plate,D04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,D09,15_reverse,67.3,0,4,67.3,780
+34,templates_plate,B01,6,oligos_plate,E04,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,E09,16_reverse,67.3,0,4,67.3,786
+35,templates_plate,C01,6,oligos_plate,A03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,A11,7_forward,68.5,0,5,68.5,126
+36,templates_plate,C01,6,oligos_plate,B03,6,PCR_mix_tubes,A01,18,myassemblyfilelist_condensed_split_PCR_plate_1,B11,9_forward,68.5,0,5,68.5,157
+
+"Thermocycler Blocks:"
+"BLOCK ID","BLOCK ZONE",BLOCK_ZONE_ANNEALING_TEMP
+0,0,56
+0,1,58.9
+0,2,61.6
+0,3,62.9
+0,4,67.2999999999999
+0,5,68.5
+
+"Pool PCR Reactions:"
+Index,FORWARD_SPLIT_PLATE,FORWARD_SPLIT_WELL,FORWARD_SPLIT_VOLUME,REVERSE_SPLIT_PLATE,REVERSE_SPLIT_WELL,REVERSE_SPLIT_VOLUME,OUTPUT_PLATE,OUTPUT_WELL,REACTION_NUMBER,OPTIMAL_ANNEALING_TEMP,THERMOCYCLER_BLOCK,THERMOCYCLER_ZONE,THERMOCYCLER_ZONE_ANNEALING_TEMP,EXPECTED_SIZE
+1,myassemblyfilelist_condensed_split_PCR_plate_1,A05,25,myassemblyfilelist_condensed_split_PCR_plate_1,A01,25,myassemblyfilelist_condensed_pool_PCR_plate_1,A01,10,56.0,0,0,58.0,4522
+2,myassemblyfilelist_condensed_split_PCR_plate_1,D05,25,myassemblyfilelist_condensed_split_PCR_plate_1,A03,25,myassemblyfilelist_condensed_pool_PCR_plate_1,B01,1,58.6,0,0,58.0,98
+3,myassemblyfilelist_condensed_split_PCR_plate_1,D08,25,myassemblyfilelist_condensed_split_PCR_plate_1,C03,25,myassemblyfilelist_condensed_pool_PCR_plate_1,C01,6,59.2,0,0,58.0,5296
+4,myassemblyfilelist_condensed_split_PCR_plate_1,F05,25,myassemblyfilelist_condensed_split_PCR_plate_1,H07,25,myassemblyfilelist_condensed_pool_PCR_plate_1,A03,0,62.2,0,1,62.8,425
+5,myassemblyfilelist_condensed_split_PCR_plate_1,A07,25,myassemblyfilelist_condensed_split_PCR_plate_1,B08,25,myassemblyfilelist_condensed_pool_PCR_plate_1,B03,2,62.5,0,1,62.8,259
+6,myassemblyfilelist_condensed_split_PCR_plate_1,C07,25,myassemblyfilelist_condensed_split_PCR_plate_1,A09,25,myassemblyfilelist_condensed_pool_PCR_plate_1,C03,11,62.5,0,1,62.8,711
+7,myassemblyfilelist_condensed_split_PCR_plate_1,A11,25,myassemblyfilelist_condensed_split_PCR_plate_1,F08,25,myassemblyfilelist_condensed_pool_PCR_plate_1,D03,7,63.8,0,1,62.8,126
+8,myassemblyfilelist_condensed_split_PCR_plate_1,E08,25,myassemblyfilelist_condensed_split_PCR_plate_1,D03,25,myassemblyfilelist_condensed_pool_PCR_plate_1,A05,8,65.2,0,2,65.3,5325
+9,myassemblyfilelist_condensed_split_PCR_plate_1,G05,25,myassemblyfilelist_condensed_split_PCR_plate_1,A08,25,myassemblyfilelist_condensed_pool_PCR_plate_1,A07,3,69.1,0,3,70.3,496
+10,myassemblyfilelist_condensed_split_PCR_plate_1,B07,25,myassemblyfilelist_condensed_split_PCR_plate_1,C08,25,myassemblyfilelist_condensed_pool_PCR_plate_1,B07,5,69.6,0,3,70.3,308
+11,myassemblyfilelist_condensed_split_PCR_plate_1,E05,25,myassemblyfilelist_condensed_split_PCR_plate_1,B03,25,myassemblyfilelist_condensed_pool_PCR_plate_1,C07,4,70.1,0,3,70.3,137
+12,myassemblyfilelist_condensed_split_PCR_plate_1,B05,25,myassemblyfilelist_condensed_split_PCR_plate_1,B01,25,myassemblyfilelist_condensed_pool_PCR_plate_1,D07,12,70.7,0,3,70.3,4621
+13,myassemblyfilelist_condensed_split_PCR_plate_1,B11,25,myassemblyfilelist_condensed_split_PCR_plate_1,G08,25,myassemblyfilelist_condensed_pool_PCR_plate_1,E07,9,70.8,0,3,70.3,157
+14,myassemblyfilelist_condensed_split_PCR_plate_1,C05,25,myassemblyfilelist_condensed_split_PCR_plate_1,C01,25,myassemblyfilelist_condensed_pool_PCR_plate_1,A09,17,76.6,0,4,75.3,4627
+15,myassemblyfilelist_condensed_split_PCR_plate_1,E07,25,myassemblyfilelist_condensed_split_PCR_plate_1,C09,25,myassemblyfilelist_condensed_pool_PCR_plate_1,A11,14,78.3,0,5,78.6,810
+16,myassemblyfilelist_condensed_split_PCR_plate_1,G07,25,myassemblyfilelist_condensed_split_PCR_plate_1,E09,25,myassemblyfilelist_condensed_pool_PCR_plate_1,B11,16,78.3,0,5,78.6,786
+17,myassemblyfilelist_condensed_split_PCR_plate_1,F07,25,myassemblyfilelist_condensed_split_PCR_plate_1,D09,25,myassemblyfilelist_condensed_pool_PCR_plate_1,C11,15,78.4,0,5,78.6,780
+18,myassemblyfilelist_condensed_split_PCR_plate_1,D07,25,myassemblyfilelist_condensed_split_PCR_plate_1,B09,25,myassemblyfilelist_condensed_pool_PCR_plate_1,D11,13,79.4,0,5,78.6,804
+
+"Thermocycler Blocks:"
+"BLOCK ID","BLOCK ZONE",BLOCK_ZONE_ANNEALING_TEMP
+0,0,58
+0,1,62.8
+0,2,65.3
+0,3,70.3
+0,4,75.3
+0,5,78.6000000000001

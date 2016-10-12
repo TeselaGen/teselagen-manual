@@ -1,0 +1,46 @@
+TABLE	Table_JBEI_1.ewt
+
+""""""
+Distribute PCR Reactions j5 v1.3.0beta
+Please cite: Hillson, N.J., Rosengarten, R.D., and Keasling J.D. (2012) j5 DNA Assembly Design Automation Software. ACS Synthetic Biology 1 (1), 14-21. DOI: 10.1021/sb2000116
+""""""
+
+#	# alias	# name
+PLATE	oligos_plate	PL1
+PLATE	templates_plate	PL2
+PLATE	assemblytoautomate_PCR_plate_1	PL4
+PLATE	PCR_mix_tubes	PL7
+
+#	# name	# location	# method
+COMPONENT	PCR_mix	PCR_mix_tubes:1	LC_W_Lev_Bot
+
+#	# alias	# volume
+VOLUME	template_volume	5
+VOLUME	primer_volume	5
+VOLUME	PCR_mix_volume	10
+
+#	# recipe name
+RECIPE	PCR_reactions
+# PCR ID	# template	# template_volume	# forward_primer	# forward_primer_volume	# reverse_primer	# reverse_primer_volume	# PCR_mix	# PCR_mix_volume
+PCR_ID_10:	templates_plate:B1	template_volume	oligos_plate:E3	primer_volume	oligos_plate:G3	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_12:	templates_plate:B1	template_volume	oligos_plate:F3	primer_volume	oligos_plate:H3	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_17:	templates_plate:B1	template_volume	oligos_plate:F3	primer_volume	oligos_plate:G4	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_1:	templates_plate:A1	template_volume	oligos_plate:E1	primer_volume	oligos_plate:G1	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_4:	templates_plate:A1	template_volume	oligos_plate:F1	primer_volume	oligos_plate:H1	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_6:	templates_plate:B1	template_volume	oligos_plate:E2	primer_volume	oligos_plate:G2	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_8:	templates_plate:B1	template_volume	oligos_plate:F2	primer_volume	oligos_plate:H2	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_0:	templates_plate:A1	template_volume	oligos_plate:A1	primer_volume	oligos_plate:C1	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_3:	templates_plate:A1	template_volume	oligos_plate:B1	primer_volume	oligos_plate:D1	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_2:	templates_plate:A1	template_volume	oligos_plate:A2	primer_volume	oligos_plate:C2	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_5:	templates_plate:A1	template_volume	oligos_plate:B2	primer_volume	oligos_plate:D2	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_11:	templates_plate:B1	template_volume	oligos_plate:A4	primer_volume	oligos_plate:C4	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_13:	templates_plate:B1	template_volume	oligos_plate:B4	primer_volume	oligos_plate:D4	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_14:	templates_plate:B1	template_volume	oligos_plate:B4	primer_volume	oligos_plate:E4	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_15:	templates_plate:B1	template_volume	oligos_plate:F4	primer_volume	oligos_plate:D4	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_16:	templates_plate:B1	template_volume	oligos_plate:F4	primer_volume	oligos_plate:E4	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_7:	templates_plate:C1	template_volume	oligos_plate:A3	primer_volume	oligos_plate:C3	primer_volume	PCR_mix	PCR_mix_volume
+PCR_ID_9:	templates_plate:C1	template_volume	oligos_plate:B3	primer_volume	oligos_plate:D3	primer_volume	PCR_mix	PCR_mix_volume
+
+# make recipe(s)
+# command	# recipe_name	# destination	# method	# options
+MAKE	PCR_reactions	assemblytoautomate_PCR_plate_1:A1,B1,C1,A3,B3,A5,B5,A7,B7,A9,B9,C9,D9,E9,F9,G9,A11,B11	DEFAULT	MIX:10X8

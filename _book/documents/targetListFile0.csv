@@ -1,0 +1,8 @@
+(>Bin) or Part Name,Direction,Forced Assembly Strategy?,Forced Relative Overhang Position?,Direct Synthesis Firewall?
+>backbone,,,,
+vector_backbone,forward,,,
+>resistance_cassette,,,,
+GentR,reverse,,,
+RifR,reverse,,,
+SpecR,reverse,,,
+TetA,reverse,,,
